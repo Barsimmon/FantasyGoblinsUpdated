@@ -7,7 +7,7 @@
     <label>make mud</label>
     <description>Collect mud.</description>
     <jobString>Collecting mud.</jobString>
-    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>CutStone</effectWorking>
     <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
     <workAmount>800</workAmount>

@@ -12,8 +12,8 @@
 		<backstoryCategories>
 			<li>Tribal</li>
 		</backstoryCategories>
-		<homeIconPath>World/WorldObjects/TribalSettlement</homeIconPath>
-		<expandingIconTexture>World/WorldObjects/Expanding/Town</expandingIconTexture>
+    <factionIconPath>World/WorldObjects/Expanding/Village</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
 		<pawnNameMaker>Fantasy_GoblinNamer</pawnNameMaker>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerFactionTribal</factionNameMaker>

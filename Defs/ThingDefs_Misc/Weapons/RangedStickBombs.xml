@@ -1,38 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef Name="BaseGrenadeProjectile" Abstract="True">
-        <category>Projectile</category>
-        <altitudeLayer>Projectile</altitudeLayer>
-        <thingClass>Projectile_Explosive</thingClass>
-        <label>projectile</label>
-        <tickerType>Normal</tickerType>
-        <useHitPoints>False</useHitPoints>
-        <neverMultiSelect>True</neverMultiSelect>
-        <graphicData>
-            <shaderType>Transparent</shaderType>
-        </graphicData>
-        <projectile>
-            <speed>14</speed>
-            <flyOverhead>false</flyOverhead>
-        </projectile>
-    </ThingDef>
-
-    <ThingDef Name="BaseMakeableGrenade" ParentName="BaseWeapon" Abstract="True">
-        <recipeMaker>
-            <workSpeedStat>SmithingSpeed</workSpeedStat>
-            <workSkill>Crafting</workSkill>
-            <effectWorking>Smith</effectWorking>
-            <soundWorking>Recipe_Smith</soundWorking>
-            <recipeUsers>
-                <li>ElectricSmithy</li>
-                <li>FueledSmithy</li>
-                <li>TableMachining</li>
-            </recipeUsers>
-            <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
-        </recipeMaker>
-    </ThingDef>
-
     <!-- ==================== Goblin Stick Bomb ========================== -->
 
     <ThingDef ParentName="BaseMakeableGrenade">

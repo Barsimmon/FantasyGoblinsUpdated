@@ -46,11 +46,6 @@
     <passability>PassThroughOnly</passability>
     <designationCategory>Joy</designationCategory>
     <designationHotKey>Misc2</designationHotKey>
-    <comps>
-      <li Class="CompProperties_RoomIdentifier">
-        <roomStat>Impressiveness</roomStat>
-      </li>
-    </comps>
   </ThingDef>
 
 
@@ -101,11 +96,6 @@
     <placeWorkers>
       <li>PlaceWorker_NeverAdjacentUnstandable</li>
     </placeWorkers>
-    <comps>
-      <li Class="CompProperties_RoomIdentifier">
-        <roomStat>Impressiveness</roomStat>
-      </li>
-    </comps>
     <constructionSkillPrerequisite>1</constructionSkillPrerequisite>
   </ThingDef>
 

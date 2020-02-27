@@ -64,11 +64,6 @@
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <staticSunShadowHeight>0.20</staticSunShadowHeight>
     <surfaceType>Eat</surfaceType>
-    <comps>
-      <li Class="CompProperties_RoomIdentifier">
-        <roomStat>Impressiveness</roomStat>
-      </li>
-    </comps>
   </ThingDef>
 
   <ThingDef Abstract="True" ParentName="TableBase" Name="TableGatherSpotBase">
@@ -148,11 +143,6 @@
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <staticSunShadowHeight>0.20</staticSunShadowHeight>
     <surfaceType>Eat</surfaceType>
-    <comps>
-      <li Class="CompProperties_RoomIdentifier">
-        <roomStat>Impressiveness</roomStat>
-      </li>
-    </comps>
   </ThingDef>
 
   <ThingDef Abstract="True" ParentName="TableMudBase" Name="TableMudGatherSpotBase">
