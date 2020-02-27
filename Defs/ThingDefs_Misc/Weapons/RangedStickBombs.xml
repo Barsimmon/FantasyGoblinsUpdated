@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="BaseGrenadeProjectile" Abstract="True">
+        <category>Projectile</category>
+        <altitudeLayer>Projectile</altitudeLayer>
+        <thingClass>Projectile_Explosive</thingClass>
+        <label>projectile</label>
+        <tickerType>Normal</tickerType>
+        <useHitPoints>False</useHitPoints>
+        <neverMultiSelect>True</neverMultiSelect>
+        <graphicData>
+            <shaderType>Transparent</shaderType>
+        </graphicData>
+        <projectile>
+            <speed>14</speed>
+            <flyOverhead>false</flyOverhead>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef Name="BaseMakeableGrenade" ParentName="BaseWeapon" Abstract="True">
+        <recipeMaker>
+            <workSpeedStat>SmithingSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+        </recipeMaker>
+    </ThingDef>
+
+    <!-- ==================== Goblin Stick Bomb ========================== -->
+
+    <ThingDef ParentName="BaseMakeableGrenade">
+        <defName>Goblin_StickBomb</defName>
+        <label>stick bombs</label>
+        <description>An explosive device stuck to a stick. The finest of goblin ingenuity.</description>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/Goblin_StickBomb</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Grenade</soundInteract>
+        <techLevel>Medieval</techLevel>
+        <statBases>
+            <Mass>1</Mass>
+            <RangedWeapon_Cooldown>3.66</RangedWeapon_Cooldown>
+            <WorkToMake>10000</WorkToMake>
+        </statBases>
+        <costList>
+            <Steel>10</Steel>
+            <Chemfuel>60</Chemfuel>
+        </costList>
+        <weaponTags>
+            <li>GrenadeDestructive</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Grenades</li>
+        </thingCategories>
+        <verbs>
+            <li>
+                <label>throw stick bomb</label>
+                <verbClass>Verb_LaunchProjectile</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <range>10</range>
+                <forcedMissRadius>2.3</forcedMissRadius>
+                <warmupTime>1.5</warmupTime>
+                <noiseRadius>4</noiseRadius>
+                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <soundCast>ThrowGrenade</soundCast>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <defaultProjectile>Proj_StickBomb</defaultProjectile>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.66</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseGrenadeProjectile">
+        <defName>Proj_StickBomb</defName>
+        <label>stick bomb</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <texPath>Things/Projectile/Goblin_StickBomb</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <explosionRadius>2.4</explosionRadius>
+            <damageDef>Bomb</damageDef>
+            <!-- Use default damage from explosion def -->
+            <explosionDelay>50</explosionDelay>
+        </projectile>
+    </ThingDef>
+
+</Defs>

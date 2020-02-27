@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JoyGiverDef>
+    <defName>Play_TribalDrum</defName>
+    <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+    <baseChance>2</baseChance>
+    <thingDefs>
+      <li>TribalDrum</li>
+    </thingDefs>
+    <jobDef>Play_TribalDrum</jobDef>
+    <joyKind>Gaming_Dexterity</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+    <JoyGiverDef>
+    <defName>Play_WrestlingPit</defName>
+    <giverClass>JoyGiver_PlayBilliards</giverClass>
+    <baseChance>4</baseChance>
+    <thingDefs>
+      <li>WrestlingPit</li>
+    </thingDefs>
+    <jobDef>Play_WrestlingPit</jobDef>
+    <joyKind>Gaming_Dexterity</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+</Defs>

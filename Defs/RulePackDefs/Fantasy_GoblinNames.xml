@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>Fantasy_GoblinNamer</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[Names_Goblins]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>Names_Goblins</keyword>
+          <path>Goblin_Names/Names_Goblins</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+</RulePackDef>
+
+  <RulePackDef>
+    <defName>Fantasy_GoblinNamerFaction</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[pack]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>pack</keyword>
+          <path>Goblin_FactionNames/Names_GoblinsFactions</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+</RulePackDef>
+
+
+</Defs>

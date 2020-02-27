@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="HatBase" ParentName="ApparelBase" Abstract="True">
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef Name="HatMakeableBase" ParentName="ApparelMakeableBase" Abstract="True">
+    <thingCategories>
+      <li>Headgear</li>
+    </thingCategories>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>Goblin_LeatherHelmet</defName>
+    <label>goblin leatherhelmet</label>
+    <description>A simple leatherbound helmet for basic protection.</description>
+    <recipeMaker>
+      <researchPrerequisite />
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <factionPrerequisiteTags>
+        <li>Tribal</li>
+      </factionPrerequisiteTags>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Armor/GoblinHelmet/GoblinHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <techLevel>Neolithic</techLevel>
+    <costStuffCount>70</costStuffCount>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>0.11</Mass>
+      <StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.05</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Item/Equipment/Armor/GoblinHelmet/GoblinHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+
+
+
+
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>Goblin_TribalMask</defName>
+    <label>goblin tribal mask</label>
+    <description>A mask.</description>
+    <recipeMaker>
+      <researchPrerequisite />
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <factionPrerequisiteTags>
+        <li>Tribal</li>
+      </factionPrerequisiteTags>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Armor/GoblinTribalMask/GoblinTribalMask</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.00</drawSize>
+    </graphicData>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <techLevel>Neolithic</techLevel>
+    <costStuffCount>70</costStuffCount>
+    <statBases>
+      <WorkToMake>5700</WorkToMake>
+      <Mass>0.11</Mass>
+      <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.10</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Item/Equipment/Armor/GoblinTribalMask/GoblinTribalMask</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>Goblin_Hood</defName>
+    <label>goblin hood</label>
+    <description>A ragged goblin hood.</description>
+    <recipeMaker>
+      <researchPrerequisite />
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <factionPrerequisiteTags>
+        <li>Tribal</li>
+      </factionPrerequisiteTags>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/GoblinHood/GoblinHood</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.00</drawSize>
+    </graphicData>
+    <stuffCategories>
+      <li>Leathery</li>
+      <li>Fabric</li>
+    </stuffCategories>
+    <techLevel>Neolithic</techLevel>
+    <costStuffCount>70</costStuffCount>
+    <statBases>
+      <WorkToMake>5200</WorkToMake>
+      <Mass>0.11</Mass>
+      <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MentalBreakThreshold>-0.08</MentalBreakThreshold>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/GoblinHood/GoblinHood</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>Goblin_ShamanHood</defName>
+    <label>goblin shaman hood</label>
+    <description>A shaman goblin hood.</description>
+    <recipeMaker>
+      <researchPrerequisite />
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+      <factionPrerequisiteTags>
+        <li>Tribal</li>
+      </factionPrerequisiteTags>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/GoblinShamanHood/GoblinShamanHood</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.00</drawSize>
+    </graphicData>
+    <stuffCategories>
+      <li>Leathery</li>
+      <li>Fabric</li>
+    </stuffCategories>
+    <techLevel>Neolithic</techLevel>
+    <costStuffCount>80</costStuffCount>
+    <statBases>
+      <WorkToMake>5800</WorkToMake>
+      <Mass>0.11</Mass>
+      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MentalBreakThreshold>-0.02</MentalBreakThreshold>
+      <MedicalTendQuality>0.1</MedicalTendQuality>
+      <MedicalSurgerySuccessChance>0.10</MedicalSurgerySuccessChance>
+      <MedicalOperationSpeed>0.1</MedicalOperationSpeed>
+      <MedicalTendSpeed>0.08</MedicalTendSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/GoblinShamanHood/GoblinShamanHood</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+
+</Defs>

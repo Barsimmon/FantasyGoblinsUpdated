@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="GoblinTribeBase" Abstract="True">
+		<race>Fantasy_Goblin</race>
+		<defaultFactionType>GoblinTribeRough</defaultFactionType>
+		<backstoryCategories>
+			<li>Tribal</li>
+		</backstoryCategories>
+		<maxGenerationAge>60</maxGenerationAge>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<invNutrition>2.55</invNutrition>
+		<invFoodDef>Pemmican</invFoodDef>
+		<apparelTags>
+			<li>Neolithic</li>
+		</apparelTags>
+	</PawnKindDef>
+
+	<!-- Poverty tier - penitent -->
+
+	<PawnKindDef ParentName="GoblinTribeBase">
+		<defName>GoblinTribe_Penitent</defName>
+		<label>penitent</label>
+		<combatPower>28</combatPower>
+		<chemicalAddictionChance>0.10</chemicalAddictionChance>
+		<invNutrition>0</invNutrition>
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>
+			<min>0.2</min>
+			<max>1.1</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>50</min>
+			<max>100</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>90</min>
+			<max>150</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>NeolithicMeleeBasic</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>50</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.15</techHediffsChance>
+	</PawnKindDef>
+
+	<!-- Low tier - archer -->
+	<PawnKindDef ParentName="GoblinTribeBase">
+		<defName>GoblinTribe_Archer</defName>
+		<label>archer</label>
+		<combatPower>41</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>1.8</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>180</min>
+			<max>350</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>80</min>
+			<max>80</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>50</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.03</techHediffsChance>
+	</PawnKindDef>
+
+	<!-- Mid tier - warrior, hunter, trader -->
+	<PawnKindDef ParentName="GoblinTribeBase">
+		<defName>GoblinTribe_Warrior</defName>
+		<label>warrior</label>
+		<combatPower>53</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<canBeSapper>true</canBeSapper>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>1.8</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>200</min>
+			<max>300</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>Goblin_LeatherHelmet</li>
+			<li>Goblin_LeatherArmour</li>
+		</apparelRequired>
+		<weaponMoney>
+			<min>150</min>
+			<max>150</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>NeolithicMeleeDecent</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="GoblinTribeBase" Name="GoblinTribe_Hunter">
+		<defName>GoblinTribe_Hunter</defName>
+		<label>hunter</label>
+		<combatPower>58</combatPower>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>1.8</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>200</min>
+			<max>300</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_WarVeil</li>
+		</apparelRequired>
+		<weaponMoney>
+			<min>100</min>
+			<max>100</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>NeolithicRangedDecent</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="GoblinTribe_Hunter">
+		<defName>GoblinTribe_Trader</defName>
+		<label>trader</label>
+		<trader>true</trader>
+		<apparelRequired Inherit="False">
+			<li>Apparel_TribalHeaddress</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<!-- High tier - berserker, heavy archer, chief melee, chief ranged -->
+	<PawnKindDef ParentName="GoblinTribeBase">
+		<defName>GoblinTribe_Berserker</defName>
+		<label>berserker</label>
+		<combatPower>83</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<apparelMoney>
+			<min>200</min>
+			<max>550</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>Goblin_TribalMask</li>
+		</apparelRequired>
+		<weaponMoney>
+			<min>300</min>
+			<max>300</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>NeolithicMeleeAdvanced</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="GoblinTribeBase">
+		<defName>GoblinTribe_HeavyArcher</defName>
+		<label>heavy archer</label>
+		<combatPower>83</combatPower>
+		<apparelMoney>
+			<min>200</min>
+			<max>550</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_WarMask</li>
+		</apparelRequired>
+		<weaponMoney>
+			<min>250</min>
+			<max>250</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>NeolithicRangedHeavy</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="GoblinTribeBase" Name="GoblinTribeChiefBase" Abstract="True">
+		<defName>GoblinTribe_ChiefMelee</defName>
+		<combatPower>122</combatPower>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<minGenerationAge>30</minGenerationAge>
+		<maxGenerationAge>50</maxGenerationAge>
+		<itemQuality>Normal</itemQuality>
+		<factionLeader>true</factionLeader>
+		<canBeSapper>true</canBeSapper>
+		<apparelMoney>
+			<min>450</min>
+			<max>750</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>Goblin_TribalMask</li>
+			<li>Goblin_WarlordArmor</li>
+		</apparelRequired>
+		<weaponMoney>
+			<min>500</min>
+			<max>1000</max>
+		</weaponMoney>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="GoblinTribeChiefBase">
+		<defName>GoblinTribe_ChiefMelee</defName>
+		<label>berserker chief</label>
+		<weaponTags>
+			<li>NeolithicMeleeAdvanced</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="GoblinTribeChiefBase">
+		<defName>GoblinTribe_ChiefRanged</defName>
+		<label>archer chief</label>
+		<weaponTags>
+			<li>NeolithicRangedChief</li>
+		</weaponTags>
+	</PawnKindDef>
+
+</Defs>

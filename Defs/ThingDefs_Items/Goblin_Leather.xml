@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>Goblin_Leather</defName>
+        <label>Goblin hide</label>
+        <description>Goblin hide</description>
+        <graphicData>
+            <color>(188,200,59)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>2</MarketValue>
+            <StuffPower_Armor_Sharp>0.10</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.15</StuffPower_Armor_Blunt>
+            <StuffPower_Insulation_Cold>15</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
+        </statBases>
+        <stuffProps>
+            <color>(188,200,59)</color>
+        </stuffProps>
+    </ThingDef>
+
+</Defs>

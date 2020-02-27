@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="ApparelBase" Abstract="True">
+        <thingClass>Apparel</thingClass>
+        <category>Item</category>
+        <selectable>True</selectable>
+        <pathCost>10</pathCost>
+        <useHitPoints>True</useHitPoints>
+        <techLevel>Medieval</techLevel>
+        <graphicData>
+            <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+        </graphicData>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <DeteriorationRate>2</DeteriorationRate>
+            <Beauty>-3</Beauty>
+            <SellPriceFactor>0.70</SellPriceFactor>
+        </statBases>
+        <altitudeLayer>Item</altitudeLayer>
+        <alwaysHaulable>True</alwaysHaulable>
+        <tickerType>Never</tickerType>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+            <li>
+                <compClass>CompColorable</compClass>
+            </li>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef Name="ApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
+        <recipeMaker>
+            <workSpeedStat>TailoringSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Tailor</effectWorking>
+            <soundWorking>Recipe_Tailor</soundWorking>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <defaultIngredientFilter>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedThingDefs>
+                    <li>Gold</li>
+                    <li>Silver</li>
+                    <li>Plasteel</li>
+                    <li>Jade</li>
+                    <li>Uranium</li>
+                </disallowedThingDefs>
+            </defaultIngredientFilter>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef Name="ArmorSmithableBase" ParentName="ApparelBase" Abstract="True">
+        <recipeMaker>
+            <workSpeedStat>SmithingSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+            </recipeUsers>
+            <defaultIngredientFilter>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedThingDefs>
+                    <li>Gold</li>
+                    <li>Silver</li>
+                    <li>Plasteel</li>
+                    <li>Jade</li>
+                    <li>Uranium</li>
+                </disallowedThingDefs>
+            </defaultIngredientFilter>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef Name="ArmorMachineableBase" ParentName="ApparelBase" Abstract="True">
+        <recipeMaker>
+            <workSpeedStat>SmithingSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <defaultIngredientFilter>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedThingDefs>
+                    <li>Gold</li>
+                    <li>Silver</li>
+                    <li>Plasteel</li>
+                    <li>Jade</li>
+                    <li>Uranium</li>
+                </disallowedThingDefs>
+            </defaultIngredientFilter>
+        </recipeMaker>
+    </ThingDef>
+
+    <!-- ====================================== Neolithic =========================================== -->
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>Goblin_LeatherArmour</defName>
+        <label>goblin leatherarmor</label>
+        <description>A full-body garment crafted using neolithic tools. While it may look primitive, it offers some basic protection.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Armor/GoblinLeatherArmor/GoblinLeatherArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+
+        </graphicData>
+        <techLevel>Neolithic</techLevel>
+        <costStuffCount>60</costStuffCount>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <tradeability>Sellable</tradeability>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>2000</WorkToMake>
+            <Mass>0.4</Mass>
+            <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>4.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MeleeDodgeChance>0.05</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Item/Equipment/Armor/GoblinLeatherArmor/GoblinLeatherArmor</wornGraphicPath>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <tags>
+                <li>Neolithic</li>
+            </tags>
+        </apparel>
+        <recipeMaker>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+                <li>CraftingSpot</li>
+            </recipeUsers>
+        </recipeMaker>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.4,0.3,0.15)</only>
+                </li>
+                <li>
+                    <weight>15</weight>
+                    <only>(0.6,0.45,0.18)</only>
+                </li>
+                <li>
+                    <weight>20</weight>
+                    <only>(0.8,0.6,0.23)</only>
+                </li>
+            </options>
+        </colorGenerator>
+    </ThingDef>
+
+
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>Apparel_GoblinLoinCloth</defName>
+        <label>goblin loin cloth</label>
+        <description>A simple loin cloth covering the more intimate parts of the body.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Apparel/Goblin_LoinCloth</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costStuffCount>30</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>1000</WorkToMake>
+            <Mass>0.5</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <tags>
+                <li>Neolithic</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+        <recipeMaker>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+                <li>CraftingSpot</li>
+            </recipeUsers>
+        </recipeMaker>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
+
+
+    <ThingDef ParentName="ArmorSmithableBase">
+        <defName>Goblin_WarlordArmor</defName>
+        <label>goblin warlord armor</label>
+        <description>Metal and leather forged .</description>
+        <techLevel>Medieval</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Armor/GoblinWarlordArmor/GoblinWarlordArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+
+
+        <!-- <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories> -->
+        <costStuffCount>50</costStuffCount>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costList>
+            <Steel>200</Steel>
+        </costList>
+        <statBases>
+            <WorkToMake>28000</WorkToMake>
+            <MaxHitPoints>260</MaxHitPoints>
+            <Mass>8</Mass>
+            <StuffEffectMultiplierArmor>0.86</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.7</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.04</MoveSpeed>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <generateCommonality>2</generateCommonality>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Item/Equipment/Armor/GoblinWarlordArmor/GoblinWarlordArmor</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>Goblin_Warrior</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Goblin_Chief</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>Goblin_BerserkerArmour</defName>
+        <label>goblin berserker armor</label>
+        <description>.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Armor/GoblinBerserkerArmor/GoblinBerserkerArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+
+        </graphicData>
+        <techLevel>Neolithic</techLevel>
+        <costStuffCount>90</costStuffCount>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <tradeability>Sellable</tradeability>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>5200</WorkToMake>
+            <Mass>0.4</Mass>
+            <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.65</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.60</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>5.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MeleeDodgeChance>0.15</MeleeDodgeChance>
+            <MeleeHitChance>0.10</MeleeHitChance>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Item/Equipment/Armor/GoblinBerserkerArmor/GoblinBerserkerArmor</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+            </layers>
+            <tags>
+                <li>Goblin_Warrior</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Goblin_Chief</li>
+            </defaultOutfitTags>
+        </apparel>
+        <recipeMaker>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+                <li>CraftingSpot</li>
+            </recipeUsers>
+        </recipeMaker>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.4,0.3,0.15)</only>
+                </li>
+                <li>
+                    <weight>15</weight>
+                    <only>(0.6,0.45,0.18)</only>
+                </li>
+                <li>
+                    <weight>20</weight>
+                    <only>(0.8,0.6,0.23)</only>
+                </li>
+            </options>
+        </colorGenerator>
+    </ThingDef>
+
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>Goblin_Quiver</defName>
+        <label>goblin arrow quiver</label>
+        <description>A place to carry arrows. Allows for quicker access to arrows and aiming.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Apparel/GoblinQuiver/GoblinQuiver</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+
+        </graphicData>
+        <techLevel>Neolithic</techLevel>
+        <costStuffCount>40</costStuffCount>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <tradeability>Sellable</tradeability>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>1000</WorkToMake>
+            <Mass>0.1</Mass>
+            <EquipDelay>0.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <AimingDelayFactor>-0.2</AimingDelayFactor>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Item/Equipment/Apparel/GoblinQuiver/GoblinQuiver</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+            </layers>
+            <tags>
+                <li>Goblin_Hunter</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Goblin_Chief</li>
+            </defaultOutfitTags>
+        </apparel>
+        <recipeMaker>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+                <li>CraftingSpot</li>
+            </recipeUsers>
+        </recipeMaker>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.4,0.3,0.15)</only>
+                </li>
+                <li>
+                    <weight>15</weight>
+                    <only>(0.6,0.45,0.18)</only>
+                </li>
+                <li>
+                    <weight>20</weight>
+                    <only>(0.8,0.6,0.23)</only>
+                </li>
+            </options>
+        </colorGenerator>
+    </ThingDef>
+
+
+</Defs>
