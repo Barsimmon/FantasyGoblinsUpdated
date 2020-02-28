@@ -1,15 +1,13 @@
-Vagabond ideas:
----------------
+Possible changes:
+-----------------
 Gibbet cage
 sleeping/poison blowdart
 nets
 poison trap
 make goblin stuff goblin only
 backstories
-
-Barsimmon ideas:
-----------------
 More skincolours
+Split up heads & ears so more combinations are possible
 Change map icons
 gibbet allow tending/feeding button
 gibbet release, recruit etc should work
@@ -19,15 +17,13 @@ See about using 1.1 rank system in some way
 
 Reported bugs:
 --------------
-non-goblins spawning with goblin apparel & weapons
-texture bugs (quiver?)
-texture bug because of apparel texture for certain body type not existing
-rename textures to north, east, south
-overwrites vanilla bases?
+non-goblins spawning with goblin apparel & weapons (maybe fixed by restricting apparel to race?)
+texture bugs (quiver?) - quiver seems to work?
+texture bug because of apparel texture for certain body type not existing (maybe fixed by restricting apparel to race?)
 moonshade soup recipe missing
 unmined steel turns into squirrel meat if mod is added after start of game
-clothes don't fit females
-mud pit sounds
+clothes don't fit females (Bodytype for male & female are both set to "Male". Try to split up bodytypes and adjust apparel textures accordingly?)
+mud pit sounds (Maybe fix by adding joykind Gaming_Strength? Grunting sounds would be cool but silence is fine too)
 
 Requested changes (probably won't do in most cases):
 ----------------------------------------------------

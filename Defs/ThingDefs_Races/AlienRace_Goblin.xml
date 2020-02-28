@@ -53,7 +53,6 @@
 						<li>Average_Wide</li>
 						<li>Average_Pointy</li>
 					</aliencrowntypes>
-
 					<alienbodytypes>
 						<li>Male</li>
 					</alienbodytypes>
@@ -114,6 +113,61 @@
 					<li>EnvironmentDark</li>
 				</cannotReceiveThoughts>
 			</thoughtSettings>
+			<raceRestriction>
+				<apparelList>
+          <li>Leather_GoblinArmour</li>
+          <li>Apparel_GoblinLoinCloth</li>
+          <li>Goblin_WarlordArmor</li>
+          <li>Goblin_BerserkerArmour</li>
+          <li>Goblin_Quiver</li>
+          <li>Leather_GoblinHelmet</li>
+          <li>Goblin_TribalMask</li>
+          <li>Goblin_Hood</li>
+          <li>Goblin_ShamanHood</li>
+        </apparelList>
+				<weaponList>
+          <li>Goblin_Spear</li>
+          <li>Goblin_Knife</li>
+          <li>Goblin_Axe</li>
+          <li>Goblin_Mace</li>
+          <li>Goblin_Sword</li>
+          <li>Goblin_OneHandedAxe</li>
+          <li>Goblin_Falchion</li>
+          <li>Goblin_MachinePistol</li>
+          <li>Goblin_AssaultRifle</li>
+          <li>Goblin_Bow</li>
+          <li>Goblin_Plumbata</li>
+          <li>Goblin_LaserRifle</li>
+          <li>Goblin_StickBomb</li>
+        </weaponList>
+				<buildingList>
+          <li>Mud_Pit</li>
+          <li>TribalDrum</li>
+          <li>WrestlingPit</li>
+          <li>Stake</li>
+          <li>Goblin_Banner</li>
+          <li>Goblin_WallBanner</li>
+          <li>Goblin_SpiderBanner</li>
+          <li>Goblin_GibbetCage</li>
+          <li>Goblin_Door</li>
+          <li>Goblin_Logstool</li>
+          <li>GoblinTable1x2c</li>
+          <li>GoblinTable2x4c</li>
+          <li>Goblin_MudTable1x1c</li>
+          <li>Goblin_TribalRug</li>
+          <li>Goblin_Brazier</li>
+          <li>Goblin_SkullWallLight</li>
+          <li>Goblin_Chandelier</li>
+          <li>Goblin_MoonShadeWallLight</li>
+          <li>Goblin_SpikedBarricade</li>
+          <li>Goblin_MudWall</li>
+          <li>Goblin_Palisade</li>
+          <li>Goblin_StoneWall</li>
+        </buildingList>
+				<!--<plantList>
+          <li>Plant_MoonShade</li>
+        </plantList>-->
+      </raceRestriction>
 		</alienRace>
 		<statBases>
 			<MarketValue>1400</MarketValue>
