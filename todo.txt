@@ -49,7 +49,7 @@ mud table & wrestling pit madeFromStuff error -done
 Moonshade soup rots twice - done
 mud production used stone cutting sound - done, changed to foodmaking
 mud floor was flammable and turned into burned wood floor (not tested but defs suggested it) - done
-door can not be placed over goblin walls (issue is walls)
+door can not be placed over goblin walls (door has tag canPlaceOverWall, which does not work for ThingsDefs that are not vanilla walls. Need C# change?)
 naming error (ErrorName) - done
 wrestling pit icon size - done
 
