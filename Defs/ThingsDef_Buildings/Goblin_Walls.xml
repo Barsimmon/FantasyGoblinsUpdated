@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
-
   <!--Goblin Mud Wall-->
 
   <ThingDef ParentName="Goblin_BuildingBase">
@@ -57,7 +55,6 @@
     <canOverlapZones>false</canOverlapZones>
     <costList>
       <GoblinMud>10</GoblinMud>
-
     </costList>
     <building>
       <blueprintGraphicData>
@@ -73,8 +70,6 @@
     </damageMultipliers>
     <designationHotKey>Misc3</designationHotKey>
   </ThingDef>
-
-
 
   <!--Goblin Palisade Wall-->
 
@@ -129,9 +124,7 @@
     <blockLight>true</blockLight>
     <canOverlapZones>false</canOverlapZones>
     <stuffCategories>
-
       <li>Woody</li>
-
     </stuffCategories>
     <building>
       <blueprintGraphicData>
@@ -201,8 +194,6 @@
     <blockLight>true</blockLight>
     <canOverlapZones>false</canOverlapZones>
     <stuffCategories>
-
-
       <li>Stony</li>
     </stuffCategories>
     <building>
@@ -219,6 +210,5 @@
     </damageMultipliers>
     <designationHotKey>Misc3</designationHotKey>
   </ThingDef>
-
 
 </Defs>

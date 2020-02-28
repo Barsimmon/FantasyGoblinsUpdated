@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+
   <ThingDef ParentName="BuildingBase">
     <defName>Mud_Pit</defName>
     <label>mud pit</label>
@@ -42,4 +43,5 @@
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
   </ThingDef>
+
 </Defs>

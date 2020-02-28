@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>Goblin_Logstool</defName>
     <label>log stool</label>
@@ -43,37 +44,6 @@
     </building>
     <uiIconOffset>(0, -0.05)</uiIconOffset>
   </ThingDef>
-
-
-  <!-- Table base -->
-  <ThingDef Abstract="True" ParentName="FurnitureWithQualityBase" Name="TableBase">
-    <description>People eat off tables when chairs are placed facing them.</description>
-    <thingClass>Building</thingClass>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <castEdgeShadows>true</castEdgeShadows>
-    <pathCost>60</pathCost>
-    <fillPercent>0.4</fillPercent>
-    <socialPropernessMatters>true</socialPropernessMatters>
-    <canOverlapZones>false</canOverlapZones>
-    <stuffCategories>
-
-      <li>Woody</li>
-
-    </stuffCategories>
-    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <staticSunShadowHeight>0.20</staticSunShadowHeight>
-    <surfaceType>Eat</surfaceType>
-  </ThingDef>
-
-  <ThingDef Abstract="True" ParentName="TableBase" Name="TableGatherSpotBase">
-    <comps>
-      <li>
-        <compClass>CompGatherSpot</compClass>
-      </li>
-    </comps>
-  </ThingDef>
-
 
   <ThingDef ParentName="TableGatherSpotBase">
     <defName>GoblinTable1x2c</defName>
@@ -126,33 +96,11 @@
     <costStuffCount>75</costStuffCount>
   </ThingDef>
 
-
-
-
-  <!--Mud Table base -->
-  <ThingDef Abstract="True" ParentName="FurnitureWithQualityBase" Name="TableMudBase">
-    <description>People eat off tables when chairs are placed facing them.</description>
-    <thingClass>Building</thingClass>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <castEdgeShadows>true</castEdgeShadows>
-    <pathCost>60</pathCost>
-    <fillPercent>0.4</fillPercent>
-    <socialPropernessMatters>true</socialPropernessMatters>
-    <canOverlapZones>false</canOverlapZones>
-    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <staticSunShadowHeight>0.20</staticSunShadowHeight>
-    <surfaceType>Eat</surfaceType>
+  <ThingDef Abstract="True" ParentName="TableGatherSpotBase" Name="TableMudGatherSpotBase">
+    <stuffCategories Inherit="False">
+      <li>Stony</li>
+    </stuffCategories>
   </ThingDef>
-
-  <ThingDef Abstract="True" ParentName="TableMudBase" Name="TableMudGatherSpotBase">
-    <comps>
-      <li>
-        <compClass>CompGatherSpot</compClass>
-      </li>
-    </comps>
-  </ThingDef>
-
 
   <ThingDef ParentName="TableMudGatherSpotBase">
     <defName>Goblin_MudTable1x1c</defName>
@@ -229,6 +177,5 @@
     </building>
     <uiIconOffset>(0, -0.05)</uiIconOffset>
   </ThingDef>
-
 
 </Defs>

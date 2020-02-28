@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   <SoundDef>
     <defName>LaserRifle</defName>
@@ -8,18 +7,14 @@
     <maxSimultaneous>4</maxSimultaneous>
     <subSounds>
       <li>
-      <onCamera>True</onCamera>
+        <onCamera>True</onCamera>
         <grains>
           <li Class="AudioGrain_Clip">
             <clipPath>LaserRifle/LaserRifle</clipPath>
           </li>
         </grains>
-        <pitchRange>
-			<min>0.9452174</min>
-			<max>1.142391</max>
-        </pitchRange>
+        <pitchRange>0.9452174~1.142391</pitchRange>
       </li>
     </subSounds>
-</SoundDef>
-
+  </SoundDef>
 </Defs>

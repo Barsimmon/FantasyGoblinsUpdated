@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
   <JoyGiverDef>
@@ -16,7 +16,7 @@
     </requiredCapacities>
   </JoyGiverDef>
 
-    <JoyGiverDef>
+  <JoyGiverDef>
     <defName>Play_WrestlingPit</defName>
     <giverClass>JoyGiver_PlayBilliards</giverClass>
     <baseChance>4</baseChance>

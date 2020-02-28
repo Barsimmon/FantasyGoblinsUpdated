@@ -73,7 +73,6 @@
     </projectile>
   </ThingDef>
 
-
   <ThingDef ParentName="BaseWeaponNeolithic">
     <defName>Goblin_Plumbata</defName>
     <label>goblin plumbata</label>
@@ -143,10 +142,5 @@
       <speed>38</speed>
     </projectile>
   </ThingDef>
-
-
-
-
-
 
 </Defs>

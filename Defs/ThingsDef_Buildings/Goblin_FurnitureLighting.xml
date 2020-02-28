@@ -28,7 +28,6 @@
     <fillPercent>0.8</fillPercent>
     <stuffCategories>
       <li>Woody</li>
-
     </stuffCategories>
     <costStuffCount>10</costStuffCount>
     <statBases>
@@ -74,7 +73,6 @@
     <designationCategory>Furniture</designationCategory>
     <designationHotKey>Misc10</designationHotKey>
   </ThingDef>
-
 
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>Goblin_SkullWallLight</defName>
@@ -146,9 +144,7 @@
         <fireSize>0.25</fireSize>
         <offset>(0,0,-0.35)</offset>
       </li>
-
     </comps>
-
     <designationCategory>Furniture</designationCategory>
   </ThingDef>
 
@@ -219,11 +215,8 @@
       </li>
       <li Class="CompProperties_Flickable"/>
     </comps>
-
     <designationCategory>Furniture</designationCategory>
   </ThingDef>
-
-
 
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>Goblin_MoonShadeWallLight</defName>
@@ -254,7 +247,6 @@
     </stuffCategories>
     <costStuffCount>30</costStuffCount>
     <costList>
-
       <Resource_RawMoonShade>20</Resource_RawMoonShade>
     </costList>
     <rotatable>true</rotatable>
@@ -291,12 +283,8 @@
         </fuelFilter>
         <destroyOnNoFuel>false</destroyOnNoFuel>
       </li>
-
     </comps>
     <designationCategory>Furniture</designationCategory>
   </ThingDef>
-
-
-
 
 </Defs>

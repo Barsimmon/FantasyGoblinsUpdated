@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<defName>Fantasy_Goblin</defName>
 		<label>Goblin</label>
@@ -193,7 +194,7 @@
 			<intelligence>Humanlike</intelligence>
 			<makesFootprints>true</makesFootprints>
 			<lifeExpectancy>60</lifeExpectancy>
-			<leatherDef>Goblin_Leather</leatherDef>
+			<leatherDef>Leather_Goblin</leatherDef>
 			<nameCategory>HumanStandard</nameCategory>
 			<body>Human</body>
 			<baseBodySize>0.9</baseBodySize>

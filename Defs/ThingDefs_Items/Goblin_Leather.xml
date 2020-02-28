@@ -2,7 +2,7 @@
 <Defs>
 
     <ThingDef ParentName="LeatherBase">
-        <defName>Goblin_Leather</defName>
+        <defName>Leather_Goblin</defName>
         <label>Goblin hide</label>
         <description>Goblin hide</description>
         <graphicData>
@@ -17,6 +17,7 @@
         </statBases>
         <stuffProps>
             <color>(188,200,59)</color>
+            <commonality>0.0025</commonality>
         </stuffProps>
     </ThingDef>
 

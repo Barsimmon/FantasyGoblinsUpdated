@@ -78,7 +78,6 @@
     </projectile>
   </ThingDef>
 
-
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Goblin_AssaultRifle</defName>
     <label>goblin assault rifle</label>
@@ -145,6 +144,7 @@
       </li>
     </tools>
   </ThingDef>
+
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_AssaultRifle</defName>
     <label>assault rifle bullet</label>

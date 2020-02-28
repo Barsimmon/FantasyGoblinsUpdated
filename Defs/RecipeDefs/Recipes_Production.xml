@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
   <RecipeDef>
     <defName>Make_GoblinMud</defName>
     <label>make mud</label>
     <description>Collect mud.</description>
     <jobString>Collecting mud.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>CutStone</effectWorking>
-    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
     <workAmount>800</workAmount>
     <products>
       <GoblinMud>20</GoblinMud>

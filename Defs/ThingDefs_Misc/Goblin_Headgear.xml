@@ -16,7 +16,7 @@
 
 
   <ThingDef ParentName="HatMakeableBase">
-    <defName>Goblin_LeatherHelmet</defName>
+    <defName>Leather_GoblinHelmet</defName>
     <label>goblin leatherhelmet</label>
     <description>A simple leatherbound helmet for basic protection.</description>
     <recipeMaker>

@@ -22,7 +22,6 @@
 		<designationHotKey>Misc7</designationHotKey>
 	</TerrainDef>
 
-
 	<!-- ================= Goblin Mud Floor ================= -->
 
 	<TerrainDef ParentName="FloorBase">
@@ -31,20 +30,15 @@
 		<renderPrecedence>250</renderPrecedence>
 		<description>Densely packed and dried mud creating a cakelike textured surface.</description>
 		<texturePath>Terrain/Surfaces/Goblin_MudFloor</texturePath>
-		<burnedDef>BurnedWoodPlankFloor</burnedDef>
 		<color>(108,78,55)</color>
 		<statBases>
+      <Beauty>-1</Beauty>
 			<WorkToBuild>30</WorkToBuild>
-			<Flammability>0.02</Flammability>
 		</statBases>
 		<costList>
 			<GoblinMud>8</GoblinMud>
-
 		</costList>
-		<constructEffect>ConstructWood</constructEffect>
 		<designationHotKey>Misc7</designationHotKey>
 	</TerrainDef>
-
-
 
 </Defs>

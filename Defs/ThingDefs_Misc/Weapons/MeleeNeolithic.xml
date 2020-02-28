@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Goblin_Spear</defName>
@@ -17,7 +16,6 @@
       <li>MedievalMeleeBasic</li>
       <li>NeolithicMeleeBasic</li>
     </weaponTags>
-
     <statBases>
       <WorkToMake>8000</WorkToMake>
       <Mass>0.85</Mass>
@@ -32,8 +30,6 @@
       <li>Woody</li>
     </stuffCategories>
     <tools>
-
-
       <li>
         <label>point</label>
         <capacities>
@@ -58,7 +54,6 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
-
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Goblin_Knife</defName>
@@ -116,7 +111,6 @@
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
-
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Goblin_Axe</defName>
@@ -275,8 +269,6 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
-
-
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>Goblin_OneHandedAxe</defName>

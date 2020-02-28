@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-<ThingDef ParentName="ResourceBase">
+  <ThingDef ParentName="ResourceBase">
     <defName>GoblinMud</defName>
     <label>mud</label>
     <description>Mud, can be used in construction of simpler walls and flooring or for wrestling in.</description>
@@ -14,17 +14,17 @@
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>75</stackLimit>
     <statBases>
-	<WorkToMake>800</WorkToMake>
+      <WorkToMake>800</WorkToMake>
       <MaxHitPoints>70</MaxHitPoints>
       <MarketValue>2</MarketValue>
       <Mass>0.6</Mass>
       <Flammability>0.0</Flammability>
-			<DeteriorationRate>0.0</DeteriorationRate>
-		</statBases>
+      <DeteriorationRate>0.0</DeteriorationRate>
+    </statBases>
     <intricate>true</intricate>
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
   </ThingDef>
-  
-  </Defs>
+
+</Defs>

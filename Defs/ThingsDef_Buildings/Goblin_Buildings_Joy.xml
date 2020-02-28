@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
   <ThingDef ParentName="FurnitureWithQualityBase">
@@ -37,9 +37,7 @@
       <JoyGainFactor>1</JoyGainFactor>
     </statBases>
     <stuffCategories>
-
       <li>Woody</li>
-
     </stuffCategories>
     <costStuffCount>50</costStuffCount>
     <pathCost>50</pathCost>
@@ -48,9 +46,7 @@
     <designationHotKey>Misc2</designationHotKey>
   </ThingDef>
 
-
-
-  <ThingDef ParentName="TableMudBase">
+  <ThingDef ParentName="TableBase">
     <defName>WrestlingPit</defName>
     <label>wrestling pit</label>
     <description>A pit made out of mud. For wrestling in the spirit of friendly competition</description>
@@ -97,7 +93,9 @@
       <li>PlaceWorker_NeverAdjacentUnstandable</li>
     </placeWorkers>
     <constructionSkillPrerequisite>1</constructionSkillPrerequisite>
+    <stuffCategories Inherit="False">
+      <li>Stony</li>
+    </stuffCategories>
   </ThingDef>
-
 
 </Defs>

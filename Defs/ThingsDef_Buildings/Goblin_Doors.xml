@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
   <!--========================= Doors =============================-->
 
   <ThingDef ParentName="BuildingBase" Name="DoorBase" Abstract="True">
@@ -11,9 +10,7 @@
     <fillPercent>1</fillPercent>
     <useHitPoints>true</useHitPoints>
     <stuffCategories>
-
       <li>Woody</li>
-
     </stuffCategories>
     <statBases>
       <MaxHitPoints>160</MaxHitPoints>
@@ -70,5 +67,5 @@
     <costStuffCount>15</costStuffCount>
     <designationHotKey>Misc1</designationHotKey>
   </ThingDef>
-  
-  </Defs>
+
+</Defs>

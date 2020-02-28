@@ -17,81 +17,91 @@
 		<li>erdelf.HumanoidAlienRaces</li>
 	</loadAfter>
 	<description>
-		This mod by Vagabond was last updated in 2018 and seemed abandoned.
-		I like the mod a lot so I took it upon myself to update it.
-		I did not make any of the art, or did any of the creative thinking.
-		If Vagabond asks me to take this down, I will.
+This mod by Vagabond was last updated in 2018 and seemed abandoned.
+I like getting raided by goblins and recruiting them, so I took it upon myself to update it.
+I did not make any of the art, nor did I do any of the creative thinking.
+If Vagabond asks me to take this down, I will.
 
-		Original description below
-		--------------------------
+I mostly just made sure it works in 1.1 with the same features as before and cleaned up the def xmls.
+Some of the other small changes I made are the following:
+- Changed the mud-making sound
+- Mud floor now can't burn, but has beauty of -1
+- Goblin factions now use goblin hair instead of tribal hair
 
-		Adds the race of sly and conniving goblins. While physically weak they
-		more than make up for it with their productivity and intellectual cunning.
+There may be bugs!
+I only did some quick testing and played a little with the goblin faction.
+Let me know if you find any bugs, but I can't promise I'll fix them.
+If anyone knows how to make sure goblin things aren't buildable or craftable by other factions, let me know please.
 
-		Goblins are focused mainly on a tribal playthrough.
+Original description below
+--------------------------
 
+Adds the race of sly and conniving goblins. While physically weak they
+more than make up for it with their productivity and intellectual cunning.
 
-		REQUIRES
-
-		Version 1.0 of the Humanoid Alien Races mod. Made by Erdelf.
-
-		FEATURES
-		--------
-
-		Goblins as a playable race.
-
-		Goblins are physically weaker with decreased hit points.
-		They're however faster and have higher rate's of resistance
-		towards diseases and toxcicity.
-
-		Hostile and friendly goblin settlements.
-
-		Mud gathering. Mud is a resource that can be harvested from mud pits.
-		Mud can then be used in the construction of weak mud walls.
-		While not being
-		able to suffer much physical abuse they're highly fire resistant.
-
-		New Walls.
-		- Mud walls.
-		- Wooden palisade.
-		- Goblin made stone walls.
-
-		New Floor Tiles.
-		- A crude makeshift wooden plank tile.
-		- Mud floor.
-		- Goblin made flagstone.
-
-		New Weapons.
-		- An array of neolithic and medieval weapons to equip your
-		goblin tribe with.
-
-		- A few late game guns, if your tribe survives long enough to get out of the
-		dark ages.
-
-		New Armour.
-		- Equip your goblins in the latest of tribal fashion.
-		Such as tribal masks, simple leather armours, and warlord armour
-		for your chieftains.
-		Warlord armour can only be used by goblins.
-
-		New Furniture
-		- Added more suitable furniture for your goblin tribe.
-		Such as crude wooden planked tables, stools.
-		And a variety of decoration and lighting options as well as a
-		few more things
-		that I'll hope you'll enjoy in your playthrough.
+Goblins are focused mainly on a tribal playthrough.
 
 
-		New Backstories
-		- I've currently disabled all goblin backstories
-		for now.
-		Sorry if this causes any immersion breaking inconveniences.
-		They currently use the vanilla tribal backstories.
+REQUIRES
+
+Version 1.0 of the Humanoid Alien Races mod. Made by Erdelf.
+
+FEATURES
+--------
+
+Goblins as a playable race.
+
+Goblins are physically weaker with decreased hit points.
+They're however faster and have higher rate's of resistance
+towards diseases and toxcicity.
+
+Hostile and friendly goblin settlements.
+
+Mud gathering. Mud is a resource that can be harvested from mud pits.
+Mud can then be used in the construction of weak mud walls.
+While not being
+able to suffer much physical abuse they're highly fire resistant.
+
+New Walls.
+- Mud walls.
+- Wooden palisade.
+- Goblin made stone walls.
+
+New Floor Tiles.
+- A crude makeshift wooden plank tile.
+- Mud floor.
+- Goblin made flagstone.
+
+New Weapons.
+- An array of neolithic and medieval weapons to equip your
+goblin tribe with.
+
+- A few late game guns, if your tribe survives long enough to get out of the
+dark ages.
+
+New Armour.
+- Equip your goblins in the latest of tribal fashion.
+Such as tribal masks, simple leather armours, and warlord armour
+for your chieftains.
+Warlord armour can only be used by goblins.
+
+New Furniture
+- Added more suitable furniture for your goblin tribe.
+Such as crude wooden planked tables, stools.
+And a variety of decoration and lighting options as well as a
+few more things
+that I'll hope you'll enjoy in your playthrough.
+
+
+New Backstories
+- I've currently disabled all goblin backstories
+for now.
+Sorry if this causes any immersion breaking inconveniences.
+They currently use the vanilla tribal backstories.
 
 
 
-		Have fun.
-
+Have fun.
 
 
 

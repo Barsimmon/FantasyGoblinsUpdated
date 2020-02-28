@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Goblin_LaserRifle</defName>
     <label>goblin laser rifle</label>
@@ -85,6 +84,5 @@
       <speed>80</speed>
     </projectile>
   </ThingDef>
-  
-  
-  </Defs>
+
+</Defs>

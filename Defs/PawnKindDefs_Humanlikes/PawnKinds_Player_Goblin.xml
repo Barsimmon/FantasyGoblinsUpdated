@@ -12,22 +12,13 @@
 		<defName>Goblin</defName>
 		<label>Tribal Goblin</label>
 		<defaultFactionType>GoblinPlayerTribe</defaultFactionType>
-		<backstoryCategories>
-			<li>Tribal</li>
-		</backstoryCategories>
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
 		<apparelTags>
 			<li>Neolithic</li>
 		</apparelTags>
-		<apparelMoney>
-			<min>200</min>
-			<max>400</max>
-		</apparelMoney>
+    <apparelMoney>200~400</apparelMoney>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-		<techHediffsMoney>
-			<min>50</min>
-			<max>50</max>
-		</techHediffsMoney>
+    <techHediffsMoney>50~50</techHediffsMoney>
 		<techHediffsTags>
 			<li>Poor</li>
 		</techHediffsTags>

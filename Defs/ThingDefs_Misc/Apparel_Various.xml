@@ -4,7 +4,7 @@
     <!-- ====================================== Neolithic =========================================== -->
 
     <ThingDef ParentName="ApparelMakeableBase">
-        <defName>Goblin_LeatherArmour</defName>
+        <defName>Leather_GoblinArmour</defName>
         <label>goblin leatherarmor</label>
         <description>A full-body garment crafted using neolithic tools. While it may look primitive, it offers some basic protection.</description>
         <graphicData>
@@ -73,8 +73,6 @@
         </colorGenerator>
     </ThingDef>
 
-
-
     <ThingDef ParentName="ApparelMakeableBase">
         <defName>Apparel_GoblinLoinCloth</defName>
         <label>goblin loin cloth</label>
@@ -124,7 +122,6 @@
         </recipeMaker>
         <colorGenerator Class="ColorGenerator_StandardApparel" />
     </ThingDef>
-
 
     <ThingDef ParentName="ArmorSmithableBase">
         <defName>Goblin_WarlordArmor</defName>
@@ -261,7 +258,6 @@
         </colorGenerator>
     </ThingDef>
 
-
     <ThingDef ParentName="ApparelMakeableBase">
         <defName>Goblin_Quiver</defName>
         <label>goblin arrow quiver</label>
@@ -328,6 +324,5 @@
             </options>
         </colorGenerator>
     </ThingDef>
-
 
 </Defs>
