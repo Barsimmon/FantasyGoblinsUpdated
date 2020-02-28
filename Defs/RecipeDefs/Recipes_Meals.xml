@@ -26,6 +26,11 @@
 			<MoonShadeSoup>1</MoonShadeSoup>
 		</products>
     <workSkill>Cooking</workSkill>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+			<li>Campfire</li>
+		</recipeUsers>
   </RecipeDef>
 
   <RecipeDef ParentName="CookMealBase">
@@ -54,6 +59,10 @@
       <MoonShadeSoup>4</MoonShadeSoup>
     </products>
     <workSkill>Cooking</workSkill>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
   </RecipeDef>
 
   </Defs>

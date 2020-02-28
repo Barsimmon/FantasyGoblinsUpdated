@@ -20,7 +20,7 @@ Reported bugs:
 non-goblins spawning with goblin apparel & weapons (maybe fixed by restricting apparel to race?)
 texture bugs (quiver?) - quiver seems to work?
 texture bug because of apparel texture for certain body type not existing (maybe fixed by restricting apparel to race?)
-moonshade soup recipe missing
+moonshade soup recipe missing - done
 unmined steel turns into squirrel meat if mod is added after start of game
 clothes don't fit females (Bodytype for male & female are both set to "Male". Try to split up bodytypes and adjust apparel textures accordingly?)
 mud pit sounds (Maybe fix by adding joykind Gaming_Strength? Grunting sounds would be cool but silence is fine too)
