@@ -43,14 +43,15 @@ moonshade inkcap should grow in dark
 goblin stuff available for non-goblins after researching tech
 cannibalism by default? (is by design)
 
-found/created bugs:
--------------------
-mud table & wrestling pit madeFromStuff
+found/caused bugs:
+------------------
+mud table & wrestling pit madeFromStuff error -done
 Moonshade soup rots twice - done
 mud production used stone cutting sound - done, changed to foodmaking
 mud floor was flammable and turned into burned wood floor (not tested but defs suggested it) - done
-door can not be placed over goblin walls
+door can not be placed over goblin walls (issue is walls)
 naming error (ErrorName) - done
+wrestling pit icon size - done
 
 todo refactoring:
 -----------------

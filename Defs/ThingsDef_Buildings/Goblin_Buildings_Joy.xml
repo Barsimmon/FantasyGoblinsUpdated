@@ -46,7 +46,7 @@
     <designationHotKey>Misc2</designationHotKey>
   </ThingDef>
 
-  <ThingDef ParentName="TableBase">
+  <ThingDef ParentName="FurnitureBase">
     <defName>WrestlingPit</defName>
     <label>wrestling pit</label>
     <description>A pit made out of mud. For wrestling in the spirit of friendly competition</description>
@@ -62,7 +62,8 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <uiIconScale>0.5</uiIconScale>
+    <staticSunShadowHeight>0.0</staticSunShadowHeight>
     <castEdgeShadows>false</castEdgeShadows>
     <altitudeLayer>Building</altitudeLayer>
     <rotatable>false</rotatable>
@@ -93,6 +94,11 @@
       <li>PlaceWorker_NeverAdjacentUnstandable</li>
     </placeWorkers>
     <constructionSkillPrerequisite>1</constructionSkillPrerequisite>
+    <comps>
+      <li>
+        <compClass>CompGatherSpot</compClass>
+      </li>
+    </comps>
   </ThingDef>
 
 </Defs>
