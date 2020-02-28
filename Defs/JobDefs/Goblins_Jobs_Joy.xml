@@ -18,7 +18,7 @@
     <reportString>wrestling.</reportString>
     <joyDuration>4000</joyDuration>
     <joyMaxParticipants>2</joyMaxParticipants>
-    <joySkill>Shooting</joySkill>
+    <joySkill>Melee</joySkill>
     <joyXpPerTick>0.004</joyXpPerTick>
     <joyKind>Gaming_Dexterity</joyKind>
     <taleOnCompletion>PlayedGame</taleOnCompletion>
