@@ -1,0 +1,60 @@
+Vagabond ideas:
+---------------
+Gibbet cage
+sleeping/poison blowdart
+nets
+poison trap
+make goblin stuff goblin only
+backstories
+
+Barsimmon ideas:
+----------------
+More skincolours
+Change map icons
+gibbet allow tending/feeding button
+gibbet release, recruit etc should work
+spike as "shelf" for dead bodies?
+See about using 1.1 quest system in some way
+See about using 1.1 rank system in some way
+
+Reported bugs:
+--------------
+non-goblins spawning with goblin apparel & weapons
+texture bugs (quiver?)
+texture bug because of apparel texture for certain body type not existing
+rename textures to north, east, south
+overwrites vanilla bases?
+moonshade soup recipe missing
+unmined steel turns into squirrel meat if mod is added after start of game
+clothes don't fit females
+mud pit sounds
+
+Requested changes (probably won't do in most cases):
+----------------------------------------------------
+Pretty females (War Chieftain Princess)
+CE compatibility or goblin race without items
+nerf plumbata
+no aging
+epoe patch (shouldn't be needed when humanoid implemented right?)
+facial stuff compatibility
+rotate gibbet
+remove clickbait cover art
+moonshade inkcap should grow in dark
+goblin stuff available for non-goblins after researching tech
+cannibalism by default? (is by design)
+
+found/created bugs:
+-------------------
+mud table & wrestling pit madeFromStuff
+Moonshade soup rots twice - done
+mud production used stone cutting sound - done, changed to foodmaking
+mud floor was flammable and turned into burned wood floor (not tested but defs suggested it) - done
+door can not be placed over goblin walls
+naming error (ErrorName) - done
+
+todo refactoring:
+-----------------
+fix red errors - done
+get rid of all *Base overrides - done
+change def syntax so it aligns with core 1.1 - done
+check humanoid alien races how to

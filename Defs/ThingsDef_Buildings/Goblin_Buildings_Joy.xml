@@ -93,9 +93,6 @@
       <li>PlaceWorker_NeverAdjacentUnstandable</li>
     </placeWorkers>
     <constructionSkillPrerequisite>1</constructionSkillPrerequisite>
-    <stuffCategories Inherit="False">
-      <li>Stony</li>
-    </stuffCategories>
   </ThingDef>
 
 </Defs>

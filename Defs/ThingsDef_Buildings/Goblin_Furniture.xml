@@ -96,13 +96,7 @@
     <costStuffCount>75</costStuffCount>
   </ThingDef>
 
-  <ThingDef Abstract="True" ParentName="TableGatherSpotBase" Name="TableMudGatherSpotBase">
-    <stuffCategories Inherit="False">
-      <li>Stony</li>
-    </stuffCategories>
-  </ThingDef>
-
-  <ThingDef ParentName="TableMudGatherSpotBase">
+  <ThingDef ParentName="TableGatherSpotBase">
     <defName>Goblin_MudTable1x1c</defName>
     <label>goblin mud table (1x1)</label>
     <description>A simple table made out of mud.</description>

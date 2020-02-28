@@ -3,14 +3,19 @@
 
     <!-- ====================================== Neolithic =========================================== -->
 
-    <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef Name="ApparelMakeableGoblinBase" ParentName="ApparelMakeableBase" Abstract="True">
+        <statBases>
+            <SellPriceFactor>0.70</SellPriceFactor>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableGoblinBase">
         <defName>Leather_GoblinArmour</defName>
         <label>goblin leatherarmor</label>
         <description>A full-body garment crafted using neolithic tools. While it may look primitive, it offers some basic protection.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/Armor/GoblinLeatherArmor/GoblinLeatherArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-
         </graphicData>
         <techLevel>Neolithic</techLevel>
         <costStuffCount>60</costStuffCount>
@@ -73,7 +78,7 @@
         </colorGenerator>
     </ThingDef>
 
-    <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef ParentName="ApparelMakeableGoblinBase">
         <defName>Apparel_GoblinLoinCloth</defName>
         <label>goblin loin cloth</label>
         <description>A simple loin cloth covering the more intimate parts of the body.</description>

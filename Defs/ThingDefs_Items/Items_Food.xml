@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <ThingDef ParentName="MealCooked">
+  <ThingDef ParentName="MealBase">
     <defName>MoonShadeSoup</defName>
     <label>moonshade soup</label>
     <description>A foul smelling and tasting soup made from the moonshade inkcap.</description>
@@ -30,6 +30,7 @@
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>
+    <tradeability>Buyable</tradeability>
   </ThingDef>
 
 </Defs>

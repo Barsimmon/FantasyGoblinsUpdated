@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef Name="HatBase" ParentName="ApparelBase" Abstract="True">
-    <thingCategories>
-      <li>Headgear</li>
-    </thingCategories>
-  </ThingDef>
-
-  <ThingDef Name="HatMakeableBase" ParentName="ApparelMakeableBase" Abstract="True">
-    <thingCategories>
-      <li>Headgear</li>
-    </thingCategories>
-  </ThingDef>
-
-
-
   <ThingDef ParentName="HatMakeableBase">
     <defName>Leather_GoblinHelmet</defName>
     <label>goblin leatherhelmet</label>
@@ -67,10 +53,6 @@
       </defaultOutfitTags>
     </apparel>
   </ThingDef>
-
-
-
-
 
   <ThingDef ParentName="HatMakeableBase">
     <defName>Goblin_TribalMask</defName>
@@ -237,6 +219,5 @@
       </defaultOutfitTags>
     </apparel>
   </ThingDef>
-
 
 </Defs>
