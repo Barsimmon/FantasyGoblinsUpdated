@@ -19,7 +19,7 @@ Reported bugs:
 --------------
 non-goblins spawning with goblin apparel & weapons - done I think. Apparel & weapons should be restricted to goblin factions because weaponTags were changed
 texture bugs (quiver?) - quiver seems to work?
-texture bug because of apparel texture for certain body type not existing - shouldn't occur unless colonist attempts to equip
+texture bug because of apparel texture for certain body type not existing - shouldn't occur anymore
 moonshade soup recipe missing - done
 unmined steel turns into squirrel meat if mod is added after start of game - issue with ThingDef hash https://ludeon.com/forums/index.php?topic=48267
 clothes don't fit females (Bodytype for male & female are both set to "Male". Try to split up bodytypes and adjust apparel textures accordingly?)
@@ -42,12 +42,12 @@ cannibalism by default? (is by design)
 
 found/caused bugs:
 ------------------
-mud table & wrestling pit madeFromStuff error -done
+mud table & wrestling pit madeFromStuff error - done
 Moonshade soup rots twice - done
 mud production used stone cutting sound - done, changed to foodmaking
 mud floor was flammable and turned into burned wood floor (not tested but defs suggested it) - done
 door can not be placed over goblin walls (door has tag canPlaceOverWall, which does not work for ThingsDefs that are not vanilla walls. Need C# change?)
-naming error - somehow failed during spouse generation or something?
+naming error - doesn't occur as much, but somehow failed during spouse generation or something?
 wrestling pit icon size - done
 make sure humans don't spawn for goblin factions - done
 
@@ -56,4 +56,4 @@ todo refactoring:
 fix red errors - done
 get rid of all *Base overrides - done
 change def syntax so it aligns with core 1.1 - done
-check humanoid alien races how to
+check humanoid alien races how to - checked wiki
