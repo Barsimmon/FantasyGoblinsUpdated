@@ -115,35 +115,6 @@
 				</cannotReceiveThoughts>
 			</thoughtSettings>
 			<raceRestriction>
-				<apparelList>
-          <li>Goblin_WarlordArmor</li>
-        </apparelList>
-				<!--<apparelList>
-          <li>Leather_GoblinArmour</li>
-          <li>Apparel_GoblinLoinCloth</li>
-          <li>Goblin_WarlordArmor</li>
-          <li>Goblin_BerserkerArmour</li>
-          <li>Goblin_Quiver</li>
-          <li>Leather_GoblinHelmet</li>
-          <li>Goblin_TribalMask</li>
-          <li>Goblin_Hood</li>
-          <li>Goblin_ShamanHood</li>
-        </apparelList>
-				<weaponList>
-          <li>Goblin_Spear</li>
-          <li>Goblin_Knife</li>
-          <li>Goblin_Axe</li>
-          <li>Goblin_Mace</li>
-          <li>Goblin_Sword</li>
-          <li>Goblin_OneHandedAxe</li>
-          <li>Goblin_Falchion</li>
-          <li>Goblin_MachinePistol</li>
-          <li>Goblin_AssaultRifle</li>
-          <li>Goblin_Bow</li>
-          <li>Goblin_Plumbata</li>
-          <li>Goblin_LaserRifle</li>
-          <li>Goblin_StickBomb</li>
-        </weaponList>-->
 				<buildingList>
           <li>Mud_Pit</li>
           <li>TribalDrum</li>
