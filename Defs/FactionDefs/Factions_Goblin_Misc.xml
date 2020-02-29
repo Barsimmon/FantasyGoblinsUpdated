@@ -10,7 +10,7 @@
     <hairTags>
       <li>Goblin_Hair</li>
     </hairTags>
-    <pawnGroupMakers>
+    <pawnGroupMakers Inherit="False">
       <li>
         <!-- Normal fights, ranged with melee mix-ins -->
         <kindDef>Combat</kindDef>
