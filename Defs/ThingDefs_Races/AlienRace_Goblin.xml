@@ -55,9 +55,10 @@
 					</aliencrowntypes>
 					<alienbodytypes>
 						<li>Male</li>
+						<li>Female</li>
 					</alienbodytypes>
 					<useGenderedHeads>true</useGenderedHeads>
-					<useGenderedBodies>true</useGenderedBodies>
+					<useGenderedBodies>false</useGenderedBodies>
 					<alienskincolorgen Class="ColorGenerator_Options">
 						<options>
 							<li>
