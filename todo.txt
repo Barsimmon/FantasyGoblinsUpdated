@@ -4,7 +4,7 @@ Gibbet cage
 sleeping/poison blowdart
 nets
 poison trap
-make goblin stuff goblin only - Buildings, apparel & weapons succeeded
+make goblin stuff goblin only - Buildings, apparel & weapons succeeded. Plants & floors not yet
 backstories
 More skincolours
 Split up heads & ears so more combinations are possible
@@ -17,9 +17,9 @@ See about using 1.1 rank system in some way
 
 Reported bugs:
 --------------
-non-goblins spawning with goblin apparel & weapons - done I think. Apparel & weapons should be restricted to race and weaponTags were changed
+non-goblins spawning with goblin apparel & weapons - done I think. Apparel & weapons should be restricted to goblin factions because weaponTags were changed
 texture bugs (quiver?) - quiver seems to work?
-texture bug because of apparel texture for certain body type not existing (maybe fixed now because apparel is restricted to race?)
+texture bug because of apparel texture for certain body type not existing - shouldn't occur unless colonist attempts to equip
 moonshade soup recipe missing - done
 unmined steel turns into squirrel meat if mod is added after start of game - issue with ThingDef hash https://ludeon.com/forums/index.php?topic=48267
 clothes don't fit females (Bodytype for male & female are both set to "Male". Try to split up bodytypes and adjust apparel textures accordingly?)
@@ -47,7 +47,7 @@ Moonshade soup rots twice - done
 mud production used stone cutting sound - done, changed to foodmaking
 mud floor was flammable and turned into burned wood floor (not tested but defs suggested it) - done
 door can not be placed over goblin walls (door has tag canPlaceOverWall, which does not work for ThingsDefs that are not vanilla walls. Need C# change?)
-naming error (ErrorName) - done
+naming error - somehow failed during spouse generation or something?
 wrestling pit icon size - done
 make sure humans don't spawn for goblin factions - done
 

@@ -114,6 +114,10 @@
 				</cannotReceiveThoughts>
 			</thoughtSettings>
 			<raceRestriction>
+				<apparelList>
+          <li>Goblin_WarlordArmor</li>
+          <li>Goblin_BerserkerArmour</li>
+        </apparelList>
 				<!--<apparelList>
           <li>Leather_GoblinArmour</li>
           <li>Apparel_GoblinLoinCloth</li>
