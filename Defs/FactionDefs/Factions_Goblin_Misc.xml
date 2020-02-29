@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+
   <FactionDef ParentName="TribeBase" Name="GoblinTribeFactionBase" Abstract="True">
     <factionIconPath>WorldObjects/Expanding/GoblinBase</factionIconPath>
     <factionNameMaker>Fantasy_GoblinNamerFaction</factionNameMaker>
     <settlementNameMaker>Fantasy_GoblinNamerFaction</settlementNameMaker>
     <pawnNameMaker>Fantasy_GoblinNamer</pawnNameMaker>
+    <categoryTag>TribalGoblin</categoryTag>
     <hairTags>
       <li>Goblin_Hair</li>
     </hairTags>
@@ -91,6 +93,7 @@
       </li>
     </pawnGroupMakers>
   </FactionDef>
+
   <FactionDef ParentName="GoblinTribeFactionBase">
     <defName>GoblinTribeCivil</defName>
     <label>goblin tribe</label>
@@ -102,6 +105,7 @@
     <startingGoodwill>0</startingGoodwill>
     <naturalColonyGoodwill>-50~50</naturalColonyGoodwill>
   </FactionDef>
+
   <FactionDef ParentName="GoblinTribeFactionBase">
     <defName>GoblinTribeRough</defName>
     <label>savage goblin tribe</label>
@@ -113,4 +117,5 @@
     <startingGoodwill>-20</startingGoodwill>
     <naturalColonyGoodwill>-100~-80</naturalColonyGoodwill>
   </FactionDef>
+
 </Defs>

@@ -40,6 +40,7 @@
       </thingDefs>
     </apparelStuffFilter>
     <recipePrerequisiteTags>
+      <li>TribalGoblin</li>
       <li>Tribal</li>
     </recipePrerequisiteTags>
   </FactionDef>

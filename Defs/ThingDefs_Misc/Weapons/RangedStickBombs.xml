@@ -24,7 +24,7 @@
             <Chemfuel>60</Chemfuel>
         </costList>
         <weaponTags>
-            <li>GrenadeDestructive</li>
+            <li>GrenadeDestructiveGoblin</li>
         </weaponTags>
         <thingCategories>
             <li>Grenades</li>

@@ -13,8 +13,8 @@
     <techLevel>Neolithic</techLevel>
     <costStuffCount>50</costStuffCount>
     <weaponTags>
-      <li>MedievalMeleeBasic</li>
-      <li>NeolithicMeleeBasic</li>
+      <li>MedievalMeleeBasicGoblin</li>
+      <li>NeolithicMeleeBasicGoblin</li>
     </weaponTags>
     <statBases>
       <WorkToMake>8000</WorkToMake>
@@ -52,6 +52,9 @@
       <skillRequirements>
         <Crafting>3</Crafting>
       </skillRequirements>
+      <factionPrerequisiteTags>
+        <li>TribalGoblin</li>
+      </factionPrerequisiteTags>
     </recipeMaker>
   </ThingDef>
 
@@ -66,8 +69,8 @@
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <weaponTags>
-      <li>MedievalMeleeBasic</li>
-      <li>NeolithicMeleeBasic</li>
+      <li>MedievalMeleeBasicGoblin</li>
+      <li>NeolithicMeleeBasicGoblin</li>
     </weaponTags>
     <costStuffCount>30</costStuffCount>
     <statBases>
@@ -109,6 +112,9 @@
       <recipeUsers>
         <li>CraftingSpot</li>
       </recipeUsers>
+      <factionPrerequisiteTags>
+        <li>TribalGoblin</li>
+      </factionPrerequisiteTags>
     </recipeMaker>
   </ThingDef>
 
@@ -123,8 +129,8 @@
     </graphicData>
     <techLevel>Neolithic</techLevel>
     <weaponTags>
-      <li>NeolithicMeleeAdvanced</li>
-      <li>MedievalMeleeAdvanced</li>
+      <li>NeolithicMeleeAdvancedGoblin</li>
+      <li>MedievalMeleeAdvancedGoblin</li>
     </weaponTags>
     <costStuffCount>75</costStuffCount>
     <statBases>
@@ -161,6 +167,9 @@
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
+      <factionPrerequisiteTags>
+        <li>TribalGoblin</li>
+      </factionPrerequisiteTags>
     </recipeMaker>
   </ThingDef>
 
@@ -184,13 +193,16 @@
       <skillRequirements>
         <Crafting>3</Crafting>
       </skillRequirements>
+      <factionPrerequisiteTags>
+        <li>TribalGoblin</li>
+      </factionPrerequisiteTags>
     </recipeMaker>
     <stuffCategories>
       <li>Metallic</li>
       <li>Woody</li>
     </stuffCategories>
     <weaponTags>
-      <li>MedievalMeleeDecent</li>
+      <li>MedievalMeleeDecentGoblin</li>
     </weaponTags>
     <tools>
       <li>
@@ -224,7 +236,7 @@
     </graphicData>
     <techLevel>Medieval</techLevel>
     <weaponTags>
-      <li>MedievalMeleeAdvanced</li>
+      <li>MedievalMeleeAdvancedGoblin</li>
     </weaponTags>
     <costStuffCount>100</costStuffCount>
     <statBases>
@@ -267,6 +279,9 @@
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
+      <factionPrerequisiteTags>
+        <li>TribalGoblin</li>
+      </factionPrerequisiteTags>
     </recipeMaker>
   </ThingDef>
 
@@ -281,7 +296,7 @@
     </graphicData>
     <techLevel>Medieval</techLevel>
     <weaponTags>
-      <li>MedievalMeleeAdvanced</li>
+      <li>MedievalMeleeAdvancedGoblin</li>
     </weaponTags>
     <costStuffCount>100</costStuffCount>
     <statBases>
@@ -316,6 +331,9 @@
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
+      <factionPrerequisiteTags>
+        <li>TribalGoblin</li>
+      </factionPrerequisiteTags>
     </recipeMaker>
   </ThingDef>
 
@@ -330,7 +348,7 @@
     </graphicData>
     <techLevel>Medieval</techLevel>
     <weaponTags>
-      <li>MedievalMeleeAdvanced</li>
+      <li>MedievalMeleeAdvancedGoblin</li>
     </weaponTags>
     <costStuffCount>100</costStuffCount>
     <statBases>
@@ -373,6 +391,9 @@
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
+      <factionPrerequisiteTags>
+        <li>TribalGoblin</li>
+      </factionPrerequisiteTags>
     </recipeMaker>
   </ThingDef>
 

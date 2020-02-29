@@ -20,7 +20,7 @@
     <apparelMoney>50~100</apparelMoney>
     <weaponMoney>90~150</weaponMoney>
     <weaponTags>
-      <li>NeolithicMeleeBasic</li>
+      <li>NeolithicMeleeBasicGoblin</li>
     </weaponTags>
     <techHediffsMoney>50~50</techHediffsMoney>
     <techHediffsTags>
@@ -40,7 +40,7 @@
     <apparelMoney>180~350</apparelMoney>
     <weaponMoney>80~80</weaponMoney>
     <weaponTags>
-      <li>NeolithicRangedBasic</li>
+      <li>NeolithicRangedBasicGoblin</li>
     </weaponTags>
     <techHediffsMoney>50~50</techHediffsMoney>
     <techHediffsTags>
@@ -65,7 +65,7 @@
     <apparelMoney>200~300</apparelMoney>
     <weaponMoney>150~150</weaponMoney>
     <weaponTags>
-      <li>NeolithicMeleeDecent</li>
+      <li>MedievalMeleeDecentGoblin</li>
     </weaponTags>
 	</PawnKindDef>
 
@@ -81,7 +81,7 @@
     </apparelRequired>
     <weaponMoney>100~100</weaponMoney>
     <weaponTags>
-      <li>NeolithicRangedDecent</li>
+      <li>NeolithicRangedBasicGoblin</li>
     </weaponTags>
 	</PawnKindDef>
 
@@ -108,7 +108,7 @@
     <apparelMoney>200~550</apparelMoney>
     <weaponMoney>300~300</weaponMoney>
     <weaponTags>
-      <li>NeolithicMeleeAdvanced</li>
+      <li>NeolithicMeleeAdvancedGoblin</li>
     </weaponTags>
 	</PawnKindDef>
 

@@ -4,7 +4,7 @@ Gibbet cage
 sleeping/poison blowdart
 nets
 poison trap
-make goblin stuff goblin only
+make goblin stuff goblin only - Buildings, apparel & weapons succeeded
 backstories
 More skincolours
 Split up heads & ears so more combinations are possible
@@ -17,7 +17,7 @@ See about using 1.1 rank system in some way
 
 Reported bugs:
 --------------
-non-goblins spawning with goblin apparel & weapons (maybe fixed now because apparel is restricted to race?)
+non-goblins spawning with goblin apparel & weapons - done I think. Apparel & weapons should be restricted to race and weaponTags were changed
 texture bugs (quiver?) - quiver seems to work?
 texture bug because of apparel texture for certain body type not existing (maybe fixed now because apparel is restricted to race?)
 moonshade soup recipe missing - done

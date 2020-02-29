@@ -15,6 +15,9 @@
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
+      <factionPrerequisiteTags>
+        <li>TribalGoblin</li>
+      </factionPrerequisiteTags>
     </recipeMaker>
     <statBases>
       <WorkToMake>11000</WorkToMake>
@@ -44,6 +47,9 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+    <weaponTags>
+      <li>IndustrialGunAdvancedGoblin</li>
+    </weaponTags>
     <tools>
       <li>
         <label>grip</label>
@@ -92,6 +98,9 @@
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
+      <factionPrerequisiteTags>
+        <li>TribalGoblin</li>
+      </factionPrerequisiteTags>
     </recipeMaker>
     <statBases>
       <WorkToMake>40000</WorkToMake>
@@ -122,7 +131,7 @@
       </li>
     </verbs>
     <weaponTags>
-      <li>IndustrialGunAdvanced</li>
+      <li>IndustrialGunAdvancedGoblin</li>
     </weaponTags>
     <tools>
       <li>
