@@ -5,11 +5,14 @@
     <defName>Fantasy_GoblinNamer</defName>
     <rulePack>
       <rulesStrings>
-        <li>r_name->[Names_Goblins]</li>
+        <li>name->[pack]</li>
       </rulesStrings>
-      <rulesFiles>
-        <li>Names_Goblins->Goblin_Names/Names_Goblins</li>
-      </rulesFiles>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>pack</keyword>
+          <path>Goblin_Names/Names_Goblins</path>
+        </li>
+      </rulesRaw>
     </rulePack>
   </RulePackDef>
 
@@ -17,11 +20,14 @@
     <defName>Fantasy_GoblinNamerFaction</defName>
     <rulePack>
       <rulesStrings>
-        <li>r_name->[FactionNames_Goblins]</li>
+        <li>name->[pack]</li>
       </rulesStrings>
-      <rulesFiles>
-        <li>FactionNames_Goblins->Goblin_FactionNames/Names_GoblinsFactions</li>
-      </rulesFiles>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>pack</keyword>
+          <path>Goblin_FactionNames/Names_GoblinsFactions</path>
+        </li>
+      </rulesRaw>
     </rulePack>
   </RulePackDef>
 
