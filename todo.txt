@@ -18,11 +18,10 @@ See about using 1.1 rank system in some way
 Reported bugs:
 --------------
 non-goblins spawning with goblin apparel & weapons - done I think. Apparel & weapons should be restricted to goblin factions because weaponTags were changed
-texture bugs (quiver?) - done, added apparel for all bodytypes
-texture bug because of apparel texture for certain body type not existing - shouldn't occur anymore
+texture bug because of apparel texture for certain body type not existing - done, added apparel for all bodytypes
 moonshade soup recipe missing - done
 unmined steel turns into squirrel meat if mod is added after start of game - issue with ThingDef hash https://ludeon.com/forums/index.php?topic=48267
-clothes don't fit females - done, added apparel for all bodytypes
+clothes don't fit females - done, added female bodytype & apparel for all bodytypes
 vanilla clothes don't fit goblins. - done, slimmed down goblins
 mud pit sounds (JobDriver_PlayBilliards is probably to blame. Possibly has to be extended using C#)
 
@@ -47,7 +46,7 @@ Moonshade soup rots twice - done
 mud production used stone cutting sound - done, changed to foodmaking
 mud floor was flammable and turned into burned wood floor (not tested but defs suggested it) - done
 door can not be placed over goblin walls (door has tag canPlaceOverWall, which does not work for ThingsDefs that are not vanilla walls. Need C# change?)
-naming error - doesn't occur as much, but somehow failed during spouse generation or something?
+naming error - doesn't occur as much, but sometimes fails during pawn generation? Seems to happen when for some reason goblin namer is used on human
 wrestling pit icon size - done
 make sure humans don't spawn for goblin factions - done
 
