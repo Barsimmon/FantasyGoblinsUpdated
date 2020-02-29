@@ -114,7 +114,7 @@
 				</cannotReceiveThoughts>
 			</thoughtSettings>
 			<raceRestriction>
-				<apparelList>
+				<!--<apparelList>
           <li>Leather_GoblinArmour</li>
           <li>Apparel_GoblinLoinCloth</li>
           <li>Goblin_WarlordArmor</li>
@@ -139,7 +139,7 @@
           <li>Goblin_Plumbata</li>
           <li>Goblin_LaserRifle</li>
           <li>Goblin_StickBomb</li>
-        </weaponList>
+        </weaponList>-->
 				<buildingList>
           <li>Mud_Pit</li>
           <li>TribalDrum</li>
