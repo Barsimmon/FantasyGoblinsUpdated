@@ -35,7 +35,7 @@ epoe patch (shouldn't be needed when humanoid implemented right?)
 facial stuff compatibility
 rotate gibbet
 remove clickbait cover art
-moonshade inkcap should grow in dark
+moonshade inkcap should grow in dark - turned into cave plant
 goblin stuff available for non-goblins after researching tech
 cannibalism by default? (is by design)
 

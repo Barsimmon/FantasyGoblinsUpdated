@@ -28,9 +28,12 @@
         <li>Hydroponic</li>
       </sowTags>
       <topWindExposure>0.1</topWindExposure>
-      <growDays>5</growDays>
+      <growDays>7</growDays>
       <visualSizeRange>0.3~0.8</visualSizeRange>
       <wildOrder>2</wildOrder>
+      <growMinGlow>0</growMinGlow>
+      <growOptimalGlow>0</growOptimalGlow>
+      <cavePlant>true</cavePlant>
     </plant>
   </ThingDef>
 
