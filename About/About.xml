@@ -17,21 +17,15 @@
 		<li>erdelf.HumanoidAlienRaces</li>
 	</loadAfter>
 	<description>
-This mod by Vagabond was last updated in 2018 and seemed abandoned.
-I like getting raided by goblins and recruiting them, so I took it upon myself to update it.
-I did not make any of the art, nor did I do any of the creative thinking.
+This mod by Vagabond was last updated in 2018 and seemed abandoned. I can't contact Vagabond, so I'm updating it in their stead.
+I did not make any of the art, nor did I do any of the creative thinking. I just fixed some bugs and adjusted some textures. May look into dveloping further later.
 If Vagabond asks me to take this down, I will.
 
-I mostly just made sure it works in 1.1 with the same features as before and cleaned up the def xmls.
-Some of the other small changes I made are the following:
-- Changed the mud-making sound
-- Mud floor now can't burn, but has beauty of -1
-- Goblin factions now use goblin hair instead of tribal hair
+If an artist wants to help, I've got some todo's at the bottom, after the changelog.
 
-There may be bugs!
+There may be bugs! Do not add this mod to existing saves!
 I only did some quick testing and played a little with the goblin faction.
-Let me know if you find any bugs, but I can't promise I'll fix them.
-If anyone knows how to make sure goblin things aren't buildable or craftable by other factions, let me know please.
+Let me know if you find any bugs that aren't in my list at the bottom.
 
 Original description below
 --------------------------
@@ -103,6 +97,52 @@ They currently use the vanilla tribal backstories.
 
 Have fun.
 
+
+
+Barsimmon's changelog
+---------------------
+- updated for 1.1
+- get rid of Defs that override vanilla Defs
+- non-goblins should no longer spawn with goblin apparel
+- Added quiver, berserker armor and warlord armor for Fat, Hulk, Thin and Female body types to fix missing texture bug
+- moonshade soup recipe now exists
+- split up male and female body types so females have correct apparel textures
+- gave goblins some plastic surgery so vanilla apparel fits their bodies
+- moonshade inkcap now dies in sunlight so should be grown in the dark
+- new cover art without clickbaity female goblin that doen't exist in the mod
+- mud production now uses food making sounds instead of stone cutting sounds
+- mud floor no longer flammable and doesn't turn into burned wooden
+- mud floor now has beauty of -1
+- naming errors shouldn't occur as often
+- wrestling pit, gibbet and banner icons are smaller in build menu
+- goblin buildings, apparel and weapons can only be made by goblin tribe
+
+
+Known bugs
+----------
+- If the mod is added to an existing save, all unmined steel turns into squirrel meat https://ludeon.com/forums/index.php?topic=48267
+- males can have female body type and the other way around
+- mud wrestling pit makes billiards sounds
+- door, cooler and vent can't be placed over goblin walls
+- Sometimes something goes wrong when naming a humans
+- goblin floors and moonshade inkcap are available for humans
+- goblin warlord armor for fat or female bodies looks ugly
+
+Todo's
+------
+- gibbet should be able to contain prisoners, is just decorative right now.
+- rotate gibbet
+- sleeping/poison blowdart
+- nets
+- poison trap
+- backstories
+- more skin colours (alpha levels for goblin textures)
+- alpha levels for armour
+- split up heads and ears for more options (humanoid alien races body addons)
+- change map icons
+- Use 1.1 quest system in some way
+- Use 1.1 rank system in some way
+- enable goblin stuff for humans after tech
 
 
 	</description>

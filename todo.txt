@@ -11,7 +11,6 @@ backstories
 More skincolours
 Split up heads & ears so more combinations are possible
 Change map icons
-spike as dead bodies storage - already works
 See about using 1.1 quest system in some way
 See about using 1.1 rank system in some way
 
@@ -30,8 +29,6 @@ Requested changes (probably won't do in most cases):
 Pretty females (War Chieftain Princess)
 CE compatibility or goblin race without items
 nerf plumbata
-no aging
-epoe patch (shouldn't be needed when humanoid implemented right?)
 facial stuff compatibility
 rotate gibbet
 remove clickbait cover art
@@ -53,6 +50,7 @@ banner & cage size - done
 wrestling pit is gathering spot - done
 floor does not reach goblin mud walls - need a graphics artist
 goblin floors are repetitive - shuffled some things around for wood floor, but need a graphics artist for others
+make sure males & females cant have each others bodies
 
 todo refactoring:
 -----------------
