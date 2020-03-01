@@ -50,7 +50,7 @@ naming error - doesn't occur as much, but sometimes fails during pawn generation
 wrestling pit icon size - done
 make sure humans don't spawn for goblin factions - done
 banner & cage size - done
-wrestling pit is gathering spot
+wrestling pit is gathering spot - done
 goblin wood floor does not reach walls
 
 todo refactoring:

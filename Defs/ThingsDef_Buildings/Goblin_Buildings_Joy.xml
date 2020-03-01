@@ -94,11 +94,6 @@
       <li>PlaceWorker_NeverAdjacentUnstandable</li>
     </placeWorkers>
     <constructionSkillPrerequisite>1</constructionSkillPrerequisite>
-    <comps>
-      <li>
-        <compClass>CompGatherSpot</compClass>
-      </li>
-    </comps>
   </ThingDef>
 
 </Defs>
