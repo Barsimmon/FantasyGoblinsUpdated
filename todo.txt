@@ -1,6 +1,8 @@
 Possible changes:
 -----------------
 Gibbet cage
+gibbet allow tending/feeding button
+gibbet release, recruit etc should work
 sleeping/poison blowdart
 nets
 poison trap
@@ -9,9 +11,7 @@ backstories
 More skincolours
 Split up heads & ears so more combinations are possible
 Change map icons
-gibbet allow tending/feeding button
-gibbet release, recruit etc should work
-spike as "shelf" for dead bodies?
+spike as dead bodies storage - already works
 See about using 1.1 quest system in some way
 See about using 1.1 rank system in some way
 
@@ -51,7 +51,8 @@ wrestling pit icon size - done
 make sure humans don't spawn for goblin factions - done
 banner & cage size - done
 wrestling pit is gathering spot - done
-goblin wood floor does not reach walls
+floor does not reach goblin mud walls - need a graphics artist
+goblin floors are repetitive - shuffled some things around for wood floor, but need a graphics artist for others
 
 todo refactoring:
 -----------------
