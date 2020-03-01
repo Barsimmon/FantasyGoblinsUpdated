@@ -6,6 +6,9 @@
 		<isFighter>false</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
+    <backstoryCategories>
+      <li>GoblinBackstory</li>
+    </backstoryCategories>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="BaseGoblinPawnKind">

@@ -4,6 +4,9 @@
 	<PawnKindDef Name="GoblinTribeBase" ParentName="TribalBase" Abstract="True">
 		<race>Fantasy_Goblin</race>
 		<defaultFactionType>GoblinTribeRough</defaultFactionType>
+    <backstoryCategories>
+      <li>GoblinBackstory</li>
+    </backstoryCategories>
 	</PawnKindDef>
 
 	<!-- Poverty tier - penitent -->

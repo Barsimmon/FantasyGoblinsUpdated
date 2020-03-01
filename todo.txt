@@ -50,7 +50,7 @@ banner & cage size - done
 wrestling pit is gathering spot - done
 floor does not reach goblin mud walls - need a graphics artist
 goblin floors are repetitive - shuffled some things around for wood floor, but need a graphics artist for others
-make sure males & females cant have each others bodies
+make sure males & females cant have each others bodies - done, had to add backstories
 
 todo refactoring:
 -----------------
