@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Fantasy Goblins Forked</name>
+	<name>Fantasy Goblins Updated</name>
 	<author>Vagabond, Barsimmon</author>
 	<supportedVersions>
 		<li>1.1</li>
@@ -18,14 +18,16 @@
 	</loadAfter>
 	<description>
 This mod by Vagabond was last updated in 2018 and seemed abandoned. I can't contact Vagabond, so I'm updating it in their stead.
-I did not make any of the art, nor did I do any of the creative thinking. I just fixed some bugs and adjusted some textures. May look into dveloping further later.
+I did not make any of the art, nor did I do any of the creative thinking. I just fixed some bugs and adjusted some textures.
 If Vagabond asks me to take this down, I will.
 
 If an artist wants to help, I've got some todo's at the bottom, after the changelog.
 
 There may be bugs! Do not add this mod to existing saves!
 I only did some quick testing and played a little with the goblin faction.
-Let me know if you find any bugs that aren't in my list at the bottom.
+Let me know if you find any bugs that aren't in the list at the bottom. Suggestions also welcome.
+
+I may see about fixing the bugs/missing features that can't be fixed with Defs sometime later.
 
 Original description below
 --------------------------
@@ -107,9 +109,10 @@ Barsimmon's changelog
 - Added quiver, berserker armor and warlord armor for Fat, Hulk, Thin and Female body types to fix missing texture bug
 - moonshade soup recipe now exists
 - split up male and female body types so females have correct apparel textures
+- Added backstories based on and copied from tribal backstories
 - gave goblins some plastic surgery so vanilla apparel fits their bodies
 - moonshade inkcap now dies in sunlight so should be grown in the dark
-- new cover art without clickbaity female goblin that doen't exist in the mod
+- Don't use cover art with female goblin that doen't exist in the mod
 - mud production now uses food making sounds instead of stone cutting sounds
 - mud floor no longer flammable and doesn't turn into burned wooden
 - mud floor now has beauty of -1
@@ -137,11 +140,16 @@ Todo's
 - backstories
 - more skin colours (alpha levels for goblin textures)
 - alpha levels for armour
+- better goblin warlord armor for fat and female body types
 - split up heads and ears for more options (humanoid alien races body addons)
 - change map icons
 - Use 1.1 quest system in some way
 - Use 1.1 rank system in some way
 - enable goblin stuff for humans after tech
+- make floors less repetitive
+- mud wall shows dirt between wall and floor
+
+
 
 
 	</description>
