@@ -21,16 +21,13 @@
       <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
     </statBases>
     <recipeMaker>
-      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <researchPrerequisite>GoblinLasers</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
         <li>FabricationBench</li>
       </recipeUsers>
-      <factionPrerequisiteTags>
-        <li>TribalGoblin</li>
-      </factionPrerequisiteTags>
     </recipeMaker>
     <costList>
       <Plasteel>50</Plasteel>

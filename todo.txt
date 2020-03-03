@@ -28,12 +28,12 @@ Requested changes (probably won't do in most cases):
 ----------------------------------------------------
 Pretty females (War Chieftain Princess)
 CE compatibility or goblin race without items
-nerf plumbata
+nerf plumbata - done
 facial stuff compatibility
 rotate gibbet
-remove clickbait cover art
+remove clickbait cover art - done
 moonshade inkcap should grow in dark - turned into cave plant
-goblin stuff available for non-goblins after researching tech
+goblin stuff available for non-goblins after researching tech - done
 cannibalism by default? (is by design)
 
 found/caused bugs:
@@ -51,6 +51,7 @@ wrestling pit is gathering spot - done
 floor does not reach goblin mud walls - need a graphics artist
 goblin floors are repetitive - shuffled some things around for wood floor, but need a graphics artist for others
 make sure males & females cant have each others bodies - done, had to add backstories
+goblin hood is positioned weirdly
 
 todo refactoring:
 -----------------

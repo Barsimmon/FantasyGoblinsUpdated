@@ -53,6 +53,9 @@
     <designationCategory>Security</designationCategory>
     <staticSunShadowHeight>0.10</staticSunShadowHeight>
     <designationHotKey>Misc1</designationHotKey>
+    <researchPrerequisites>
+      <li>GoblinFurniture</li>
+    </researchPrerequisites>
   </ThingDef>
 
 </Defs>

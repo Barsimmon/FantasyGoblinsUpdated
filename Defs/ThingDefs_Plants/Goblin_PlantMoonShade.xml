@@ -27,6 +27,9 @@
         <li>Ground</li>
         <li>Hydroponic</li>
       </sowTags>
+      <sowResearchPrerequisites>
+        <li>GoblinMoonshadeCultivation</li>
+      </sowResearchPrerequisites>
       <topWindExposure>0.1</topWindExposure>
       <growDays>7</growDays>
       <visualSizeRange>0.3~0.8</visualSizeRange>

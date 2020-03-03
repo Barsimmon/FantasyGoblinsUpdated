@@ -59,9 +59,7 @@
                 <li>HandTailoringBench</li>
                 <li>CraftingSpot</li>
             </recipeUsers>
-            <factionPrerequisiteTags>
-              <li>TribalGoblin</li>
-            </factionPrerequisiteTags>
+            <researchPrerequisite>GoblinBasicGear</researchPrerequisite>
         </recipeMaker>
         <colorGenerator Class="ColorGenerator_Options">
             <options>
@@ -127,9 +125,7 @@
                 <li>HandTailoringBench</li>
                 <li>CraftingSpot</li>
             </recipeUsers>
-            <factionPrerequisiteTags>
-              <li>TribalGoblin</li>
-            </factionPrerequisiteTags>
+            <researchPrerequisite>GoblinBasicGear</researchPrerequisite>
         </recipeMaker>
         <colorGenerator Class="ColorGenerator_StandardApparel" />
     </ThingDef>
@@ -144,9 +140,7 @@
             <skillRequirements>
                 <Crafting>10</Crafting>
             </skillRequirements>
-            <factionPrerequisiteTags>
-              <li>TribalGoblin</li>
-            </factionPrerequisiteTags>
+            <researchPrerequisite>GoblinAdvancedGear</researchPrerequisite>
         </recipeMaker>
         <graphicData>
             <texPath>Things/Item/Equipment/Armor/GoblinWarlordArmor/GoblinWarlordArmor</texPath>
@@ -252,9 +246,7 @@
                 <li>HandTailoringBench</li>
                 <li>CraftingSpot</li>
             </recipeUsers>
-            <factionPrerequisiteTags>
-              <li>TribalGoblin</li>
-            </factionPrerequisiteTags>
+            <researchPrerequisite>GoblinBasicGear</researchPrerequisite>
         </recipeMaker>
         <colorGenerator Class="ColorGenerator_Options">
             <options>
@@ -281,7 +273,6 @@
         <graphicData>
             <texPath>Things/Item/Equipment/Apparel/GoblinQuiver/GoblinQuiver</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-
         </graphicData>
         <techLevel>Neolithic</techLevel>
         <costStuffCount>40</costStuffCount>
@@ -322,9 +313,7 @@
                 <li>HandTailoringBench</li>
                 <li>CraftingSpot</li>
             </recipeUsers>
-            <factionPrerequisiteTags>
-              <li>TribalGoblin</li>
-            </factionPrerequisiteTags>
+            <researchPrerequisite>GoblinBasicGear</researchPrerequisite>
         </recipeMaker>
         <colorGenerator Class="ColorGenerator_Options">
             <options>

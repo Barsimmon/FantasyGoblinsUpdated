@@ -11,13 +11,10 @@
     </graphicData>
     <soundInteract>Interact_SMG</soundInteract>
     <recipeMaker>
-      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
-      <factionPrerequisiteTags>
-        <li>TribalGoblin</li>
-      </factionPrerequisiteTags>
+      <researchPrerequisite>GoblinGuns</researchPrerequisite>
     </recipeMaker>
     <statBases>
       <WorkToMake>11000</WorkToMake>
@@ -70,6 +67,7 @@
       </li>
     </tools>
   </ThingDef>
+
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_MachinePistol</defName>
     <label>machine pistol bullet</label>
@@ -94,13 +92,13 @@
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
-      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
-      <factionPrerequisiteTags>
-        <li>TribalGoblin</li>
-      </factionPrerequisiteTags>
+      <researchPrerequisites>
+        <li>GoblinBasicGear</li>
+        <li>PrecisionRifling</li>
+      </researchPrerequisites>
     </recipeMaker>
     <statBases>
       <WorkToMake>40000</WorkToMake>

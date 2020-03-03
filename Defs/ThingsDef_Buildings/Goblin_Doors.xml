@@ -22,6 +22,9 @@
     <uiIconPath>Things/Building/Goblin_Door/Goblin_DoorMenuIcon</uiIconPath>
     <costStuffCount>15</costStuffCount>
     <designationHotKey>Misc1</designationHotKey>
+    <researchPrerequisites>
+      <li>GoblinWoodConstruction</li>
+    </researchPrerequisites>
   </ThingDef>
 
 </Defs>

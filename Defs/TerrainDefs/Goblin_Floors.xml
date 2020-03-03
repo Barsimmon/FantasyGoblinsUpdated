@@ -20,6 +20,9 @@
 		</costList>
 		<constructEffect>ConstructWood</constructEffect>
 		<designationHotKey>Misc7</designationHotKey>
+    <researchPrerequisites>
+      <li>GoblinWoodConstruction</li>
+    </researchPrerequisites>
 	</TerrainDef>
 
 	<!-- ================= Goblin Mud Floor ================= -->
@@ -39,6 +42,9 @@
 			<GoblinMud>8</GoblinMud>
 		</costList>
 		<designationHotKey>Misc7</designationHotKey>
+    <researchPrerequisites>
+      <li>GoblinMud</li>
+    </researchPrerequisites>
 	</TerrainDef>
 
 </Defs>

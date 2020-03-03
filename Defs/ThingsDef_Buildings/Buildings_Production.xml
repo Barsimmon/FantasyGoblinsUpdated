@@ -42,6 +42,9 @@
       <li>PlaceWorker_ReportWorkSpeedPenalties</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
+    <researchPrerequisites>
+      <li>GoblinMud</li>
+    </researchPrerequisites>
   </ThingDef>
 
 </Defs>

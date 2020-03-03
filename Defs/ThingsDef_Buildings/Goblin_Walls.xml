@@ -70,6 +70,9 @@
       </li>
     </damageMultipliers>
     <designationHotKey>Misc3</designationHotKey>
+    <researchPrerequisites>
+      <li>GoblinMud</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <!--Goblin Palisade Wall-->
@@ -142,6 +145,9 @@
       </li>
     </damageMultipliers>
     <designationHotKey>Misc3</designationHotKey>
+    <researchPrerequisites>
+      <li>GoblinWoodConstruction</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <!--Goblin Stone Wall-->
@@ -214,6 +220,9 @@
       </li>
     </damageMultipliers>
     <designationHotKey>Misc3</designationHotKey>
+    <researchPrerequisites>
+      <li>GoblinStoneConstruction</li>
+    </researchPrerequisites>
   </ThingDef>
 
 </Defs>

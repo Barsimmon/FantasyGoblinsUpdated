@@ -6,7 +6,6 @@
     <label>goblin leatherhelmet</label>
     <description>A simple leatherbound helmet for basic protection.</description>
     <recipeMaker>
-      <researchPrerequisite />
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
@@ -15,9 +14,7 @@
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
-      <factionPrerequisiteTags>
-        <li>TribalGoblin</li>
-      </factionPrerequisiteTags>
+      <researchPrerequisite>GoblinBasicGear</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <texPath>Things/Item/Equipment/Armor/GoblinHelmet/GoblinHelmet</texPath>
@@ -59,7 +56,6 @@
     <label>goblin tribal mask</label>
     <description>A mask.</description>
     <recipeMaker>
-      <researchPrerequisite />
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
@@ -68,9 +64,7 @@
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
-      <factionPrerequisiteTags>
-        <li>TribalGoblin</li>
-      </factionPrerequisiteTags>
+      <researchPrerequisite>GoblinBasicGear</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <texPath>Things/Item/Equipment/Armor/GoblinTribalMask/GoblinTribalMask</texPath>
@@ -112,7 +106,6 @@
     <label>goblin hood</label>
     <description>A ragged goblin hood.</description>
     <recipeMaker>
-      <researchPrerequisite />
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
@@ -121,9 +114,7 @@
       <skillRequirements>
         <Crafting>3</Crafting>
       </skillRequirements>
-      <factionPrerequisiteTags>
-        <li>TribalGoblin</li>
-      </factionPrerequisiteTags>
+      <researchPrerequisite>GoblinBasicGear</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <texPath>Things/Item/Equipment/Apparel/GoblinHood/GoblinHood</texPath>
@@ -166,7 +157,6 @@
     <label>goblin shaman hood</label>
     <description>A shaman goblin hood.</description>
     <recipeMaker>
-      <researchPrerequisite />
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
@@ -175,9 +165,7 @@
       <skillRequirements>
         <Crafting>3</Crafting>
       </skillRequirements>
-      <factionPrerequisiteTags>
-        <li>TribalGoblin</li>
-      </factionPrerequisiteTags>
+      <researchPrerequisite>GoblinBasicGear</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <texPath>Things/Item/Equipment/Apparel/GoblinShamanHood/GoblinShamanHood</texPath>

@@ -34,9 +34,7 @@
       <skillRequirements>
         <Crafting>2</Crafting>
       </skillRequirements>
-      <factionPrerequisiteTags>
-        <li>TribalGoblin</li>
-      </factionPrerequisiteTags>
+      <researchPrerequisite>GoblinBasicGear</researchPrerequisite>
     </recipeMaker>
     <verbs>
       <li>
@@ -91,11 +89,11 @@
     <statBases>
       <WorkToMake>2000</WorkToMake>
       <Mass>0.8</Mass>
-      <AccuracyTouch>0.82</AccuracyTouch>
+      <AccuracyTouch>0.62</AccuracyTouch>
       <AccuracyShort>0.72</AccuracyShort>
       <AccuracyMedium>0.60</AccuracyMedium>
-      <AccuracyLong>0.25</AccuracyLong>
-      <RangedWeapon_Cooldown>1.15</RangedWeapon_Cooldown>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>NeolithicRangedBasicGoblin</li>
@@ -107,9 +105,7 @@
       <skillRequirements>
         <Crafting>2</Crafting>
       </skillRequirements>
-      <factionPrerequisiteTags>
-        <li>TribalGoblin</li>
-      </factionPrerequisiteTags>
+      <researchPrerequisite>GoblinBasicGear</researchPrerequisite>
     </recipeMaker>
     <verbs>
       <li>
@@ -134,6 +130,7 @@
       </li>
     </tools>
   </ThingDef>
+
   <ThingDef ParentName="BaseProjectileNeolithic">
     <defName>Goblin_PlumbataThrow</defName>
     <label>plumbata</label>
@@ -143,9 +140,10 @@
     </graphicData>
     <projectile>
       <flyOverhead>false</flyOverhead>
-      <damageDef>Arrow</damageDef>
-      <damageAmountBase>19</damageAmountBase>
-      <speed>38</speed>
+      <damageDef>RangedStab</damageDef>
+      <stoppingPower>1.2</stoppingPower>
+      <damageAmountBase>16</damageAmountBase>
+      <speed>28</speed>
     </projectile>
   </ThingDef>
 

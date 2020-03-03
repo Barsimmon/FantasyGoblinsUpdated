@@ -72,6 +72,9 @@
     </comps>
     <designationCategory>Furniture</designationCategory>
     <designationHotKey>Misc10</designationHotKey>
+    <researchPrerequisites>
+      <li>GoblinFurniture</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="FurnitureWithQualityBase">
@@ -146,6 +149,9 @@
       </li>
     </comps>
     <designationCategory>Furniture</designationCategory>
+    <researchPrerequisites>
+      <li>GoblinFurniture</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="ArtableFurnitureBase">
@@ -216,6 +222,9 @@
       <li Class="CompProperties_Flickable"/>
     </comps>
     <designationCategory>Furniture</designationCategory>
+    <researchPrerequisites>
+      <li>GoblinFurniture</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="FurnitureWithQualityBase">
@@ -285,6 +294,9 @@
       </li>
     </comps>
     <designationCategory>Furniture</designationCategory>
+    <researchPrerequisites>
+      <li>GoblinMoonshadeCultivation</li>
+    </researchPrerequisites>
   </ThingDef>
 
 </Defs>

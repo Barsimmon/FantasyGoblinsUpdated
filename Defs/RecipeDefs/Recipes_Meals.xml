@@ -31,6 +31,9 @@
 			<li>FueledStove</li>
 			<li>Campfire</li>
 		</recipeUsers>
+    <researchPrerequisites>
+      <li>GoblinMoonshadeCultivation</li>
+    </researchPrerequisites>
   </RecipeDef>
 
   <RecipeDef ParentName="CookMealBase">
@@ -63,6 +66,9 @@
 			<li>ElectricStove</li>
 			<li>FueledStove</li>
 		</recipeUsers>
+    <researchPrerequisites>
+      <li>GoblinMoonshadeCultivation</li>
+    </researchPrerequisites>
   </RecipeDef>
 
   </Defs>

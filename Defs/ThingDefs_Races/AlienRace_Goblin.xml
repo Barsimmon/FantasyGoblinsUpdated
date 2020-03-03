@@ -114,35 +114,6 @@
 					<li>EnvironmentDark</li>
 				</cannotReceiveThoughts>
 			</thoughtSettings>
-			<raceRestriction>
-				<buildingList>
-          <li>Mud_Pit</li>
-          <li>TribalDrum</li>
-          <li>WrestlingPit</li>
-          <li>Stake</li>
-          <li>Goblin_Banner</li>
-          <li>Goblin_WallBanner</li>
-          <li>Goblin_SpiderBanner</li>
-          <li>Goblin_GibbetCage</li>
-          <li>Goblin_Door</li>
-          <li>Goblin_Logstool</li>
-          <li>GoblinTable1x2c</li>
-          <li>GoblinTable2x4c</li>
-          <li>Goblin_MudTable1x1c</li>
-          <li>Goblin_TribalRug</li>
-          <li>Goblin_Brazier</li>
-          <li>Goblin_SkullWallLight</li>
-          <li>Goblin_Chandelier</li>
-          <li>Goblin_MoonShadeWallLight</li>
-          <li>Goblin_SpikedBarricade</li>
-          <li>Goblin_MudWall</li>
-          <li>Goblin_Palisade</li>
-          <li>Goblin_StoneWall</li>
-        </buildingList>
-				<!--<plantList>
-          <li>Plant_MoonShade</li>
-        </plantList>-->
-      </raceRestriction>
 		</alienRace>
 		<statBases>
 			<MarketValue>1400</MarketValue>

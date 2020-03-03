@@ -54,6 +54,9 @@
                 <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
             </li>
         </comps>
+        <recipeMaker>
+          <researchPrerequisite>GoblinAdvancedGear</researchPrerequisite>
+        </recipeMaker>
     </ThingDef>
 
     <ThingDef ParentName="BaseGrenadeProjectile">

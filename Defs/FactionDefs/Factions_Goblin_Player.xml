@@ -26,6 +26,7 @@
     <forageabilityFactor>1.7</forageabilityFactor>
     <startingResearchTags>
       <li>TribalStart</li>
+      <li>GoblinTribalStart</li>
     </startingResearchTags>
     <startingTechprintsResearchTags>
       <li>TribalStart</li>

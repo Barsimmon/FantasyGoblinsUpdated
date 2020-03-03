@@ -16,6 +16,9 @@
 		</statBases>
 		<designatorDropdown>Floor_Goblinstone</designatorDropdown>
 		<pathCost>-1</pathCost>
+    <researchPrerequisites>
+      <li>GoblinStoneConstruction</li>
+    </researchPrerequisites>
 	</TerrainDef>
 
 	<TerrainDef ParentName="GoblinstoneBase">

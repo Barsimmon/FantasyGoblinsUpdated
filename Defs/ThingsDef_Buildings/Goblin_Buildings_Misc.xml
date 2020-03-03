@@ -59,6 +59,9 @@
     <terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
     <designationCategory>Misc</designationCategory>
     <designationHotKey>Misc8</designationHotKey>
+    <researchPrerequisites>
+      <li>GoblinFurniture</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -105,6 +108,9 @@
     <terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
     <designationCategory>Misc</designationCategory>
     <designationHotKey>Misc8</designationHotKey>
+    <researchPrerequisites>
+      <li>GoblinDecoration</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="FurnitureWithQualityBase">
@@ -150,6 +156,9 @@
     </statBases>
     <selectable>true</selectable>
     <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+    <researchPrerequisites>
+      <li>GoblinDecoration</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="FurnitureWithQualityBase">
@@ -196,6 +205,9 @@
     </statBases>
     <selectable>true</selectable>
     <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+    <researchPrerequisites>
+      <li>GoblinDecoration</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -241,6 +253,9 @@
     <terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
     <designationCategory>Misc</designationCategory>
     <designationHotKey>Misc9</designationHotKey>
+    <researchPrerequisites>
+      <li>GoblinDecoration</li>
+    </researchPrerequisites>
   </ThingDef>
 
 </Defs>

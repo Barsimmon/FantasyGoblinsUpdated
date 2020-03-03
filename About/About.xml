@@ -17,9 +17,13 @@
 		<li>erdelf.HumanoidAlienRaces</li>
 	</loadAfter>
 	<description>
+UPDATE 2020-03-03: I have added goblin techs so other factions can also research the goblin stuff. These techs are automatically added when you start a goblin tribe colony. If you already started a goblin colony before this update, you need to research the techs as well. The cost is 1 for now, so it won't take long.
+
 This mod by Vagabond was last updated in 2018 and seemed abandoned. I can't contact Vagabond, so I'm updating it in their stead.
 I did not make any of the art, nor did I do any of the creative thinking. I just fixed some bugs and adjusted some textures.
 If Vagabond asks me to take this down, I will.
+
+Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=1465072243
 
 If an artist wants to help, I've got some todo's at the bottom, after the changelog.
 
@@ -103,31 +107,31 @@ Have fun.
 
 Barsimmon's changelog
 ---------------------
-- updated for 1.1
-- get rid of Defs that override vanilla Defs
-- non-goblins should no longer spawn with goblin apparel
+- Updated for 1.1
+- Get rid of Defs that override vanilla Defs
+- Non-goblins should no longer spawn with goblin apparel
 - Added quiver, berserker armor and warlord armor for Fat, Hulk, Thin and Female body types to fix missing texture bug
-- moonshade soup recipe now exists
-- split up male and female body types so females have correct apparel textures
+- Moonshade soup recipe now exists
+- Split up male and female body types so females have correct apparel textures
 - Added backstories based on and copied from tribal backstories
-- gave goblins some plastic surgery so vanilla apparel fits their bodies
-- moonshade inkcap now dies in sunlight so should be grown in the dark
+- Gave goblins some plastic surgery so vanilla apparel fits their bodies
+- Moonshade inkcap now dies in sunlight so should be grown in the dark
 - Don't use cover art with female goblin that doen't exist in the mod
-- mud production now uses food making sounds instead of stone cutting sounds
-- mud floor no longer flammable and doesn't turn into burned wooden
-- mud floor now has beauty of -1
-- naming errors shouldn't occur as often
-- wrestling pit, gibbet and banner icons are smaller in build menu
-- goblin buildings, apparel and weapons can only be made by goblin tribe
-
+- Mud production now uses food making sounds instead of stone cutting sounds
+- Mud floor no longer flammable and doesn't turn into burned wooden
+- Mud floor now has beauty of -1
+- Naming errors shouldn't occur as often
+- Wrestling pit, gibbet and banner icons are smaller in build menu
+- Goblin stuff is locked behind techs. Neolithic techs are granted to the goblin tribal start
+- Nerfed plumbata. Is now more like pila instead of like a shotgun
+- Nerfed axes
 
 Known bugs
 ----------
 - If the mod is added to an existing save, all unmined steel turns into squirrel meat https://ludeon.com/forums/index.php?topic=48267
 - mud wrestling pit makes billiards sounds
 - door, cooler and vent can't be placed over goblin walls
-- Sometimes something goes wrong when naming a humans
-- goblin floors and moonshade inkcap are available for humans
+- Sometimes something goes wrong when naming a human
 - goblin warlord armor for fat or female bodies looks ugly
 
 Todo's
@@ -140,12 +144,11 @@ Todo's
 - backstories
 - more skin colours (alpha levels for goblin textures)
 - alpha levels for armour
-- better goblin warlord armor for fat and female body types
+- better goblin warlord armour for fat and female body types
 - split up heads and ears for more options (humanoid alien races body addons)
 - change map icons
 - Use 1.1 quest system in some way
 - Use 1.1 rank system in some way
-- enable goblin stuff for humans after tech
 - make floors less repetitive
 - mud wall shows dirt between wall and floor
 

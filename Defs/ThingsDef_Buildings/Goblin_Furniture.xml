@@ -43,6 +43,9 @@
       <isSittable>true</isSittable>
     </building>
     <uiIconOffset>(0, -0.05)</uiIconOffset>
+    <researchPrerequisites>
+      <li>GoblinFurniture</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="TableGatherSpotBase">
@@ -69,6 +72,9 @@
     </statBases>
     <size>(1,2)</size>
     <costStuffCount>20</costStuffCount>
+    <researchPrerequisites>
+      <li>GoblinFurniture</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="TableGatherSpotBase">
@@ -94,6 +100,9 @@
     </statBases>
     <size>(2,4)</size>
     <costStuffCount>75</costStuffCount>
+    <researchPrerequisites>
+      <li>GoblinFurniture</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="FurnitureWithQualityBase">
@@ -129,6 +138,9 @@
         <compClass>CompGatherSpot</compClass>
       </li>
     </comps>
+    <researchPrerequisites>
+      <li>GoblinMud</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="FurnitureWithQualityBase">
@@ -175,6 +187,9 @@
       <isEdifice>false</isEdifice>
     </building>
     <uiIconOffset>(0, -0.05)</uiIconOffset>
+    <researchPrerequisites>
+      <li>GoblinFurniture</li>
+    </researchPrerequisites>
   </ThingDef>
 
 </Defs>

@@ -44,6 +44,9 @@
     <passability>PassThroughOnly</passability>
     <designationCategory>Joy</designationCategory>
     <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>GoblinFurniture</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="FurnitureBase">
@@ -94,6 +97,9 @@
       <li>PlaceWorker_NeverAdjacentUnstandable</li>
     </placeWorkers>
     <constructionSkillPrerequisite>1</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>GoblinMud</li>
+    </researchPrerequisites>
   </ThingDef>
 
 </Defs>
