@@ -17,7 +17,8 @@
 		<li>erdelf.HumanoidAlienRaces</li>
 	</loadAfter>
 	<description>
-WARNING (2020-03-05): I added research costs to the goblin techs, this means you will have to research them in existing saves as well.
+WARNING: Do not add this mod to existing saves. Explanation below.
+WARNING 2 (2020-03-05): I added research costs to the goblin techs, this means you will have to research them in existing saves as well.
 
 This mod by Vagabond was last updated in 2018 and seemed abandoned. I can't contact Vagabond, so I'm updating it in their stead.
 I did not make any of the art, nor did I do any of the creative thinking. I just fixed some bugs and adjusted some textures.
@@ -27,11 +28,17 @@ Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=1465072243
 
 If an artist wants to help, I've got some todo's at the bottom, after the changelog.
 
-There may be bugs! Do not add this mod to existing saves!
-I only did some quick testing and played a little with the goblin faction.
 Let me know if you find any bugs that aren't in the list at the bottom. Suggestions also welcome.
 
 I may see about fixing the bugs/missing features that can't be fixed with Defs sometime later.
+
+Known bugs
+----------
+- If the mod is added to an existing save, all unmined steel turns into squirrel meat. This is because the defName for the mud pit causes a conflict. I could rename it, but it would delete all the unmined steel on everyones save.
+- mud wrestling pit makes billiards sounds
+- door, cooler and vent can't be placed over goblin walls
+- Sometimes something goes wrong when naming a human
+- goblin warlord armor for fat or female bodies looks ugly
 
 Original description below
 --------------------------
@@ -125,14 +132,6 @@ Barsimmon's changelog
 - Goblin stuff is locked behind techs. Neolithic techs are granted to the goblin tribal start
 - Nerfed plumbata. Is now more like pila instead of like a shotgun
 - Nerfed axes
-
-Known bugs
-----------
-- If the mod is added to an existing save, all unmined steel turns into squirrel meat https://ludeon.com/forums/index.php?topic=48267
-- mud wrestling pit makes billiards sounds
-- door, cooler and vent can't be placed over goblin walls
-- Sometimes something goes wrong when naming a human
-- goblin warlord armor for fat or female bodies looks ugly
 
 Todo's
 ------
