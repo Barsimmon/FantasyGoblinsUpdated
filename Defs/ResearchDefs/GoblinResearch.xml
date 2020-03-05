@@ -37,7 +37,7 @@
     <defName>GoblinFurniture</defName>
     <label>Goblin furniture</label>
     <description>Build the tribal drum, the stake, various lighting options and others.</description>
-    <baseCost>1</baseCost>
+    <baseCost>400</baseCost>
     <researchViewX>0</researchViewX>
     <researchViewY>0</researchViewY>
   </ResearchProjectDef>
@@ -46,7 +46,7 @@
     <defName>GoblinWoodConstruction</defName>
     <label>Goblin wood construction</label>
     <description>Build the Goblin wood floor, door and pallisade.</description>
-    <baseCost>1</baseCost>
+    <baseCost>400</baseCost>
     <researchViewX>0</researchViewX>
     <researchViewY>1</researchViewY>
   </ResearchProjectDef>
@@ -55,7 +55,7 @@
     <defName>GoblinStoneConstruction</defName>
     <label>Goblin stone construction</label>
     <description>Build the Goblin stone walls and floor.</description>
-    <baseCost>1</baseCost>
+    <baseCost>600</baseCost>
     <researchViewX>0</researchViewX>
     <researchViewY>2</researchViewY>
   </ResearchProjectDef>
@@ -64,7 +64,7 @@
     <defName>GoblinDecoration</defName>
     <label>Goblin decoration</label>
     <description>Build various banners and the gibbet cage, which is not yet functional.</description>
-    <baseCost>1</baseCost>
+    <baseCost>400</baseCost>
     <researchViewX>0</researchViewX>
     <researchViewY>3</researchViewY>
   </ResearchProjectDef>
@@ -73,7 +73,7 @@
     <defName>GoblinMud</defName>
     <label>Mud</label>
     <description>Build various things out of mud.</description>
-    <baseCost>1</baseCost>
+    <baseCost>400</baseCost>
     <researchViewX>0</researchViewX>
     <researchViewY>4</researchViewY>
   </ResearchProjectDef>
@@ -82,7 +82,7 @@
     <defName>GoblinMoonshadeCultivation</defName>
     <label>Moonshade cultivation</label>
     <description>Grow moonshade inkcap mushrooms in caves or dark buildings. Use them for food or a long-lasting light source.</description>
-    <baseCost>1</baseCost>
+    <baseCost>600</baseCost>
     <researchViewX>0</researchViewX>
     <researchViewY>5</researchViewY>
   </ResearchProjectDef>
@@ -91,7 +91,7 @@
     <defName>GoblinBasicGear</defName>
     <label>Goblin basic gear</label>
     <description>Craft basic Goblin weapons and apparel like the berserker armor or the Goblin bow.</description>
-    <baseCost>1</baseCost>
+    <baseCost>600</baseCost>
     <researchViewX>0</researchViewX>
     <researchViewY>6</researchViewY>
   </ResearchProjectDef>
