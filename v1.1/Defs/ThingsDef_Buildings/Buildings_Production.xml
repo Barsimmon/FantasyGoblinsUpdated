@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="BuildingBase">
-    <defName>Mud_Pit</defName>
+    <defName>Goblin_Mud_Pit</defName>
     <label>mud pit</label>
     <description>A mud hole for digging up mud.</description>
     <thingClass>Building_WorkTable</thingClass>

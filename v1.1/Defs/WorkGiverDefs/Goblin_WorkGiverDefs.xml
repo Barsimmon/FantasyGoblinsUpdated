@@ -8,7 +8,7 @@
     <workType>Crafting</workType>
     <priorityInType>100</priorityInType>
     <fixedBillGiverDefs>
-      <li>Mud_Pit</li>
+      <li>Goblin_Mud_Pit</li>
     </fixedBillGiverDefs>
     <verb>craft</verb>
     <gerund>collecting at</gerund>
