@@ -76,12 +76,18 @@ namespace FantasyGoblinsUpdated
             {
 				ThingDef thingDef = newEntDef as ThingDef;
 				ThingDef thingDef2 = oldEntDef as ThingDef;
-				ThingDef thingDef3 = thingDef.entityDefToBuild as ThingDef;
+                if (thingDef == null || thingDef2 == null)
+                {
+                    return;
+                }
+                ThingDef thingDef3 = thingDef.entityDefToBuild as ThingDef;
 				if (thingDef2.IsBlueprint)
 				{
 					if (thingDef.IsBlueprint)
 					{
-						if (thingDef3 != null && thingDef3.building != null && thingDef3.building.canPlaceOverWall && thingDef2.entityDefToBuild is ThingDef && WallBehaviourPatch.defNameIsGoblinWall(((ThingDef)thingDef2.entityDefToBuild).defName))
+                        ThingDef thingDef4 = thingDef2.entityDefToBuild as ThingDef;
+
+                        if (thingDef4 != null && thingDef3 != null && thingDef3.building != null && thingDef3.building.canPlaceOverWall && thingDef2.entityDefToBuild is ThingDef && WallBehaviourPatch.defNameIsGoblinWall(thingDef4.defName))
 						{
 							__result = true;
 						}
