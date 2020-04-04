@@ -14,7 +14,7 @@
   </JobDef>
   <JobDef>
     <defName>Play_WrestlingPit</defName>
-    <driverClass>JobDriver_PlayBilliards</driverClass>
+    <driverClass>FantasyGoblinsUpdated.JobDriver_Wrestle</driverClass>
     <reportString>wrestling.</reportString>
     <joyDuration>4000</joyDuration>
     <joyMaxParticipants>2</joyMaxParticipants>

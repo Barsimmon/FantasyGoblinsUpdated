@@ -65,7 +65,7 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-    <uiIconScale>0.5</uiIconScale>
+    <uiIconScale>0.75</uiIconScale>
     <staticSunShadowHeight>0.0</staticSunShadowHeight>
     <castEdgeShadows>false</castEdgeShadows>
     <altitudeLayer>Building</altitudeLayer>
@@ -84,18 +84,15 @@
       <Beauty>-2</Beauty>
       <JoyGainFactor>1.1</JoyGainFactor>
     </statBases>
-    <size>(2,2)</size>
+    <size>(3,3)</size>
     <costList>
-      <GoblinMud>30</GoblinMud>
+      <GoblinMud>50</GoblinMud>
     </costList>
     <pathCost>70</pathCost>
     <passability>Standable</passability>
     <designationCategory>Joy</designationCategory>
     <designationHotKey>Misc3</designationHotKey>
     <canOverlapZones>false</canOverlapZones>
-    <placeWorkers>
-      <li>PlaceWorker_NeverAdjacentUnstandable</li>
-    </placeWorkers>
     <constructionSkillPrerequisite>1</constructionSkillPrerequisite>
     <researchPrerequisites>
       <li>GoblinMud</li>

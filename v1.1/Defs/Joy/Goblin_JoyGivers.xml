@@ -18,7 +18,7 @@
 
   <JoyGiverDef>
     <defName>Play_WrestlingPit</defName>
-    <giverClass>JoyGiver_PlayBilliards</giverClass>
+    <giverClass>FantasyGoblinsUpdated.JoyGiver_Wrestle</giverClass>
     <baseChance>4</baseChance>
     <thingDefs>
       <li>WrestlingPit</li>

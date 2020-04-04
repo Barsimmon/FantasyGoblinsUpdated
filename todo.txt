@@ -19,10 +19,10 @@ Reported bugs:
 non-goblins spawning with goblin apparel & weapons - done I think. Apparel & weapons should be restricted to goblin factions because weaponTags were changed
 texture bug because of apparel texture for certain body type not existing - done, added apparel for all bodytypes
 moonshade soup recipe missing - done
-unmined steel turns into squirrel meat if mod is added after start of game - issue with ThingDef hash https://ludeon.com/forums/index.php?topic=48267
+unmined steel turns into squirrel meat if mod is added after start of game, issue with ThingDef hash https://ludeon.com/forums/index.php?topic=48267 - done, renamed Def and added dll mod that fixes existing saves
 clothes don't fit females - done, added female bodytype & apparel for all bodytypes
 vanilla clothes don't fit goblins. - done, slimmed down goblins
-mud pit sounds (JobDriver_PlayBilliards is probably to blame. Possibly has to be extended using C#)
+wrestling pit sounds - done, added custom JobDriver
 
 Requested changes (probably won't do in most cases):
 ----------------------------------------------------
@@ -48,14 +48,14 @@ wrestling pit icon size - done
 make sure humans don't spawn for goblin factions - done
 banner & cage size - done
 wrestling pit is gathering spot - done
-floor does not reach goblin mud walls - need a graphics artist
+floor does not reach goblin mud walls - need a graphics artist/look at vanilla expanded medieval faction cobblestone wall
 goblin floors are repetitive - shuffled some things around for wood floor, but need a graphics artist for others
-make sure males & females cant have each others bodies - done, had to add backstories
+make sure males & females cant have each others bodies - done, had to add backstories. Check raiders though
 goblin hood is positioned weirdly
 
 todo refactoring:
 -----------------
 fix red errors - done
 get rid of all *Base overrides - done
-change def syntax so it aligns with core 1.1 - done
+change xml syntax so it aligns with core 1.1 - done
 check humanoid alien races how to - checked wiki
