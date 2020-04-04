@@ -42,7 +42,7 @@ mud table & wrestling pit madeFromStuff error - done
 Moonshade soup rots twice - done
 mud production used stone cutting sound - done, changed to foodmaking
 mud floor was flammable and turned into burned wood floor (not tested but defs suggested it) - done
-door can not be placed over goblin walls (door has tag canPlaceOverWall, which does not work for ThingsDefs that are not vanilla walls. Need C# change?)
+door can not be placed over goblin walls (door has tag canPlaceOverWall, which does not work for ThingsDefs that are not vanilla walls. Need C# change?) - done, patched GenConstruct & GenSpawn
 naming error - doesn't occur as much, but sometimes fails during pawn generation? Seems to happen when for some reason goblin namer is used on human
 wrestling pit icon size - done
 make sure humans don't spawn for goblin factions - done
