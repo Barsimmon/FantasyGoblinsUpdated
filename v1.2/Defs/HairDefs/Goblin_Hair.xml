@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <HairDef>
+    <defName>Goblin_Bald</defName>
+    <label>Goblin bald</label>
+    <hairGender>Any</hairGender>
+    <texPath>Things/Goblin/Hairs/GoblinBald</texPath>
+    <hairTags>
+      <li>Goblin_Hair</li>
+    </hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>Goblin_Braidbun</defName>
+    <label>Goblin braidbun</label>
+    <hairGender>Any</hairGender>
+    <texPath>Things/Goblin/Hairs/GoblinBraidbun</texPath>
+    <hairTags>
+      <li>Goblin_Hair</li>
+    </hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>Goblin_Mohawk</defName>
+    <label>Goblin mohawk</label>
+    <hairGender>Any</hairGender>
+    <texPath>Things/Goblin/Hairs/GoblinMohawk</texPath>
+    <hairTags>
+      <li>Goblin_Hair</li>
+    </hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>Goblin_Firestarter</defName>
+    <label>Goblin firestarter</label>
+    <hairGender>Any</hairGender>
+    <texPath>Things/Goblin/Hairs/GoblinFirestarter</texPath>
+    <hairTags>
+      <li>Goblin_Hair</li>
+    </hairTags>
+  </HairDef>
+  <HairDef>
+    <defName>Goblin_Tuft</defName>
+    <label>Goblin tuft</label>
+    <hairGender>Any</hairGender>
+    <texPath>Things/Goblin/Hairs/GoblinTuft</texPath>
+    <hairTags>
+      <li>Goblin_Hair</li>
+    </hairTags>
+  </HairDef>
+</Defs>

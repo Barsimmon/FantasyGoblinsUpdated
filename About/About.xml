@@ -4,6 +4,7 @@
 	<author>Vagabond, Barsimmon</author>
 	<supportedVersions>
 		<li>1.1</li>
+		<li>1.2</li>
 	</supportedVersions>
 	<packageId>Barsimmon.OriginalByVagabond.FantasyGoblins</packageId>
 	<modDependencies>
@@ -134,6 +135,8 @@ Barsimmon's changelog
 - Fixed the squirrel meat bug by renaming def Mud_Pit to Goblin_Mud_Pit. Added dll that fixes saves from before this fix (2020-04-03)
 - Added custom JobDriver for wrestling pit. Wrestling pit is now actually 3x3, pawns are now actually standing in it and the sounds are no longer the same as playing billiards
 - Patch GenConstruct and GenSpawn to fix goblin wall behaviour so canPlaceOverWall works
+- Updated to 1.2
+- Updated some syntax for Humanoid Alien Races
 
 Todo's
 ------
