@@ -85,6 +85,7 @@
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>Leather_GoblinArmour</thingDef>
+					<stuff>Leather_Plain</stuff>
 					<count>3</count>
 				</li>
 
