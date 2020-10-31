@@ -44,13 +44,8 @@
 						<defName>Kind</defName>
 					</li>
 					<li>
-						<defName>BleedingHeart</defName>
-					</li>
-					<li>
-						<defName>Teetotaler</defName>
-					</li>
-					<li>
-						<defName>Pacifist</defName>
+						<defName>DrugDesire</defName>
+						<degree>-1</degree>
 					</li>
 				</disallowedTraits>
 				<immuneToXenophobia>false</immuneToXenophobia>
@@ -106,10 +101,8 @@
 				<cannotReceiveThoughts>
 					<li>AteRawFood</li>
 					<li>AteCorpse</li>
-					<li>RawCannibalism</li>
 					<li>Naked</li>
 					<li>SharedBed</li>
-					<li>SomeoneWasExecuted</li>
 					<li>KnowPrisonerSold</li>
 					<li>AteWithoutTable</li>
 					<li>KnowGuestOrganHarvested</li>
@@ -117,9 +110,9 @@
 					<li>KnowButcheredHumanlikeCorpse</li>
 					<li>ObservedLayingCorpse</li>
 					<li>ObservedLayingRottingCorpse</li>
-					<li>UnsightlyEnvironment</li>
 					<li>DeadMansApparel</li>
 					<li>AteHumanlikeMeatDirect</li>
+					<li>AteHumanlikeMeatAsIngredient</li>
 					<li>Disfigured</li>
 					<li>SleptOutside</li>
 					<li>EnvironmentDark</li>
