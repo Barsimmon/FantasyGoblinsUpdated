@@ -2,6 +2,7 @@
 <ModMetaData>
 	<name>Fantasy Goblins Updated</name>
 	<author>Vagabond, Barsimmon</author>
+	<url>https://github.com/Barsimmon/FantasyGoblinsUpdated</url>
 	<supportedVersions>
 		<li>1.1</li>
 		<li>1.2</li>
@@ -31,9 +32,11 @@ If Vagabond asks me to take this down, I will.
 
 Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=1465072243
 
-If an artist wants to help, I've got some todo's at the bottom, after the changelog.
-
 Let me know if you find any bugs that aren't in the list at the bottom. Suggestions also welcome.
+
+If anyone wants to help, I've got some todo's at the bottom. If you find a fix or want to contribute in another way, tell me about it via Steam, or make a pull request on Github:
+
+https://github.com/Barsimmon/FantasyGoblinsUpdated
 
 Known bugs
 ----------
@@ -112,7 +115,7 @@ Have fun.
 
 
 
-Barsimmon's changelog
+Barsimmon's changes
 ---------------------
 - Updated for 1.1
 - Get rid of Defs that override vanilla Defs
@@ -137,7 +140,7 @@ Barsimmon's changelog
 - Patch GenConstruct and GenSpawn to fix goblin wall behaviour so canPlaceOverWall works
 - Updated to 1.2
 - Updated some syntax for Humanoid Alien Races
-- Removed references to thoughts and traits that no longer exist
+- Removed references to thoughts and traits that no longer exist in the base game
 
 Todo's
 ------
