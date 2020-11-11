@@ -3,7 +3,7 @@
 
 	<ScenarioDef>
 		<defName>GoblinScenario</defName>
-		<label>Goblins Survivors</label>
+		<label>Goblin Survivors</label>
 		<description>You barely escaped, the huts behind you engulfed in flames and your tribespeople slaughtered by the humans. You managed to sneak away in the cover of darkness forced to leave your lives behind you.</description>
 		<scenario>
 			<summary>Five goblin tribespeople venture out to begin again.</summary>
@@ -81,6 +81,12 @@
 					<def>StartingThing_Defined</def>
 					<thingDef>Goblin_Bow</thingDef>
 					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Leather_GoblinArmour</thingDef>
+					<stuff>Leather_Plain</stuff>
+					<count>3</count>
 				</li>
 
 

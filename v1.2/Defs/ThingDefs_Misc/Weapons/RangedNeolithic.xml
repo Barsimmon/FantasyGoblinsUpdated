@@ -29,6 +29,8 @@
     </weaponTags>
     <recipeMaker>
       <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
         <li>CraftingSpot</li>
       </recipeUsers>
       <skillRequirements>
@@ -100,6 +102,8 @@
     </weaponTags>
     <recipeMaker>
       <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
         <li>CraftingSpot</li>
       </recipeUsers>
       <skillRequirements>

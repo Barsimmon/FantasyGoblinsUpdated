@@ -4,7 +4,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<defName>Fantasy_Goblin</defName>
 		<label>Goblin</label>
-		<description>Goblins are small humanoid beings. With short scrawny bodies and oversized heads with long ears. While physically weaker than an average human goblins have a higher resistance to diseases and toxcicity. What they lack in physical strength they make up with their speed and tenacity. Goblins are fast workers if not the most diligent ones. They're a sly and intellectual race,only hindered by their own greed and violent nature. Goblins exists in primitive tribal structures with constant shifts in power. Often small tribes dominated by the strongest warriors. Both goblin men and women are vicious and both sexes are just as likely to rise to positions of power in a tribe.</description>
+		<description>Goblins are small humanoid beings. With short scrawny bodies and oversized heads with long ears. While physically weaker than an average human goblins have a higher resistance to diseases and toxcicity. What they lack in physical strength they make up with their speed and tenacity. Goblins are fast workers if not the most diligent ones. They're a sly and intellectual race, only hindered by their own greed and violent nature. Goblins exist in primitive tribal structures with constant shifts in power. Often small tribes dominated by the strongest warriors. Both goblin men and women are vicious and both sexes are just as likely to rise to positions of power in a tribe.</description>
 		<alienRace>
 			<generalSettings>
 				<maleGenderProbability>0.7</maleGenderProbability>
@@ -130,11 +130,12 @@
 			<Flammability>1.0</Flammability>
 			<ComfyTemperatureMin>5</ComfyTemperatureMin>
 			<ComfyTemperatureMax>48</ComfyTemperatureMax>
-			<ImmunityGainSpeed>1.45</ImmunityGainSpeed>
+			<ImmunityGainSpeed>1.1</ImmunityGainSpeed>
+			<!-- Too OP
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
-			<LeatherAmount>50</LeatherAmount>
-			<Mass>60.0</Mass>
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>-->
+			<LeatherAmount>30</LeatherAmount>
+			<Mass>50.0</Mass>
 		</statBases>
 		<tools>
 			<li>
