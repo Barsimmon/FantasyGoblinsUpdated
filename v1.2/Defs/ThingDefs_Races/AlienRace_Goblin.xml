@@ -136,6 +136,7 @@
 			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>-->
 			<LeatherAmount>30</LeatherAmount>
 			<Mass>50.0</Mass>
+      <RoyalFavorValue>2</RoyalFavorValue>
 		</statBases>
 		<tools>
 			<li>
@@ -181,6 +182,8 @@
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.3</chanceFactor>
+        <soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+        <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
 			</li>
 			<li>
 				<label>head</label>
@@ -209,6 +212,8 @@
 			<foodType>OmnivoreHuman</foodType>
 			<gestationPeriodDays>36</gestationPeriodDays>
 			<meatMarketValue>0.8</meatMarketValue>
+      <manhunterOnDamageChance>0.30</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>
@@ -242,6 +247,7 @@
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
 			<specialShadowData>
 				<volume>(0.3, 0.8, 0.4)</volume>
 				<offset>(0,0,-0.3)</offset>
@@ -293,6 +299,9 @@
 			<li>RemoveBodyPart</li>
 			<li>Euthanize</li>
 			<li>Anesthetize</li>
+      <li>CureScaria</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
 		</recipes>
 	</AlienRace.ThingDef_AlienRace>
 </Defs>
