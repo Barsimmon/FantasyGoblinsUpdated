@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-  <FactionDef ParentName="PlayerFactionBase">
+  <FactionDef>
     <defName>GoblinPlayerTribe</defName>
     <label>Goblin Tribe</label>
     <description>Goblin Tribal Start.</description>
@@ -44,5 +44,8 @@
       <li>TribalGoblin</li>
       <li>Tribal</li>
     </recipePrerequisiteTags>
+    <colorSpectrum>
+      <li>(0, 0.737, 0.847)</li>
+    </colorSpectrum>
   </FactionDef>
 </Defs>

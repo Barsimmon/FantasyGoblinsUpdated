@@ -2,7 +2,7 @@
 <Defs>
 	<PawnKindDef Abstract="True" Name="BaseGoblinPawnKind">
 		<race>Fantasy_Goblin</race>
-		<combatPower>40</combatPower>
+		<combatPower>35</combatPower>
 		<isFighter>false</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
@@ -17,6 +17,7 @@
 		<defaultFactionType>GoblinPlayerTribe</defaultFactionType>
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
 		<apparelTags>
+			<li>NeolithicGoblin</li>
 			<li>Neolithic</li>
 		</apparelTags>
     <apparelMoney>200~400</apparelMoney>

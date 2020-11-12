@@ -1,12 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<PawnKindDef Name="GoblinTribeBase" ParentName="TribalBase" Abstract="True">
+	<PawnKindDef Name="GoblinTribeBase" Abstract="True">
 		<race>Fantasy_Goblin</race>
 		<defaultFactionType>GoblinTribeRough</defaultFactionType>
     <backstoryCategories>
       <li>GoblinBackstory</li>
     </backstoryCategories>
+    <maxGenerationAge>60</maxGenerationAge>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <invNutrition>2.55</invNutrition>
+    <invFoodDef>MoonShadeSoup</invFoodDef>
+    <apparelTags>
+      <li>NeolithicGoblin</li>
+    </apparelTags>
 	</PawnKindDef>
 
 	<!-- Poverty tier - penitent -->
