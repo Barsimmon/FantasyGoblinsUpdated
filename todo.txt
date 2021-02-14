@@ -35,6 +35,7 @@ remove clickbait cover art - done
 moonshade inkcap should grow in dark - turned into cave plant
 goblin stuff available for non-goblins after researching tech - done
 cannibalism by default? (is by design)
+Fix it so Goblin slaves can be sold by slave traders
 
 found/caused bugs:
 ------------------
