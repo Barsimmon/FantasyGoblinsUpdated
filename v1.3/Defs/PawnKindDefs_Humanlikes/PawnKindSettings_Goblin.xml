@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <!--
+  Different chance values all result in 2 to 5 of 10 refugee pods being goblins.
+  Chance values tried: 15.0, 8.0, 1.0, 0.1, 0.05
+  This maybe means this chance is not a percentage on the whole but the weight of the parent li? Is the weight in comparison to other alien races?
+
+  <AlienRace.RaceSettings>
+    <defName>GoblinRaceSettings</defName>
+    <pawnKindSettings>
+      <alienslavekinds>
+        <li>
+          <kindDefs>
+            <li>GoblinSlave</li>
+          </kindDefs>
+          <chance>10.0</chance>
+        </li>
+      </alienslavekinds>
+      <alienrefugeekinds>
+        <li>
+          <kindDefs>
+            <li>GoblinSlave</li>
+          </kindDefs>
+          <chance>10.0</chance>
+        </li>
+      </alienrefugeekinds>
+    </pawnKindSettings>
+  </AlienRace.RaceSettings>-->
+
+</Defs>

@@ -6,20 +6,21 @@
 	<supportedVersions>
 		<li>1.1</li>
 		<li>1.2</li>
+		<li>1.3</li>
 	</supportedVersions>
 	<packageId>Barsimmon.OriginalByVagabond.FantasyGoblins</packageId>
 	<modDependencies>
 		<li>
-      <packageId>erdelf.HumanoidAlienRaces</packageId>
-      <displayName>Humanoid Alien Races 2.0</displayName>
-      <steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
-    </li>
-    <li>
-        <packageId>brrainz.harmony</packageId>
-        <displayName>Harmony</displayName>
-        <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
-        <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
-    </li>
+		  <packageId>erdelf.HumanoidAlienRaces</packageId>
+		  <displayName>Humanoid Alien Races 2.0</displayName>
+		  <steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>erdelf.HumanoidAlienRaces</li>
@@ -149,6 +150,7 @@ Barsimmon's changes
 - Remove references to base tribal faction and pawnkind to improve compatibility
 - Add goblin nicknames to prevent naming errors
 - Added improved mud and stone floor textures, provided by Delta1138
+- Updated to 1.3
 
 Todo's
 ------

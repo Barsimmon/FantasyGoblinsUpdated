@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerPersonGoblinUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>GoblinNames->Goblin_Names/Names_Goblins</li>
+        <li>GoblinNickNames->Goblin_Names/Nicknames_Goblins</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>Fantasy_GoblinNamer</defName>
+    <include>
+      <li>NamerPersonGoblinUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=2)->[GoblinNames] [GoblinNickNames]</li>
+        <li>r_name->[GoblinNames] [GoblinNickNames]</li>
+        <li>r_name->[GoblinNames] [GoblinNickNames]</li>
+        <li>r_name->[GoblinNames] [GoblinNickNames]</li>
+        <li>r_name->[GoblinNames] [Animal]botherer</li>
+        <li>r_name->[GoblinNames] [Animal]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>Fantasy_GoblinNamerFaction</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[pack]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>pack</keyword>
+          <path>Goblin_FactionNames/Names_GoblinsFactions</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

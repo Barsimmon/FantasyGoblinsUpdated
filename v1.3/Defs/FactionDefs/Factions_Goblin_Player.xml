@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <FactionDef>
+    <defName>GoblinPlayerTribe</defName>
+    <label>Goblin Tribe</label>
+    <description>Goblin Tribal Start.</description>
+    <isPlayer>true</isPlayer>
+    <pawnSingular>Goblin</pawnSingular>
+    <pawnsPlural>Goblins</pawnsPlural>
+    <basicMemberKind>Goblin</basicMemberKind>
+    <techLevel>Neolithic</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>GoblinBackstory</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>WorldObjects/Expanding/GoblinBase</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+    <pawnNameMaker>Fantasy_GoblinNamer</pawnNameMaker>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>Fantasy_GoblinNamerFaction</factionNameMaker>
+    <settlementNameMaker>Fantasy_GoblinNamerFaction</settlementNameMaker>
+    <geneticVariance>1</geneticVariance>
+    <forageabilityFactor>1.7</forageabilityFactor>
+    <startingResearchTags>
+      <li>TribalStart</li>
+      <li>GoblinTribalStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>TribalStart</li>
+      <li>TribalStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <hairTags>
+      <li>Goblin_Hair</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <recipePrerequisiteTags>
+      <li>TribalGoblin</li>
+      <li>Tribal</li>
+    </recipePrerequisiteTags>
+    <colorSpectrum>
+      <li>(0, 0.737, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+</Defs>
