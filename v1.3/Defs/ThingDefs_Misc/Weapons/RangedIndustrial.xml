@@ -47,6 +47,12 @@
     <weaponTags>
       <li>IndustrialGunAdvancedGoblin</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Goblin</li>
+      <li>Ranged</li>
+      <li>ShortShots</li>
+      <li>RangedLight</li>
+    </weaponClasses>
     <tools>
       <li>
         <label>grip</label>
@@ -131,6 +137,12 @@
     <weaponTags>
       <li>IndustrialGunAdvancedGoblin</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Goblin</li>
+      <li>Ranged</li>
+      <li>ShortShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
     <tools>
       <li>
         <label>stock</label>

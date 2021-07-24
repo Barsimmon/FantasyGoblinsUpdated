@@ -36,6 +36,13 @@
     <weaponTags>
       <li>SpacerGunGoblin</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Goblin</li>
+      <li>Ranged</li>
+      <li>ShortShots</li>
+      <li>RangedHeavy</li>
+      <li>Ultratech</li>
+    </weaponClasses>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>

@@ -1,48 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+
+  <StyleItemCategoryDef>
+    <defName>Goblin</defName>
+    <label>goblin</label>
+  </StyleItemCategoryDef>
+
   <HairDef>
     <defName>Goblin_Bald</defName>
     <label>Goblin bald</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Goblin/Hairs/GoblinBald</texPath>
-    <hairTags>
+    <category>Goblin</category>
+    <styleTags>
       <li>Goblin_Hair</li>
-    </hairTags>
+    </styleTags>
   </HairDef>
   <HairDef>
     <defName>Goblin_Braidbun</defName>
     <label>Goblin braidbun</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Goblin/Hairs/GoblinBraidbun</texPath>
-    <hairTags>
+    <category>Goblin</category>
+    <styleTags>
       <li>Goblin_Hair</li>
-    </hairTags>
+    </styleTags>
   </HairDef>
   <HairDef>
     <defName>Goblin_Mohawk</defName>
     <label>Goblin mohawk</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Goblin/Hairs/GoblinMohawk</texPath>
-    <hairTags>
+    <category>Goblin</category>
+    <styleTags>
       <li>Goblin_Hair</li>
-    </hairTags>
+    </styleTags>
   </HairDef>
   <HairDef>
     <defName>Goblin_Firestarter</defName>
     <label>Goblin firestarter</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Goblin/Hairs/GoblinFirestarter</texPath>
-    <hairTags>
+    <category>Goblin</category>
+    <styleTags>
       <li>Goblin_Hair</li>
-    </hairTags>
+    </styleTags>
   </HairDef>
   <HairDef>
     <defName>Goblin_Tuft</defName>
     <label>Goblin tuft</label>
-    <hairGender>Any</hairGender>
+    <styleGender>Any</styleGender>
     <texPath>Things/Goblin/Hairs/GoblinTuft</texPath>
-    <hairTags>
+    <category>Goblin</category>
+    <styleTags>
       <li>Goblin_Hair</li>
-    </hairTags>
+    </styleTags>
   </HairDef>
 </Defs>

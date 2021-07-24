@@ -16,6 +16,11 @@
       <li>MedievalMeleeBasicGoblin</li>
       <li>NeolithicMeleeBasicGoblin</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Goblin</li>
+      <li>Melee</li>
+      <li>Neolithic</li>
+    </weaponClasses>
     <statBases>
       <WorkToMake>8000</WorkToMake>
       <Mass>0.85</Mass>
@@ -70,6 +75,11 @@
       <li>MedievalMeleeBasicGoblin</li>
       <li>NeolithicMeleeBasicGoblin</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Goblin</li>
+      <li>Melee</li>
+      <li>Neolithic</li>
+    </weaponClasses>
     <costStuffCount>30</costStuffCount>
     <statBases>
       <WorkToMake>1800</WorkToMake>
@@ -128,6 +138,11 @@
       <li>NeolithicMeleeAdvancedGoblin</li>
       <li>MedievalMeleeAdvancedGoblin</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Goblin</li>
+      <li>Melee</li>
+      <li>Neolithic</li>
+    </weaponClasses>
     <costStuffCount>75</costStuffCount>
     <statBases>
       <WorkToMake>12000</WorkToMake>

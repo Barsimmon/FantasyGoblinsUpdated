@@ -19,7 +19,7 @@
       <Nutrition>0.9</Nutrition>
     </statBases>
     <ingestible>
-      <tasteThought>AteAwfulMeal</tasteThought>
+      <foodType>Fungus</foodType>
       <preferability>MealSimple</preferability>
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>Meal_Eat</ingestSound>

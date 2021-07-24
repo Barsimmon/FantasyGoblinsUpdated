@@ -30,6 +30,11 @@
     <weaponTags>
       <li>MedievalMeleeDecentGoblin</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Goblin</li>
+      <li>Melee</li>
+      <li>MeleeBlunt</li>
+    </weaponClasses>
     <tools>
       <li>
         <label>handle</label>
@@ -64,6 +69,10 @@
     <weaponTags>
       <li>MedievalMeleeAdvancedGoblin</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Goblin</li>
+      <li>Melee</li>
+    </weaponClasses>
     <costStuffCount>100</costStuffCount>
     <statBases>
       <WorkToMake>18000</WorkToMake>
@@ -124,6 +133,10 @@
     <weaponTags>
       <li>MedievalMeleeAdvancedGoblin</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Goblin</li>
+      <li>Melee</li>
+    </weaponClasses>
     <costStuffCount>100</costStuffCount>
     <statBases>
       <WorkToMake>17000</WorkToMake>
@@ -176,6 +189,10 @@
     <weaponTags>
       <li>MedievalMeleeAdvancedGoblin</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Goblin</li>
+      <li>Melee</li>
+    </weaponClasses>
     <costStuffCount>100</costStuffCount>
     <statBases>
       <WorkToMake>19000</WorkToMake>

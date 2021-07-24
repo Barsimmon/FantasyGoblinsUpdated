@@ -26,6 +26,12 @@
         <weaponTags>
             <li>GrenadeDestructiveGoblin</li>
         </weaponTags>
+        <weaponClasses>
+            <li>Goblin</li>
+            <li>Ranged</li>
+            <li>RangedHeavy</li>
+            <li>ShortShots</li>
+        </weaponClasses>
         <thingCategories>
             <li>Grenades</li>
         </thingCategories>

@@ -14,8 +14,24 @@
     <geneticVariance>0.1</geneticVariance>
     <factionNameMaker>Fantasy_GoblinNamerFaction</factionNameMaker>
     <settlementNameMaker>Fantasy_GoblinNamerFaction</settlementNameMaker>
-    <pawnNameMaker>Fantasy_GoblinNamer</pawnNameMaker>
-    <techLevel>Neolithic</techLevel>
+    <allowedCultures><li>Goblin</li></allowedCultures>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginChristian</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginIslamic</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginHindu</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginBuddhist</li>
+    </disallowedMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FungusEating_Despised</li>
+    </disallowedPrecepts>
+    <structureMemeWeights>
+      <Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">4</Structure_Animist>
+      <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+    </structureMemeWeights>
     <backstoryFilters>
       <li>
         <categories>
@@ -24,9 +40,6 @@
       </li>
     </backstoryFilters>
     <leaderTitle>chief</leaderTitle>
-    <hairTags>
-      <li>Goblin_Hair</li>
-    </hairTags>
     <caravanTraderKinds>
       <li>Caravan_Neolithic_BulkGoods</li>
       <li>Caravan_Neolithic_WarMerchant</li>
@@ -36,6 +49,9 @@
     <visitorTraderKinds>
       <li>Visitor_Neolithic_Standard</li>
     </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Neolithic_Standard</li>
+    </baseTraderKinds>
     <allowedArrivalTemperatureRange>-20~55</allowedArrivalTemperatureRange>
     <raidCommonalityFromPointsCurve>
       <points>
@@ -91,6 +107,22 @@
         </options>
       </li>
       <li>
+        <!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>5</commonality>
+        <options>
+          <GoblinTribe_Breacher>5</GoblinTribe_Breacher>
+          <GoblinTribe_Penitent>5</GoblinTribe_Penitent>
+          <GoblinTribe_Warrior>5</GoblinTribe_Warrior>
+          <GoblinTribe_Archer>10</GoblinTribe_Archer>
+          <GoblinTribe_Hunter>10</GoblinTribe_Hunter>
+          <GoblinTribe_HeavyArcher>10</GoblinTribe_HeavyArcher>
+          <GoblinTribe_Berserker>5</GoblinTribe_Berserker>
+          <GoblinTribe_ChiefRanged>3</GoblinTribe_ChiefRanged>
+          <GoblinTribe_ChiefMelee>1.5</GoblinTribe_ChiefMelee>
+        </options>
+      </li>
+      <li>
         <!-- Peaceful -->
         <kindDef>Peaceful</kindDef>
         <options>
@@ -133,6 +165,43 @@
           <GoblinTribe_ChiefRanged>10</GoblinTribe_ChiefRanged>
         </options>
       </li>
+      <li>
+        <kindDef>Settlement_RangedOnly</kindDef>
+        <options>
+          <GoblinTribe_Archer>10</GoblinTribe_Archer>
+          <GoblinTribe_Hunter>10</GoblinTribe_Hunter>
+          <GoblinTribe_HeavyArcher>10</GoblinTribe_HeavyArcher>
+          <GoblinTribe_ChiefRanged>10</GoblinTribe_ChiefRanged>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <GoblinTribe_Miner>1</GoblinTribe_Miner>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <GoblinTribe_Hunter>1</GoblinTribe_Hunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <GoblinTribe_Logger>1</GoblinTribe_Logger>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <GoblinTribe_Farmer>1</GoblinTribe_Farmer>
+        </options>
+      </li>
     </pawnGroupMakers>
     <settlementTexturePath>World/GoblinBase</settlementTexturePath>
   </FactionDef>
@@ -145,20 +214,35 @@
       <li>(0.85, 0.75, 0.37)</li>
       <li>(0.95, 0.95, 0.37)</li>
     </colorSpectrum>
-    <startingGoodwill>0</startingGoodwill>
-    <naturalColonyGoodwill>-50~50</naturalColonyGoodwill>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>200</configurationListOrderPriority>
   </FactionDef>
 
   <FactionDef ParentName="GoblinTribeFactionBase">
-    <defName>GoblinTribeRough</defName>
+    <defName>GoblinTribeSavage</defName>
     <label>savage goblin tribe</label>
     <description>These goblins live their lives in constant strife. Having made war an occupation they raid nearby settlements to sustain themselves.</description>
     <colorSpectrum>
       <li>(0.25, 0.65, 0.05)</li>
       <li>(0.25, 0.75, 0.05)</li>
     </colorSpectrum>
-    <startingGoodwill>-20</startingGoodwill>
-    <naturalColonyGoodwill>-100~-80</naturalColonyGoodwill>
+    <permanentEnemy>true</permanentEnemy>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+    </requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>210</configurationListOrderPriority>
   </FactionDef>
 
 </Defs>

@@ -91,12 +91,6 @@
 					<!--skull/-->
 				</li>
 			</graphicPaths>
-			<hairSettings>
-				<hasHair>true</hasHair>
-				<hairTags>
-					<li>Goblin_Hair</li>
-				</hairTags>
-			</hairSettings>
 			<thoughtSettings>
 				<cannotReceiveThoughts>
 					<li>AteRawFood</li>

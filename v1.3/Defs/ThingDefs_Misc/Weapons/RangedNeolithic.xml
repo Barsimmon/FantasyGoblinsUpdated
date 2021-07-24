@@ -27,6 +27,13 @@
     <weaponTags>
       <li>NeolithicRangedBasicGoblin</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Goblin</li>
+      <li>Ranged</li>
+      <li>ShortShots</li>
+      <li>RangedLight</li>
+      <li>Neolithic</li>
+    </weaponClasses>
     <recipeMaker>
       <recipeUsers>
         <li>ElectricSmithy</li>
@@ -100,6 +107,13 @@
     <weaponTags>
       <li>NeolithicRangedBasicGoblin</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Goblin</li>
+      <li>Ranged</li>
+      <li>ShortShots</li>
+      <li>RangedHeavy</li>
+      <li>Neolithic</li>
+    </weaponClasses>
     <recipeMaker>
       <recipeUsers>
         <li>ElectricSmithy</li>
