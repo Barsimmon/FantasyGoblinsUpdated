@@ -85,9 +85,15 @@
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
-                    <thingDef>Leather_GoblinArmour</thingDef>
+                    <thingDef>Goblin_Quiver</thingDef>
                     <stuff>Leather_Plain</stuff>
-                    <count>3</count>
+                    <count>1</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Goblin_BerserkerArmour</thingDef>
+                    <stuff>Leather_Plain</stuff>
+                    <count>1</count>
                 </li>
 
 
@@ -107,9 +113,7 @@
                 <!-- Game start dialog -->
                 <li Class="ScenPart_GameStartDialog">
                     <def>GameStartDialog</def>
-                    <text>Now, after a harrowing journey on foot, with no close friends to turn to, you must build a new
-                        home in the wilderness.
-                    </text>
+                    <text>You barely escaped, the huts behind you engulfed in flames and your tribespeople slaughtered by the humans. You managed to sneak away in the cover of darkness forced to leave your lives behind you. Now, after a harrowing journey on foot, with no close friends to turn to, you must build a new home in the wilderness.</text>
                     <closeSound>GameStartSting</closeSound>
                 </li>
             </parts>

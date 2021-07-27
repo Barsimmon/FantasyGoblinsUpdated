@@ -18,6 +18,7 @@
         <iconColor>(0, 0.737, 0.847)</iconColor>
         <preferredWeaponClasses>
             <noble>Goblin</noble>
+            <despised>Ultratech</despised>
         </preferredWeaponClasses>
         <thingStyleCategories>
             <li MayRequire="Ludeon.RimWorld.Ideology">

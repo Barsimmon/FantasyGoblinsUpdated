@@ -46,11 +46,6 @@
             <li>TribalStart</li>
             <li>TribalStartTechprints</li>
         </startingTechprintsResearchTags>
-        <apparelStuffFilter>
-            <thingDefs>
-                <li>Cloth</li>
-            </thingDefs>
-        </apparelStuffFilter>
         <recipePrerequisiteTags>
             <li>TribalGoblin</li>
             <li>Tribal</li>

@@ -48,7 +48,8 @@
             </bodyPartGroups>
             <wornGraphicPath>Things/Item/Equipment/Armor/GoblinLeatherArmor/GoblinLeatherArmor</wornGraphicPath>
             <layers>
-                <li>OnSkin</li>
+                <li>Middle</li>
+                <li>Shell</li>
             </layers>
             <tags>
                 <li>NeolithicGoblin</li>
@@ -234,6 +235,7 @@
             <wornGraphicPath>Things/Item/Equipment/Armor/GoblinBerserkerArmor/GoblinBerserkerArmor</wornGraphicPath>
             <layers>
                 <li>Middle</li>
+                <li>Shell</li>
             </layers>
             <tags>
                 <li>Goblin_Warrior</li>
