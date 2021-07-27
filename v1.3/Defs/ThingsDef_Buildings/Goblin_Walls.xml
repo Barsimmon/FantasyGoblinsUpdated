@@ -59,6 +59,7 @@
         </costList>
         <building>
             <isInert>true</isInert>
+            <isPlaceOverableWall>true</isPlaceOverableWall>
             <ai_chillDestination>false</ai_chillDestination>
             <blueprintGraphicData>
                 <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
@@ -134,6 +135,7 @@
         </stuffCategories>
         <building>
             <isInert>true</isInert>
+            <isPlaceOverableWall>true</isPlaceOverableWall>
             <ai_chillDestination>false</ai_chillDestination>
             <blueprintGraphicData>
                 <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
@@ -209,6 +211,7 @@
         </stuffCategories>
         <building>
             <isInert>true</isInert>
+            <isPlaceOverableWall>true</isPlaceOverableWall>
             <ai_chillDestination>false</ai_chillDestination>
             <blueprintGraphicData>
                 <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>

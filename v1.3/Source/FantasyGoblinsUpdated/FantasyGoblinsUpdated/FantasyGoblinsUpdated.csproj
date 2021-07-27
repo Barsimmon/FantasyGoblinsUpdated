@@ -52,7 +52,6 @@
     <Compile Include="JoyGiver_Wrestle.cs" />
     <Compile Include="Toils_Wrestling.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WallBehaviourPatch.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
