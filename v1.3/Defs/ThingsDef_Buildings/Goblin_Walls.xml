@@ -9,8 +9,7 @@
         <thingClass>Building</thingClass>
         <category>Building</category>
         <description>Walls made from mud. They're quick and easy to build. Though hardly the sturdiest. Does not catch
-            fire very easily.
-        </description>
+            fire very easily.</description>
         <graphicData>
             <texPath>Things/Building/Linked/Goblin_MudWall</texPath>
             <graphicClass>Graphic_Single</graphicClass>

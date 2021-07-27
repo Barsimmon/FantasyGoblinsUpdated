@@ -16,8 +16,7 @@
         <defName>Goblin_SpikedBarricade</defName>
         <label>spiked barricade</label>
         <description>A defensive structure providing cover and slowing enemy movement. Consisting of a portable frame
-            covered with many projecting wooden spikes.
-        </description>
+            covered with many projecting wooden spikes.</description>
         <thingClass>Building</thingClass>
         <category>Building</category>
         <graphicData>

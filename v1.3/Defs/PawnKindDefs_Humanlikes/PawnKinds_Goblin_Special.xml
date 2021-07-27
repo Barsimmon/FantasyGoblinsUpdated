@@ -14,6 +14,8 @@
         </apparelTags>
         <gearHealthRange>0.5~1.8</gearHealthRange>
         <apparelMoney>50~250</apparelMoney>
+        <initialWillRange>0~0</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
     </PawnKindDef>
 
 </Defs>

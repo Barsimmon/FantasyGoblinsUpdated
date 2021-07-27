@@ -27,5 +27,7 @@
             <li>Poor</li>
         </techHediffsTags>
         <techHediffsChance>0.02</techHediffsChance>
+        <initialResistanceRange>9~15</initialResistanceRange>
+        <initialWillRange>0~0</initialWillRange>
     </PawnKindDef>
 </Defs>

@@ -82,8 +82,7 @@
         <defName>GoblinMoonshadeCultivation</defName>
         <label>Moonshade cultivation</label>
         <description>Grow moonshade inkcap mushrooms in caves or dark buildings. Use them for food or a long-lasting
-            light source.
-        </description>
+            light source.</description>
         <baseCost>600</baseCost>
         <researchViewX>0</researchViewX>
         <researchViewY>5</researchViewY>

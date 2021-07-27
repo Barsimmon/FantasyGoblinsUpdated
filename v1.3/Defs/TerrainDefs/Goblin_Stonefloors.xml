@@ -8,8 +8,7 @@
     <TerrainDef Abstract="True" ParentName="FloorBase" Name="GoblinstoneBase">
         <renderPrecedence>220</renderPrecedence>
         <description>Roughly-cut stone tiles. These are not beautiful, but they're cheap to build and boosts walking
-            speed ever so slightly. Deconstructing flagstone yields no resources.
-        </description>
+            speed ever so slightly. Deconstructing flagstone yields no resources.</description>
         <texturePath>Terrain/Surfaces/Goblin_StoneFloor</texturePath>
         <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
         <statBases>

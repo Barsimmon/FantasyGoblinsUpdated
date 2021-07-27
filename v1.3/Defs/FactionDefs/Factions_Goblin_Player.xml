@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <FactionDef>
+    <FactionDef ParentName="FactionBase">
         <defName>GoblinPlayerTribe</defName>
         <label>Goblin Tribe</label>
         <description>Goblin Tribal Start.</description>

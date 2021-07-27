@@ -180,8 +180,7 @@
         <defName>Goblin_Falchion</defName>
         <label>goblin falchion</label>
         <description>The most deadliest of goblin sword designs. A short fast blade that can be used for quick slashing
-            and cutting.
-        </description>
+            and cutting.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponMelee/Goblin_Falchion</texPath>
             <graphicClass>Graphic_Single</graphicClass>

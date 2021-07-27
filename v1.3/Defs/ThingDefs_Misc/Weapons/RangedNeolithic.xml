@@ -87,8 +87,7 @@
         <defName>Goblin_Plumbata</defName>
         <label>goblin plumbata</label>
         <description>A goblin plumbata. A large lead-weighted dart that can inflict large damage in short range
-            combat.
-        </description>
+            combat.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponRanged/Goblin_Plumbata</texPath>
             <graphicClass>Graphic_Single</graphicClass>

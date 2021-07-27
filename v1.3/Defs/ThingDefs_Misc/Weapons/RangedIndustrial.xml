@@ -5,8 +5,7 @@
         <defName>Goblin_MachinePistol</defName>
         <label>goblin machine pistol</label>
         <description>A short ranged assault weapon. What it lacks in range and accuracy it makes up with sheer rate of
-            bullets.
-        </description>
+            bullets.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponRangedIndust/GoblinMachinePistol</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -93,8 +92,7 @@
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>Goblin_AssaultRifle</defName>
         <label>goblin assault rifle</label>
-        <description>The multi purpose weapon of choice for any goblin set on the path of war and destruction.
-        </description>
+        <description>The multi purpose weapon of choice for any goblin set on the path of war and destruction.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponRangedIndust/GoblinAssaultRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>

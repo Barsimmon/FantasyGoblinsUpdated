@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-    <FactionDef Name="GoblinTribeFactionBase" Abstract="True">
+    <FactionDef ParentName="FactionBase" Name="GoblinTribeFactionBase" Abstract="True">
         <pawnSingular>goblin</pawnSingular>
         <pawnsPlural>goblins</pawnsPlural>
         <categoryTag>TribalGoblin</categoryTag>
@@ -12,6 +12,7 @@
         <canStageAttacks>true</canStageAttacks>
         <factionIconPath>WorldObjects/Expanding/GoblinBase</factionIconPath>
         <geneticVariance>0.1</geneticVariance>
+        <techLevel>Neolithic</techLevel>
         <factionNameMaker>Fantasy_GoblinNamerFaction</factionNameMaker>
         <settlementNameMaker>Fantasy_GoblinNamerFaction</settlementNameMaker>
         <allowedCultures>
@@ -212,8 +213,7 @@
         <defName>GoblinTribeCivil</defName>
         <label>goblin tribe</label>
         <description>A tribe of nomadic goblins. This particular tribe seems to be of a less hostile nature than one
-            would expect from a goblin settlement.
-        </description>
+            would expect from a goblin settlement.</description>
         <colorSpectrum>
             <li>(0.85, 0.75, 0.37)</li>
             <li>(0.95, 0.95, 0.37)</li>
@@ -233,8 +233,7 @@
         <defName>GoblinTribeSavage</defName>
         <label>savage goblin tribe</label>
         <description>These goblins live their lives in constant strife. Having made war an occupation they raid nearby
-            settlements to sustain themselves.
-        </description>
+            settlements to sustain themselves.</description>
         <colorSpectrum>
             <li>(0.25, 0.65, 0.05)</li>
             <li>(0.25, 0.75, 0.05)</li>

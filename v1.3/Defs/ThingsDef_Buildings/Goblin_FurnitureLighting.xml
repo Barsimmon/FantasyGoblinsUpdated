@@ -81,8 +81,7 @@
         <defName>Goblin_SkullWallLight</defName>
         <label>goblin skull wall light</label>
         <thingClass>Building</thingClass>
-        <description>The remains of some poor creatures skull turned into a fashionable lightsource hung from a wall.
-        </description>
+        <description>The remains of some poor creatures skull turned into a fashionable lightsource hung from a wall.</description>
         <category>Building</category>
         <thingCategories>
             <li>Buildings</li>
@@ -233,8 +232,7 @@
         <label>goblin moonshade wall light</label>
         <thingClass>Building</thingClass>
         <description>Bottled juice from the moonshade inkcap that creates a green luminescence sourrounding it. Needs to
-            be continously refilled with fresh moonshade inkcap to conetinue to shine.
-        </description>
+            be continously refilled with fresh moonshade inkcap to conetinue to shine.</description>
         <category>Building</category>
         <thingCategories>
             <li>Buildings</li>

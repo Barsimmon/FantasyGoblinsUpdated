@@ -5,8 +5,7 @@
         <defName>Goblin_Spear</defName>
         <label>goblin spear</label>
         <description>A short and nasty looking weapon of ancient design. Good for stabbing or slashing. It's light and
-            nimble, which sometimes lets it beat bigger, heavier weapons.
-        </description>
+            nimble, which sometimes lets it beat bigger, heavier weapons.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponMelee/Goblin_Spear</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -129,8 +128,7 @@
     <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
         <defName>Goblin_Axe</defName>
         <label>goblin axe</label>
-        <description>A large piece of sharpened metal stuck to a wooden piece. One might even call it an axe
-        </description>
+        <description>A large piece of sharpened metal stuck to a wooden piece. One might even call it an axe</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponMelee/Goblin_Axe</texPath>
             <graphicClass>Graphic_Single</graphicClass>
