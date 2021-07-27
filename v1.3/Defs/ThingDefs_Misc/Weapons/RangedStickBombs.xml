@@ -61,7 +61,7 @@
             </li>
         </comps>
         <recipeMaker>
-          <researchPrerequisite>GoblinAdvancedGear</researchPrerequisite>
+            <researchPrerequisite>GoblinAdvancedGear</researchPrerequisite>
         </recipeMaker>
     </ThingDef>
 

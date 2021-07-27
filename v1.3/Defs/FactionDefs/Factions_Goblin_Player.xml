@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-  <FactionDef>
-    <defName>GoblinPlayerTribe</defName>
-    <label>Goblin Tribe</label>
-    <description>Goblin Tribal Start.</description>
-    <isPlayer>true</isPlayer>
-    <categoryTag>Goblin</categoryTag>
-    <pawnSingular>Goblin</pawnSingular>
-    <pawnsPlural>Goblins</pawnsPlural>
-    <basicMemberKind>Goblin</basicMemberKind>
-    <techLevel>Neolithic</techLevel>
-    <factionNameMaker>Fantasy_GoblinNamerFaction</factionNameMaker>
-    <settlementNameMaker>Fantasy_GoblinNamerFaction</settlementNameMaker>
-    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-    <allowedCultures>
-      <li>Goblin</li>
-    </allowedCultures>
-    <disallowedMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginChristian</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginIslamic</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginHindu</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginBuddhist</li>
-    </disallowedMemes>
-    <disallowedPrecepts>
-      <li MayRequire="Ludeon.RimWorld.Ideology">FungusEating_Despised</li>
-    </disallowedPrecepts>
-    <backstoryFilters>
-      <li>
-        <categories>
-          <li>GoblinBackstory</li>
-        </categories>
-      </li>
-    </backstoryFilters>
-    <factionIconPath>WorldObjects/Expanding/GoblinBase</factionIconPath>
-    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
-    <geneticVariance>1</geneticVariance>
-    <forageabilityFactor>1.7</forageabilityFactor>
-    <startingResearchTags>
-      <li>TribalStart</li>
-      <li>GoblinTribalStart</li>
-    </startingResearchTags>
-    <startingTechprintsResearchTags>
-      <li>TribalStart</li>
-      <li>TribalStartTechprints</li>
-    </startingTechprintsResearchTags>
-    <apparelStuffFilter>
-      <thingDefs>
-        <li>Cloth</li>
-      </thingDefs>
-    </apparelStuffFilter>
-    <recipePrerequisiteTags>
-      <li>TribalGoblin</li>
-      <li>Tribal</li>
-    </recipePrerequisiteTags>
-    <colorSpectrum>
-      <li>(0, 0.737, 0.847)</li>
-    </colorSpectrum>
-  </FactionDef>
+    <FactionDef>
+        <defName>GoblinPlayerTribe</defName>
+        <label>Goblin Tribe</label>
+        <description>Goblin Tribal Start.</description>
+        <isPlayer>true</isPlayer>
+        <categoryTag>Goblin</categoryTag>
+        <pawnSingular>Goblin</pawnSingular>
+        <pawnsPlural>Goblins</pawnsPlural>
+        <basicMemberKind>Goblin</basicMemberKind>
+        <techLevel>Neolithic</techLevel>
+        <factionNameMaker>Fantasy_GoblinNamerFaction</factionNameMaker>
+        <settlementNameMaker>Fantasy_GoblinNamerFaction</settlementNameMaker>
+        <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+        <allowedCultures>
+            <li>Goblin</li>
+        </allowedCultures>
+        <disallowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginChristian</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginIslamic</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginHindu</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginBuddhist</li>
+        </disallowedMemes>
+        <disallowedPrecepts>
+            <li MayRequire="Ludeon.RimWorld.Ideology">FungusEating_Despised</li>
+        </disallowedPrecepts>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>GoblinBackstory</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <factionIconPath>WorldObjects/Expanding/GoblinBase</factionIconPath>
+        <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+        <geneticVariance>1</geneticVariance>
+        <forageabilityFactor>1.7</forageabilityFactor>
+        <startingResearchTags>
+            <li>TribalStart</li>
+            <li>GoblinTribalStart</li>
+        </startingResearchTags>
+        <startingTechprintsResearchTags>
+            <li>TribalStart</li>
+            <li>TribalStartTechprints</li>
+        </startingTechprintsResearchTags>
+        <apparelStuffFilter>
+            <thingDefs>
+                <li>Cloth</li>
+            </thingDefs>
+        </apparelStuffFilter>
+        <recipePrerequisiteTags>
+            <li>TribalGoblin</li>
+            <li>Tribal</li>
+        </recipePrerequisiteTags>
+        <colorSpectrum>
+            <li>(0, 0.737, 0.847)</li>
+        </colorSpectrum>
+    </FactionDef>
 </Defs>

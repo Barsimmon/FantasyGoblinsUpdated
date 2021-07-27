@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--========================= Doors =============================-->
+    <!--========================= Doors =============================-->
 
-  <ThingDef ParentName="DoorBase">
-    <defName>Goblin_Door</defName>
-    <label>Goblin_door</label>
-    <description>A crude door made out of simple planks.</description>
-    <statBases>
-      <WorkToBuild>650</WorkToBuild>
-    </statBases>
-    <graphicData>
-      <texPath>Things/Building/Goblin_Door/GoblinDoor_Mover</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <damageData>
-        <!--  no damage marks because they don't move with the door
-        <rect>(0,0.12,1,0.76)</rect>-->
-        <enabled>false</enabled>
-      </damageData>
-    </graphicData>
-    <uiIconPath>Things/Building/Goblin_Door/Goblin_DoorMenuIcon</uiIconPath>
-    <costStuffCount>15</costStuffCount>
-    <designationHotKey>Misc1</designationHotKey>
-    <researchPrerequisites>
-      <li>GoblinWoodConstruction</li>
-    </researchPrerequisites>
-  </ThingDef>
+    <ThingDef ParentName="DoorBase">
+        <defName>Goblin_Door</defName>
+        <label>Goblin_door</label>
+        <description>A crude door made out of simple planks.</description>
+        <statBases>
+            <WorkToBuild>650</WorkToBuild>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Building/Goblin_Door/GoblinDoor_Mover</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <damageData>
+                <!--  no damage marks because they don't move with the door
+                <rect>(0,0.12,1,0.76)</rect>-->
+                <enabled>false</enabled>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Goblin_Door/Goblin_DoorMenuIcon</uiIconPath>
+        <costStuffCount>15</costStuffCount>
+        <designationHotKey>Misc1</designationHotKey>
+        <researchPrerequisites>
+            <li>GoblinWoodConstruction</li>
+        </researchPrerequisites>
+    </ThingDef>
 
 </Defs>

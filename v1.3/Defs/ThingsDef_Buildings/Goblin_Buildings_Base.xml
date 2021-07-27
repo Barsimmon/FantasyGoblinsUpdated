@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <ThingDef ParentName="BuildingBase" Name="Goblin_BuildingBase" Abstract="True">
-  </ThingDef>
+    <ThingDef ParentName="BuildingBase" Name="Goblin_BuildingBase" Abstract="True">
+    </ThingDef>
 
-  <ThingDef ParentName="FurnitureBase" Name="Goblin_FurnitureBase" Abstract="True">
-  </ThingDef>
+    <ThingDef ParentName="FurnitureBase" Name="Goblin_FurnitureBase" Abstract="True">
+    </ThingDef>
 
-  <ThingDef ParentName="FurnitureWithQualityBase" Name="Goblin_FurnitureWithQualityBase" Abstract="True">
-  </ThingDef>
+    <ThingDef ParentName="FurnitureWithQualityBase" Name="Goblin_FurnitureWithQualityBase" Abstract="True">
+    </ThingDef>
 
-  <ThingDef ParentName="ArtableFurnitureBase" Name="Goblin_ArtableFurnitureBase" Abstract="True">
-  </ThingDef>
+    <ThingDef ParentName="ArtableFurnitureBase" Name="Goblin_ArtableFurnitureBase" Abstract="True">
+    </ThingDef>
 
-  <ThingCategoryDef>
-    <defName>Goblin_Buildings</defName>
-    <label>Goblin</label>
-    <parent>Buildings</parent>
-  </ThingCategoryDef>
+    <ThingCategoryDef>
+        <defName>Goblin_Buildings</defName>
+        <label>Goblin</label>
+        <parent>Buildings</parent>
+    </ThingCategoryDef>
 
 </Defs>

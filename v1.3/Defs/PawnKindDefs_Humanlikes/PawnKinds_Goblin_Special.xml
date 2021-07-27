@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <PawnKindDef ParentName="BaseGoblinPawnKind">
-		<defName>GoblinSlave</defName>
-		<label>Goblin slave</label>
-    <factionLeader>false</factionLeader>
-    <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-    <forceNormalGearQuality>false</forceNormalGearQuality>
-    <defaultFactionType>GoblinTribeCivil</defaultFactionType>
-    <itemQuality>Poor</itemQuality>
-    <apparelTags>
-      <li>NeolithicGoblin</li>
-    </apparelTags>
-    <gearHealthRange>0.5~1.8</gearHealthRange>
-    <apparelMoney>50~250</apparelMoney>
-  </PawnKindDef>
+    <PawnKindDef ParentName="BaseGoblinPawnKind">
+        <defName>GoblinSlave</defName>
+        <label>Goblin slave</label>
+        <factionLeader>false</factionLeader>
+        <apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+        <forceNormalGearQuality>false</forceNormalGearQuality>
+        <defaultFactionType>GoblinTribeCivil</defaultFactionType>
+        <itemQuality>Poor</itemQuality>
+        <apparelTags>
+            <li>NeolithicGoblin</li>
+        </apparelTags>
+        <gearHealthRange>0.5~1.8</gearHealthRange>
+        <apparelMoney>50~250</apparelMoney>
+    </PawnKindDef>
 
 </Defs>

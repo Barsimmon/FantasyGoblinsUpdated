@@ -1,74 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <ThingDef ParentName="CavePlantBase">
-    <defName>Plant_MoonShade</defName>
-    <label>Moonshade inkcap</label>
-    <description>A short, fast-growing mushroom Used for basic ingredients in cooking.</description>
-    <statBases>
-      <MaxHitPoints>85</MaxHitPoints>
-      <Nutrition>0.10</Nutrition>
-    </statBases>
-    <graphicData>
-      <texPath>Things/Plants/MoonShade</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <shadowData>
-        <volume>(0.2, 0.3, 0.13)</volume>
-        <offset>(-0.03,0,-0.44)</offset>
-      </shadowData>
-    </graphicData>
-    <selectable>true</selectable>
-    <pathCost>10</pathCost>
-    <ingestible />
-    <plant>
-      <fertilityMin>0.3</fertilityMin>
-      <fertilitySensitivity>0.15</fertilitySensitivity>
-      <dieIfLeafless>true</dieIfLeafless>
-      <harvestTag>Standard</harvestTag>
-      <harvestedThingDef>Resource_RawMoonShade</harvestedThingDef>
-      <harvestYield>8</harvestYield>
-      <sowTags>
-        <li>Ground</li>
-        <li>Hydroponic</li>
-      </sowTags>
-      <sowResearchPrerequisites>
-        <li>GoblinMoonshadeCultivation</li>
-      </sowResearchPrerequisites>
-      <topWindExposure>0.1</topWindExposure>
-      <growDays>7</growDays>
-      <visualSizeRange>0.3~0.8</visualSizeRange>
-      <wildOrder>2</wildOrder>
-      <purpose>Food</purpose>
-      <humanFoodPlant>true</humanFoodPlant>
-      <maxMeshCount>4</maxMeshCount>
-    </plant>
-  </ThingDef>
+    <ThingDef ParentName="CavePlantBase">
+        <defName>Plant_MoonShade</defName>
+        <label>Moonshade inkcap</label>
+        <description>A short, fast-growing mushroom Used for basic ingredients in cooking.</description>
+        <statBases>
+            <MaxHitPoints>85</MaxHitPoints>
+            <Nutrition>0.10</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plants/MoonShade</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shadowData>
+                <volume>(0.2, 0.3, 0.13)</volume>
+                <offset>(-0.03,0,-0.44)</offset>
+            </shadowData>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible/>
+        <plant>
+            <fertilityMin>0.3</fertilityMin>
+            <fertilitySensitivity>0.15</fertilitySensitivity>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>Resource_RawMoonShade</harvestedThingDef>
+            <harvestYield>8</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <sowResearchPrerequisites>
+                <li>GoblinMoonshadeCultivation</li>
+            </sowResearchPrerequisites>
+            <topWindExposure>0.1</topWindExposure>
+            <growDays>7</growDays>
+            <visualSizeRange>0.3~0.8</visualSizeRange>
+            <wildOrder>2</wildOrder>
+            <purpose>Food</purpose>
+            <humanFoodPlant>true</humanFoodPlant>
+            <maxMeshCount>4</maxMeshCount>
+        </plant>
+    </ThingDef>
 
-  <ThingDef ParentName="PlantFoodRawBase">
-    <defName>Resource_RawMoonShade</defName>
-    <label>Picked moonshade inkcap</label>
-    <description>Picked moonshade inkcap.</description>
-    <graphicData>
-      <texPath>Things/Plants/RawMoonShade</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <statBases>
-      <MarketValue>1.1</MarketValue>
-    </statBases>
-    <ingestible>
-      <foodType>Fungus</foodType>
-    </ingestible>
-    <ingredient>
-      <mergeCompatibilityTags>
-        <li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
-      </mergeCompatibilityTags>
-    </ingredient>
-    <comps>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>34</daysToRotStart>
-        <rotDestroys>true</rotDestroys>
-      </li>
-    </comps>
-  </ThingDef>
+    <ThingDef ParentName="PlantFoodRawBase">
+        <defName>Resource_RawMoonShade</defName>
+        <label>Picked moonshade inkcap</label>
+        <description>Picked moonshade inkcap.</description>
+        <graphicData>
+            <texPath>Things/Plants/RawMoonShade</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.1</MarketValue>
+        </statBases>
+        <ingestible>
+            <foodType>Fungus</foodType>
+        </ingestible>
+        <ingredient>
+            <mergeCompatibilityTags>
+                <li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+            </mergeCompatibilityTags>
+        </ingredient>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>34</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
 
 </Defs>
