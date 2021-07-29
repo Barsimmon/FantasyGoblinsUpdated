@@ -6,20 +6,21 @@
 	<supportedVersions>
 		<li>1.1</li>
 		<li>1.2</li>
+		<li>1.3</li>
 	</supportedVersions>
 	<packageId>Barsimmon.OriginalByVagabond.FantasyGoblins</packageId>
 	<modDependencies>
 		<li>
-      <packageId>erdelf.HumanoidAlienRaces</packageId>
-      <displayName>Humanoid Alien Races 2.0</displayName>
-      <steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
-    </li>
-    <li>
-        <packageId>brrainz.harmony</packageId>
-        <displayName>Harmony</displayName>
-        <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
-        <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
-    </li>
+		  <packageId>erdelf.HumanoidAlienRaces</packageId>
+		  <displayName>Humanoid Alien Races 2.0</displayName>
+		  <steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>erdelf.HumanoidAlienRaces</li>
@@ -29,9 +30,8 @@
     <li>CETeam.CombatExtended</li>
 	</loadBefore>-->
 	<description>
-This mod by Vagabond was last updated in 2018 and seemed abandoned. I can't contact Vagabond, so I'm updating it in their stead.
+This mod was first made by Vagabond, I just updated it with retroactive permission.
 I did not make any of the art, nor did I do any of the creative thinking. I just fixed some bugs and adjusted some textures.
-If Vagabond asks me to take this down, I will.
 
 Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=1465072243
 
@@ -149,6 +149,11 @@ Barsimmon's changes
 - Remove references to base tribal faction and pawnkind to improve compatibility
 - Add goblin nicknames to prevent naming errors
 - Added improved mud and stone floor textures, provided by Delta1138
+- Updated to 1.3
+- Basic Ideology integration
+- Removed Harmony patch for saves older than 2020-04-03 (squirrel meat bug) as I don't think anyone is dragging around a save from 1.1 anymore. Still works if you're not yet on 1.3
+- Removed Harmony patch used to make sure doors can be placed over goblin walls in favor of new(?) xml solution.
+- Change goblin starting gear
 
 Todo's
 ------

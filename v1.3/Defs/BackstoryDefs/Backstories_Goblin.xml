@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- Need to specify backkstories in order to set which body should go with which gender.
+          Copied these from the rimworld wiki and changed some titles and text -->
+
+    <AlienRace.BackstoryDef Name="GoblinBackstoryBase" Abstract="True">
+        <bodyTypeMale>Male</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <spawnCategories>
+            <li>GoblinBackstory</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- Adulthood -->
+
+    <AlienRace.BackstoryDef ParentName="GoblinBackstoryBase">
+        <defName>HutTenderGoblin</defName>
+        <title>Hut tender</title>
+        <titleShort>Tender</titleShort>
+        <baseDescription>While the others were out hunting and foraging, [PAWN_nameDef] would stay at home to cook and
+            take care of the young and sick.
+        </baseDescription>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Cooking</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef ParentName="GoblinBackstoryBase">
+        <defName>DiggerGoblin</defName>
+        <title>Digger</title>
+        <titleShort>Digger</titleShort>
+        <baseDescription>[PAWN_nameDef] and [PAWN_possessive] tribe carved their home deep into the side of a mountain.
+            [PAWN_nameDef] feels most at home picking through rock and shoring up cave walls.
+        </baseDescription>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Mining</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef ParentName="GoblinBackstoryBase">
+        <defName>MoonshadeFarmerGoblin</defName>
+        <title>Moonshade farmer</title>
+        <titleShort>Farmer</titleShort>
+        <baseDescription>[PAWN_nameDef] is a master farmer. [PAWN_pronoun] has spent a lot of time growing moonshade
+            inkcap mushrooms.
+        </baseDescription>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Plants</defName>
+                <amount>4</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef ParentName="GoblinBackstoryBase">
+        <defName>ShamanGoblin</defName>
+        <title>Shaman</title>
+        <titleShort>Shaman</titleShort>
+        <baseDescription>After [PAWN_possessive] tribe’s elder shaman was killed in a raid, [PAWN_nameDef] took on the
+            role. [PAWN_pronoun] spent [PAWN_possessive] days scrounging up herbs and mineral compounds from the nearby
+            area to use in surprisingly effective remedies.
+        </baseDescription>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Medicine</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef ParentName="GoblinBackstoryBase">
+        <defName>HermitGoblin</defName>
+        <title>Hermit</title>
+        <titleShort>Hermit</titleShort>
+        <baseDescription>[PAWN_nameDef] never much liked the tribal council or the yearly festivals. [PAWN_pronoun]
+            prefers the open plain and the lonely whistle of wind through the rocks. [PAWN_pronoun] visits
+            [PAWN_possessive] tribe from time to time, but for the most part [PAWN_pronoun] takes care of
+            [PAWN_objective]self using [PAWN_possessive] own survival skills.
+        </baseDescription>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>Social</li>
+        </workDisables>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef ParentName="GoblinBackstoryBase">
+        <defName>StoryTellerGoblin</defName>
+        <title>Story teller</title>
+        <titleShort>Teller</titleShort>
+        <baseDescription>[PAWN_nameDef] was one of a long line of story tellers in [PAWN_possessive] tribe. Every night
+            around the fire, [PAWN_pronoun] would pass on ancient knowledge and helpful wisdom through stories.
+        </baseDescription>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef ParentName="GoblinBackstoryBase">
+        <defName>WrestlingChampionGoblin</defName>
+        <title>Wrestling champion</title>
+        <titleShort>Champion</titleShort>
+        <baseDescription>[PAWN_nameDef] used his strength and charisma to become a champion of the wrestling pits in
+            [PAWN_possessive] tribe.
+        </baseDescription>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef ParentName="GoblinBackstoryBase">
+        <defName>GuideGoblin</defName>
+        <title>Guide</title>
+        <titleShort>Guide</titleShort>
+        <baseDescription>Since [PAWN_possessive] tribe has made contact with local humans, [PAWN_nameDef] has contracted
+            [PAWN_possessive] services out as a guide to the local area. Frequent contact with ancient relics has made
+            [PAWN_objective] fairly comfortable with the old technology.
+        </baseDescription>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef ParentName="GoblinBackstoryBase">
+        <defName>BerserkerGoblin</defName>
+        <title>Berserker</title>
+        <titleShort>Berserker</titleShort>
+        <baseDescription>[PAWN_nameDef] was a fearsome berserker. [PAWN_pronoun] participated in many battles.
+        </baseDescription>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Shooting</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef ParentName="GoblinBackstoryBase">
+        <defName>TailorGoblin</defName>
+        <title>Tailor</title>
+        <titleShort>Tailor</titleShort>
+        <baseDescription>[PAWN_nameDef] was an expert at working leather into sturdy clothing for [PAWN_possessive]
+            kin.
+        </baseDescription>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Crafting</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
+
+    <!-- Childhood -->
+
+    <AlienRace.BackstoryDef ParentName="GoblinBackstoryBase">
+        <defName>AbandonedChildGoblin</defName>
+        <title>Abandoned child</title>
+        <titleShort>Abandoned</titleShort>
+        <baseDescription>[PAWN_nameDef] was born sickly. Thinking that [PAWN_pronoun] would only burden the tribe,
+            [PAWN_possessive] parents left [PAWN_objective] out in the elements. Somehow, [PAWN_pronoun] survived.
+        </baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef ParentName="GoblinBackstoryBase">
+        <defName>CaveChildGoblin</defName>
+        <title>Cave child</title>
+        <titleShort>Cave child</titleShort>
+        <baseDescription>[PAWN_nameDef] grew up in a large and intricate cave complex that extended deep into a
+            mountainside. [PAWN_pronoun] helped the adults maintain and improve the deep caves.
+        </baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Mining</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef ParentName="GoblinBackstoryBase">
+        <defName>FireKeeperGoblin</defName>
+        <title>Fire keeper</title>
+        <titleShort>Firekeep</titleShort>
+        <baseDescription>[PAWN_nameDef] was responsible for keeping the tribe’s fire going. [PAWN_pronoun] took this
+            responsibility very seriously.
+        </baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Crafting</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef ParentName="GoblinBackstoryBase">
+        <defName>HerderGoblin</defName>
+        <title>Herder</title>
+        <titleShort>Herder</titleShort>
+        <baseDescription>As a child, [PAWN_nameDef] tended the tribe’s herds, keeping them safe from predators and
+            treating the sick. It was quiet work, but [PAWN_pronoun] enjoyed being away from people.
+        </baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Medicine</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef ParentName="GoblinBackstoryBase">
+        <defName>ReclusiveChildGoblin</defName>
+        <title>Reclusive child</title>
+        <titleShort>Reclusive</titleShort>
+        <baseDescription>[PAWN_nameDef] didn’t learn to speak until [PAWN_pronoun] was nearly 5 years old, and, even
+            then, [PAWN_pronoun] preferred to keep to [PAWN_objective]self. When [PAWN_pronoun] was in [PAWN_possessive]
+            early teens, [PAWN_pronoun] made a habit of wandering off from the village to live in the wilderness for
+            weeks at a time.
+        </baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef ParentName="GoblinBackstoryBase">
+        <defName>ScavengerGoblin</defName>
+        <title>Scavenger</title>
+        <titleShort>Scavenger</titleShort>
+        <baseDescription>[PAWN_nameDef] spent [PAWN_possessive] childhood escaping grunt work to go digging through
+            wrecks and ruins for treasures. [PAWN_possessive] natural curiosity got [PAWN_objective] into a lot of
+            trouble, but it also yielded many interesting finds.
+        </baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Mining</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef ParentName="GoblinBackstoryBase">
+        <defName>SoleSurvivorGoblin</defName>
+        <title>Sole survivor</title>
+        <titleShort>Survivor</titleShort>
+        <baseDescription>[PAWN_nameDef]’s entire tribe was wiped out in a raid. Though [PAWN_pronoun] was adopted by
+            another group, [PAWN_pronoun] was emotionally scarred, and preferred to stay near home, cooking and tending
+            crops.
+        </baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Plants</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef ParentName="GoblinBackstoryBase">
+        <defName>TribeChildGoblin</defName>
+        <title>Tribe child</title>
+        <titleShort>Tribal</titleShort>
+        <baseDescription>[PAWN_nameDef] grew up in the tribe, running around the village, learning essential skills from
+            [PAWN_possessive] parents. [PAWN_pronoun] never learned to read and never saw a machine that wasn't an
+            ancient ruin.
+        </baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Plants</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Shooting</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef ParentName="GoblinBackstoryBase">
+        <defName>VengefulChildGoblin</defName>
+        <title>Vengeful child</title>
+        <titleShort>Vengeful</titleShort>
+        <baseDescription></baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Shooting</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
+
+</Defs>

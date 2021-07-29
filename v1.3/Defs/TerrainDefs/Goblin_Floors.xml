@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- ================= Goblin Wooden Floor ================= -->
+
+    <TerrainDef ParentName="FloorBase">
+        <defName>GoblinWoodPlankFloor</defName>
+        <label>wood floor</label>
+        <renderPrecedence>250</renderPrecedence>
+        <description>Wooden planks crudely and swiftly forged together creating a surprsingly sturdy surface to stand on
+            despite it's look.</description>
+        <texturePath>Terrain/Surfaces/Goblin_WoodenFloor</texturePath>
+        <burnedDef>BurnedWoodPlankFloor</burnedDef>
+        <color>(108,78,55)</color>
+        <statBases>
+            <WorkToBuild>50</WorkToBuild>
+            <Flammability>0.16</Flammability>
+        </statBases>
+        <costList>
+            <WoodLog>2</WoodLog>
+        </costList>
+        <constructEffect>ConstructWood</constructEffect>
+        <designationHotKey>Misc7</designationHotKey>
+        <researchPrerequisites>
+            <li>GoblinWoodConstruction</li>
+        </researchPrerequisites>
+    </TerrainDef>
+
+    <!-- ================= Goblin Mud Floor ================= -->
+
+    <TerrainDef ParentName="FloorBase">
+        <defName>GoblinMudFloor</defName>
+        <label>mud floor</label>
+        <renderPrecedence>250</renderPrecedence>
+        <description>Densely packed and dried mud creating a cakelike textured surface.</description>
+        <texturePath>Terrain/Surfaces/Goblin_MudFloor</texturePath>
+        <color>(108,78,55)</color>
+        <statBases>
+            <Beauty>-1</Beauty>
+            <WorkToBuild>30</WorkToBuild>
+        </statBases>
+        <costList>
+            <GoblinMud>8</GoblinMud>
+        </costList>
+        <designationHotKey>Misc7</designationHotKey>
+        <researchPrerequisites>
+            <li>GoblinMud</li>
+        </researchPrerequisites>
+    </TerrainDef>
+
+</Defs>

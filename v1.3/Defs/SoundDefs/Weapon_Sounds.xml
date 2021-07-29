@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <SoundDef>
+        <defName>LaserRifle</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>4</maxSimultaneous>
+        <subSounds>
+            <li>
+                <onCamera>True</onCamera>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>LaserRifle/LaserRifle</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>0.9452174~1.142391</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+</Defs>
