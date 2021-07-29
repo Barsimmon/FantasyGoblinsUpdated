@@ -4,8 +4,7 @@
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>Goblin_MachinePistol</defName>
         <label>goblin machine pistol</label>
-        <description>A short ranged assault weapon. What it lacks in range and accuracy it makes up with sheer rate of
-            bullets.</description>
+        <description>A short ranged assault weapon. What it lacks in range and accuracy it makes up with sheer rate of bullets.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponRangedIndust/GoblinMachinePistol</texPath>
             <graphicClass>Graphic_Single</graphicClass>

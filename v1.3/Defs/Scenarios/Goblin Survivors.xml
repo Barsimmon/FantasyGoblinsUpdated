@@ -4,8 +4,7 @@
     <ScenarioDef>
         <defName>GoblinScenario</defName>
         <label>Goblin Survivors</label>
-        <description>You barely escaped, the huts behind you engulfed in flames and your tribespeople slaughtered by the
-            humans. You managed to sneak away in the cover of darkness forced to leave your lives behind you.</description>
+        <description>You barely escaped, the huts behind you engulfed in flames and your tribespeople slaughtered by the humans. You managed to sneak away in the cover of darkness forced to leave your lives behind you.</description>
         <scenario>
             <summary>Five goblin tribespeople venture out to begin again.</summary>
             <playerFaction>

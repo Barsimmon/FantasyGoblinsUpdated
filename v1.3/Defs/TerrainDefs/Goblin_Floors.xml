@@ -7,8 +7,7 @@
         <defName>GoblinWoodPlankFloor</defName>
         <label>wood floor</label>
         <renderPrecedence>250</renderPrecedence>
-        <description>Wooden planks crudely and swiftly forged together creating a surprsingly sturdy surface to stand on
-            despite it's look.</description>
+        <description>Wooden planks crudely and swiftly forged together creating a surprsingly sturdy surface to stand on despite it's look.</description>
         <texturePath>Terrain/Surfaces/Goblin_WoodenFloor</texturePath>
         <burnedDef>BurnedWoodPlankFloor</burnedDef>
         <color>(108,78,55)</color>

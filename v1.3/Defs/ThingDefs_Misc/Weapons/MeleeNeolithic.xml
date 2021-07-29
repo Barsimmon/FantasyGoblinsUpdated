@@ -4,8 +4,7 @@
     <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
         <defName>Goblin_Spear</defName>
         <label>goblin spear</label>
-        <description>A short and nasty looking weapon of ancient design. Good for stabbing or slashing. It's light and
-            nimble, which sometimes lets it beat bigger, heavier weapons.</description>
+        <description>A short and nasty looking weapon of ancient design. Good for stabbing or slashing. It's light and nimble, which sometimes lets it beat bigger, heavier weapons.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponMelee/Goblin_Spear</texPath>
             <graphicClass>Graphic_Single</graphicClass>

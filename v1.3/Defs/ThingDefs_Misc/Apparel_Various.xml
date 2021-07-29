@@ -12,8 +12,7 @@
     <ThingDef ParentName="ApparelMakeableGoblinBase">
         <defName>Leather_GoblinArmour</defName>
         <label>goblin leatherarmor</label>
-        <description>A full-body garment crafted using neolithic tools. While it may look primitive, it offers some
-            basic protection.</description>
+        <description>A full-body garment crafted using neolithic tools. While it may look primitive, it offers some basic protection.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/Armor/GoblinLeatherArmor/GoblinLeatherArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>

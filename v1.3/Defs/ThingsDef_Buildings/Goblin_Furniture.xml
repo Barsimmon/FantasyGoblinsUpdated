@@ -4,8 +4,7 @@
     <ThingDef ParentName="FurnitureWithQualityBase">
         <defName>Goblin_Logstool</defName>
         <label>log stool</label>
-        <description>A simple platform on which to sit. Not very comfortable, but much better than nothing. Can be used
-            at tables, work stations, and elsewhere.</description>
+        <description>A simple platform on which to sit. Not very comfortable, but much better than nothing. Can be used at tables, work stations, and elsewhere.</description>
         <graphicData>
             <texPath>Things/Building/Furniture/Logstool/Logstool</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
