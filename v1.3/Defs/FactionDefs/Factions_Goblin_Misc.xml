@@ -4,7 +4,7 @@
     <FactionDef ParentName="FactionBase" Name="GoblinTribeFactionBase" Abstract="True">
         <pawnSingular>goblin</pawnSingular>
         <pawnsPlural>goblins</pawnsPlural>
-        <categoryTag>TribalGoblin</categoryTag>
+        <categoryTag>Goblin</categoryTag>
         <listOrderPriority>20</listOrderPriority>
         <settlementGenerationWeight>0.5</settlementGenerationWeight>
         <requiredCountAtGameStart>1</requiredCountAtGameStart>

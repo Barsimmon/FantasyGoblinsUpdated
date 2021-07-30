@@ -36,17 +36,6 @@
                     </requiredDefs>
                 </requirement>
             </li>
-            <li>
-                <allowedFactionCategoryTags><li>Goblin</li></allowedFactionCategoryTags>
-                <requirement>
-                    <bodyPartGroupsMatchAny>
-                        <li>FullHead</li>
-                    </bodyPartGroupsMatchAny>
-                    <requiredDefs>
-                        <li>Leather_GoblinHelmet</li>
-                    </requiredDefs>
-                </requirement>
-            </li>
         </value>
     </Operation>
     <Operation Class="PatchOperationAdd">
@@ -70,28 +59,6 @@
                         <li>FullHead</li>
                     </bodyPartGroupsMatchAny>
                     <requiredDefs>
-                        <li>Goblin_Hood</li>
-                    </requiredDefs>
-                </requirement>
-            </li>
-            <li>
-                <allowedFactionCategoryTags><li>Goblin</li></allowedFactionCategoryTags>
-                <requirement>
-                    <bodyPartGroupsMatchAny>
-                        <li>FullHead</li>
-                    </bodyPartGroupsMatchAny>
-                    <requiredDefs>
-                        <li>Goblin_ShamanHood</li>
-                    </requiredDefs>
-                </requirement>
-            </li>
-            <li>
-                <allowedFactionCategoryTags><li>Goblin</li></allowedFactionCategoryTags>
-                <requirement>
-                    <bodyPartGroupsMatchAny>
-                        <li>FullHead</li>
-                    </bodyPartGroupsMatchAny>
-                    <requiredDefs>
                         <li>Leather_GoblinHelmet</li>
                     </requiredDefs>
                 </requirement>
@@ -101,17 +68,6 @@
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements</xpath>
         <value>
-            <li>
-                <allowedFactionCategoryTags><li>Goblin</li></allowedFactionCategoryTags>
-                <requirement>
-                    <bodyPartGroupsMatchAny>
-                        <li>FullHead</li>
-                    </bodyPartGroupsMatchAny>
-                    <requiredDefs>
-                        <li>Goblin_TribalMask</li>
-                    </requiredDefs>
-                </requirement>
-            </li>
             <li>
                 <allowedFactionCategoryTags><li>Goblin</li></allowedFactionCategoryTags>
                 <requirement>
