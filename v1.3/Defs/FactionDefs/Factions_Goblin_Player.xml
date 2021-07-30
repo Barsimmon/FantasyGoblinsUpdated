@@ -34,7 +34,7 @@
                 </categories>
             </li>
         </backstoryFilters>
-        <factionIconPath>WorldObjects/Expanding/GoblinBase</factionIconPath>
+        <factionIconPath>World/GoblinBase</factionIconPath>
         <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
         <geneticVariance>1</geneticVariance>
         <forageabilityFactor>1.7</forageabilityFactor>

@@ -14,7 +14,7 @@
         <allowedPlaceTags>
             <li>OriginTribal</li>
         </allowedPlaceTags>
-        <iconPath>WorldObjects/Expanding/GoblinBase</iconPath>
+        <iconPath>World/GoblinBase</iconPath>
         <iconColor>(0, 0.737, 0.847)</iconColor>
         <preferredWeaponClasses>
             <noble>Goblin</noble>
