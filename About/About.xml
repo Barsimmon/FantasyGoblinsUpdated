@@ -24,7 +24,7 @@
 	</modDependencies>
 	<loadAfter>
 		<li>erdelf.HumanoidAlienRaces</li>
-    <li>brrainz.harmony</li>
+		<li>brrainz.harmony</li>
 	</loadAfter>
 	<!--<loadBefore>
     <li>CETeam.CombatExtended</li>
@@ -154,6 +154,7 @@ Barsimmon's changes
 - Removed Harmony patch for saves older than 2020-04-03 (squirrel meat bug) as I don't think anyone is dragging around a save from 1.1 anymore. Still works if you're not yet on 1.3
 - Removed Harmony patch used to make sure doors can be placed over goblin walls in favor of new(?) xml solution.
 - Change goblin starting gear
+- Fix red errors when loading mod without Ideology
 
 Todo's
 ------
