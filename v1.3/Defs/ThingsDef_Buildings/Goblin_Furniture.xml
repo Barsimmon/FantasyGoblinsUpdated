@@ -105,18 +105,14 @@
         </researchPrerequisites>
     </ThingDef>
 
-    <ThingDef ParentName="FurnitureWithQualityBase">
+    <ThingDef ParentName="TableGatherSpotBase">
         <defName>Goblin_MudTable1x1c</defName>
         <label>goblin mud table (1x1)</label>
         <description>A simple table made out of mud.</description>
-        <surfaceType>Item</surfaceType>
         <graphicData>
             <texPath>Things/Building/Furniture/GoblinMudTable1x1/GoblinMudTable1x1</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <color>(108,78,55)</color>
-            <shadowData>
-                <volume>(0.3, 0.6, 0.3)</volume>
-            </shadowData>
             <drawSize>1.6</drawSize>
         </graphicData>
         <statBases>
@@ -127,17 +123,11 @@
             <Beauty>0.20</Beauty>
         </statBases>
         <defaultPlacingRot>North</defaultPlacingRot>
+        <size>(1,1)</size>
         <costList>
             <GoblinMud>15</GoblinMud>
         </costList>
-        <staticSunShadowHeight>0</staticSunShadowHeight>
-        <castEdgeShadows>false</castEdgeShadows>
         <rotatable>false</rotatable>
-        <comps>
-            <li>
-                <compClass>CompGatherSpot</compClass>
-            </li>
-        </comps>
         <researchPrerequisites>
             <li>GoblinMud</li>
         </researchPrerequisites>
