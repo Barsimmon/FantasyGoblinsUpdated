@@ -163,7 +163,6 @@
             <li>Goblin_WarlordArmor</li>
         </apparelRequired>
         <!-- copied from vanilla below -->
-        <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
         <minGenerationAge>30</minGenerationAge>
         <itemQuality>Normal</itemQuality>
         <factionLeader>true</factionLeader>

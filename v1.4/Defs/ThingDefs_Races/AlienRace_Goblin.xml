@@ -51,15 +51,18 @@
                 <immuneToXenophobia>false</immuneToXenophobia>
                 <humanRecipeImport>true</humanRecipeImport>
                 <alienPartGenerator>
-                    <aliencrowntypes>
-                        <li>Average_Normal</li>
-                        <li>Average_Wide</li>
-                        <li>Average_Pointy</li>
-                    </aliencrowntypes>
-                    <alienbodytypes>
+                    <headTypes>
+                        <li>Goblin_Male_AverageNormal</li>
+                        <li>Goblin_Male_AverageWide</li>
+                        <li>Goblin_Male_AveragePointy</li>
+                        <li>Goblin_Female_AverageNormal</li>
+                        <li>Goblin_Female_AverageWide</li>
+                        <li>Goblin_Female_AveragePointy</li>
+                    </headTypes>
+                    <bodyTypes>
                         <li>Male</li>
                         <li>Female</li>
-                    </alienbodytypes>
+                    </bodyTypes>
                     <useGenderedHeads>true</useGenderedHeads>
                     <useGenderedBodies>false</useGenderedBodies>
                     <colorChannels>
@@ -84,12 +87,9 @@
                 </alienPartGenerator>
             </generalSettings>
             <graphicPaths>
-                <li>
-                    <body>Things/Goblin/Bodies/</body>
-                    <head>Things/Goblin/Heads/</head>
-                    <skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
-                    <!--skull/-->
-                </li>
+                <body>Things/Goblin/Bodies/</body>
+                <head>Things/Goblin/Heads/</head>
+                <skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
             </graphicPaths>
             <thoughtSettings>
                 <cannotReceiveThoughts>
@@ -117,7 +117,7 @@
         </alienRace>
         <statBases>
             <MarketValue>1400</MarketValue>
-            <ToxicSensitivity>0.6</ToxicSensitivity>
+            <ToxicResistance>0.4</ToxicResistance>
             <ConstructionSpeed>1.2</ConstructionSpeed>
             <WorkSpeedGlobal>1.2</WorkSpeedGlobal>
             <MoveSpeed>5.20</MoveSpeed>

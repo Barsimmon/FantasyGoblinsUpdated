@@ -9,6 +9,7 @@
         <pawnSingular>Goblin</pawnSingular>
         <pawnsPlural>Goblins</pawnsPlural>
         <basicMemberKind>Goblin</basicMemberKind>
+        <melaninRange>0.25~0.75</melaninRange>
         <techLevel>Neolithic</techLevel>
         <factionNameMaker>Fantasy_GoblinNamerFaction</factionNameMaker>
         <settlementNameMaker>Fantasy_GoblinNamerFaction</settlementNameMaker>
@@ -36,7 +37,6 @@
         </backstoryFilters>
         <factionIconPath>World/GoblinBase</factionIconPath>
         <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
-        <geneticVariance>1</geneticVariance>
         <forageabilityFactor>1.7</forageabilityFactor>
         <startingResearchTags>
             <li>TribalStart</li>
