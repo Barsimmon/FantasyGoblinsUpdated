@@ -9,7 +9,7 @@
         <pawnSingular>Goblin</pawnSingular>
         <pawnsPlural>Goblins</pawnsPlural>
         <basicMemberKind>Goblin</basicMemberKind>
-        <melaninRange>0.25~0.75</melaninRange>
+        <!--<melaninRange>0.25~0.75</melaninRange>-->
         <techLevel>Neolithic</techLevel>
         <factionNameMaker>Fantasy_GoblinNamerFaction</factionNameMaker>
         <settlementNameMaker>Fantasy_GoblinNamerFaction</settlementNameMaker>

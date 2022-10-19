@@ -10,7 +10,7 @@
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
         <canMakeRandomly>true</canMakeRandomly>
         <canStageAttacks>true</canStageAttacks>
-        <melaninRange>0.25~0.75</melaninRange>
+        <!--<melaninRange>0.25~0.75</melaninRange>-->
         <techLevel>Neolithic</techLevel>
         <factionNameMaker>Fantasy_GoblinNamerFaction</factionNameMaker>
         <settlementNameMaker>Fantasy_GoblinNamerFaction</settlementNameMaker>
