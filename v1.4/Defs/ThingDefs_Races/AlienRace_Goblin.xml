@@ -65,8 +65,6 @@
                         <li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
                         <li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
                     </bodyTypes>
-                    <useGenderedHeads>true</useGenderedHeads>
-                    <useGenderedBodies>false</useGenderedBodies>
                     <colorChannels>
                         <li>
                             <name>skin</name>
@@ -120,8 +118,8 @@
         <statBases>
             <MarketValue>1400</MarketValue>
             <ToxicResistance>0.4</ToxicResistance>
-            <ConstructionSpeed>1.2</ConstructionSpeed>
-            <WorkSpeedGlobal>1.2</WorkSpeedGlobal>
+            <ConstructionSpeed>1.1</ConstructionSpeed>
+            <WorkSpeedGlobal>1.1</WorkSpeedGlobal>
             <MoveSpeed>5.20</MoveSpeed>
             <Flammability>1.0</Flammability>
             <ComfyTemperatureMin>5</ComfyTemperatureMin>
@@ -140,14 +138,14 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>8.2</power>
+                <power>6</power>
                 <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
                             <def>Stun</def>
-                            <amount>14</amount>
+                            <amount>10</amount>
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>
@@ -157,14 +155,14 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>8.2</power>
+                <power>6</power>
                 <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
                             <def>Stun</def>
-                            <amount>14</amount>
+                            <amount>10</amount>
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>
@@ -186,7 +184,7 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>8</power>
+                <power>4</power>
                 <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -203,8 +201,8 @@
             <leatherDef>Leather_Goblin</leatherDef>
             <nameCategory>HumanStandard</nameCategory>
             <body>Human</body>
-            <baseBodySize>0.9</baseBodySize>
-            <baseHealthScale>0.9</baseHealthScale>
+            <baseBodySize>0.8</baseBodySize>
+            <baseHealthScale>0.8</baseHealthScale>
             <foodType>OmnivoreHuman</foodType>
             <gestationPeriodDays>36</gestationPeriodDays>
             <meatMarketValue>0.8</meatMarketValue>
@@ -224,12 +222,12 @@
                     <minAge>0</minAge>
                 </li>
                 <li>
-                    <def>HumanlikeToddler</def>
-                    <minAge>1.2</minAge>
-                </li>
-                <li>
                     <def>HumanlikeChild</def>
-                    <minAge>4</minAge>
+                    <minAge>2</minAge>
+                </li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">
+                    <def>HumanlikePreTeenager</def>
+                    <minAge>7</minAge>
                 </li>
                 <li>
                     <def>HumanlikeTeenager</def>
@@ -240,6 +238,29 @@
                     <minAge>15</minAge>
                 </li>
             </lifeStageAges>
+            <lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+                <Firefighter>5</Firefighter>
+                <Patient>0</Patient>
+                <Doctor>8</Doctor>
+                <PatientBedRest>0</PatientBedRest>
+                <Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+                <BasicWorker>5</BasicWorker>
+                <Warden>8</Warden>
+                <Handling>5</Handling>
+                <Cooking>5</Cooking>
+                <Hunting>5</Hunting>
+                <Construction>8</Construction>
+                <Growing>5</Growing>
+                <Mining>5</Mining>
+                <PlantCutting>5</PlantCutting>
+                <Smithing>10</Smithing>
+                <Tailoring>5</Tailoring>
+                <Art>8</Art>
+                <Crafting>5</Crafting>
+                <Hauling>2</Hauling>
+                <Cleaning>2</Cleaning>
+                <Research>10</Research>
+            </lifeStageWorkSettings>
             <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
             <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
             <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
@@ -252,21 +273,21 @@
                 <points>
                     <li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
                     <li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li>  <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li><!-- End exclude -->
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
-                    <li>(14,0)</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
-                    <li>(16,100)</li>
-                    <li>(50,100)</li>
-                    <li>(60,30)</li>
-                    <li>(70,18)</li>
-                    <li>(80,10)</li>
-                    <li>(90,3)</li>
-                    <li>(100,0)</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(6,86)</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(9.5,118)</li>  <!-- Exclude 9.5-10 years to avoid spawning pawns who are very close to becoming adults -->
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(9.51,0)</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(10,0)</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(10.001,122)</li><!-- End exclude -->
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(10.999,130)</li>
+                    <li>(11,0)</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(11.001,130)</li>
+                    <li>(13,100)</li>
+                    <li>(40,100)</li>
+                    <li>(50,30)</li>
+                    <li>(60,18)</li>
+                    <li>(70,10)</li>
+                    <li>(80,3)</li>
+                    <li>(90,0)</li>
                 </points>
             </ageGenerationCurve>
             <hediffGiverSets>
@@ -305,8 +326,18 @@
             <li>Euthanize</li>
             <li>Anesthetize</li>
             <li>CureScaria</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Vasectomy</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">ReverseVasectomy</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">TubalLigation</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">ExtractOvum</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">ExtractHemogenPack</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">BloodTransfusion</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">ImplantXenogerm</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">ImplantIUD</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">RemoveIUD</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">TerminatePregnancy</li>
         </recipes>
     </AlienRace.ThingDef_AlienRace>
 </Defs>
