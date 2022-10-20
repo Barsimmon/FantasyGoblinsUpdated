@@ -156,7 +156,9 @@ Barsimmon's changes
 - Removed Harmony patch used to make sure doors can be placed over goblin walls in favor of new(?) xml solution.
 - Change goblin starting gear
 - Fix red errors when loading mod without Ideology
-- Fixed mud table so it's an actual table
+- Fixed mud table, so it's an actual table
+- Updated to 1.4
+- Nerfed goblins some more, now weaker than humans in melee, and only 10% work speed bonus instead of 20%
 
 Todo's
 ------
