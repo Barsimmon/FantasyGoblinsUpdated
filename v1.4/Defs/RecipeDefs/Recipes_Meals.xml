@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RecipeDef ParentName="CookMealBase">
+        <defName>Cook_MoonShadeSoup</defName>
+        <label>cook moonshade soup</label>
+        <description>Cook a moonshade soup from moonshade inkcap.</description>
+        <jobString>Cooking moonshade soup.</jobString>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Resource_RawMoonShade</li>
+                    </thingDefs>
+                </filter>
+                <count>0.5</count>
+            </li>
+        </ingredients>
+        <products>
+            <MoonShadeSoup>1</MoonShadeSoup>
+        </products>
+        <workSkill>Cooking</workSkill>
+        <recipeUsers>
+            <li>ElectricStove</li>
+            <li>FueledStove</li>
+            <li>Campfire</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>GoblinMoonshadeCultivation</li>
+        </researchPrerequisites>
+    </RecipeDef>
+
+    <RecipeDef ParentName="CookMealBase">
+        <defName>Cook_MoonShadeSoupBulk</defName>
+        <label>cook moonshade soup x4</label>
+        <description>Cook 4 portions of moonshade soup from moonshade inkcap.</description>
+        <jobString>Cooking 4 portions of moonshade soup.</jobString>
+        <workAmount>960</workAmount>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Resource_RawMoonShade</li>
+                    </thingDefs>
+                </filter>
+                <count>2.0</count>
+            </li>
+        </ingredients>
+        <products>
+            <MoonShadeSoup>4</MoonShadeSoup>
+        </products>
+        <workSkill>Cooking</workSkill>
+        <recipeUsers>
+            <li>ElectricStove</li>
+            <li>FueledStove</li>
+        </recipeUsers>
+        <researchPrerequisites>
+            <li>GoblinMoonshadeCultivation</li>
+        </researchPrerequisites>
+    </RecipeDef>
+
+</Defs>
