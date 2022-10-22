@@ -27,6 +27,9 @@
 		<li>erdelf.HumanoidAlienRaces</li>
 		<li>brrainz.harmony</li>
 	</loadAfter>
+	<incompatibleWith>
+		<li>Ludeon.RimWorld.Biotech</li>
+	</incompatibleWith>
 	<!--<loadBefore>
     <li>CETeam.CombatExtended</li>
 	</loadBefore>-->
