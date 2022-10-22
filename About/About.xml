@@ -34,6 +34,9 @@
     <li>CETeam.CombatExtended</li>
 	</loadBefore>-->
 	<description>
+THIS MOD IS CURRENTLY INCOMPATIBLE WITH THE BIOTECH EXPANSION
+Honestly. Missing textures, pigkin mixed with goblins have two sets of ears, colors, hair, nothing involving genes works. Don't try to play this mod with Biotech. Will take a while until there is a compatible version.
+
 This mod was first made by Vagabond, I just updated it with retroactive permission.
 I did not make any of the art, nor did I do any of the creative thinking. I just fixed some bugs and adjusted some textures.
 
@@ -162,6 +165,7 @@ Barsimmon's changes
 - Fixed mud table, so it's an actual table
 - Updated to 1.4
 - Nerfed goblins some more, now weaker than humans in melee, and only 10% work speed bonus instead of 20%
+- Set mod to be incompatible with Biotech
 
 Todo's
 ------
