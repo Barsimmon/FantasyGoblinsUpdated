@@ -75,6 +75,16 @@
                                         <weight>10</weight>
                                         <only>RGBA(188,200,59)</only>
                                     </li>
+                                    <li>
+                                        <!-- Goblin (light) -->
+                                        <weight>5</weight>
+                                        <only>RGBA(215,226,81)</only>
+                                    </li>
+                                    <li>
+                                        <!-- Goblin (dark) -->
+                                        <weight>5</weight>
+                                        <only>RGBA(136,145,43)</only>
+                                    </li>
                                 </options>
                             </first>
                         </li>
