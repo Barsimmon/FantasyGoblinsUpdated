@@ -51,14 +51,14 @@
                 <immuneToXenophobia>false</immuneToXenophobia>
                 <humanRecipeImport>true</humanRecipeImport>
                 <alienPartGenerator>
-<!--                    <headTypes>-->
-<!--                        <li>Goblin_Male_AverageNormal</li>-->
-<!--                        <li>Goblin_Male_AverageWide</li>-->
-<!--                        <li>Goblin_Male_AveragePointy</li>-->
-<!--                        <li>Goblin_Female_AverageNormal</li>-->
-<!--                        <li>Goblin_Female_AverageWide</li>-->
-<!--                        <li>Goblin_Female_AveragePointy</li>-->
-<!--                    </headTypes>-->
+                    <headTypes>
+                        <li>Male_AverageNormal</li>
+                        <li>Male_AverageWide</li>
+                        <li>Male_AveragePointy</li>
+                        <li>Female_AverageNormal</li>
+                        <li>Female_AverageWide</li>
+                        <li>Female_AveragePointy</li>
+                    </headTypes>
                     <bodyTypes>
                         <li>Male</li>
                         <li>Female</li>
@@ -108,8 +108,7 @@
             </generalSettings>
             <graphicPaths>
                 <body>Things/Goblin/Bodies/</body>
-<!--                <head>Things/Goblin/Heads/</head>-->
-                <head>Things/Pawn/Humanlike/Heads/</head>
+                <head>Things/Goblin/Heads/</head>
                 <skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
             </graphicPaths>
             <thoughtSettings>
