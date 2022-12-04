@@ -64,6 +64,102 @@
                             </prefixSymbols>
                         </symbolPack>
                     </GeneDef>
+
+                    <GeneDef ParentName="GeneEarsBase">
+                        <defName>Ears_Fantasy_Goblin_Normal</defName>
+                        <label>goblin ears</label>
+                        <description>Carriers of this gene have goblin ears.</description>
+                        <iconPath>UI/Icons/Genes/Gene_EarFantasyGoblin_Normal</iconPath>
+                        <graphicData>
+                            <graphicPath>Things/Goblin/Ears/Goblin_Ears</graphicPath>
+                            <colorType>Skin</colorType>
+                        </graphicData>
+                        <symbolPack>
+                            <prefixSymbols>
+                                <li><symbol>goblin</symbol></li>
+                                <li><symbol>trash</symbol></li>
+                                <li><symbol>gobber</symbol></li>
+                            </prefixSymbols>
+                            <suffixSymbols>
+                                <li><symbol>goblin</symbol></li>
+                                <li><symbol>gobber</symbol></li>
+                                <li><symbol>gob</symbol></li>
+                                <li><symbol>ear</symbol></li>
+                            </suffixSymbols>
+                        </symbolPack>
+                    </GeneDef>
+
+                    <GeneDef ParentName="GeneEarsBase">
+                        <defName>Ears_Fantasy_Goblin_Hanging</defName>
+                        <label>hanging goblin ears</label>
+                        <description>Carriers of this gene have hanging goblin ears.</description>
+                        <iconPath>UI/Icons/Genes/Gene_EarFantasyGoblin_Hanging</iconPath>
+                        <graphicData>
+                            <graphicPath>Things/Goblin/Ears/Goblin_Ears1</graphicPath>
+                            <colorType>Skin</colorType>
+                        </graphicData>
+                        <symbolPack>
+                            <prefixSymbols>
+                                <li><symbol>goblin</symbol></li>
+                                <li><symbol>trash</symbol></li>
+                                <li><symbol>gobber</symbol></li>
+                            </prefixSymbols>
+                            <suffixSymbols>
+                                <li><symbol>goblin</symbol></li>
+                                <li><symbol>gobber</symbol></li>
+                                <li><symbol>gob</symbol></li>
+                                <li><symbol>ear</symbol></li>
+                            </suffixSymbols>
+                        </symbolPack>
+                    </GeneDef>
+
+                    <GeneDef ParentName="GeneEarsBase">
+                        <defName>Ears_Fantasy_Goblin_Jutting</defName>
+                        <label>jutting goblin ears</label>
+                        <description>Carriers of this gene have jutting goblin ears.</description>
+                        <iconPath>UI/Icons/Genes/Gene_EarFantasyGoblin_Jutting</iconPath>
+                        <graphicData>
+                            <graphicPath>Things/Goblin/Ears/Goblin_Ears2</graphicPath>
+                            <colorType>Skin</colorType>
+                        </graphicData>
+                        <symbolPack>
+                            <prefixSymbols>
+                                <li><symbol>goblin</symbol></li>
+                                <li><symbol>trash</symbol></li>
+                                <li><symbol>gobber</symbol></li>
+                            </prefixSymbols>
+                            <suffixSymbols>
+                                <li><symbol>goblin</symbol></li>
+                                <li><symbol>gobber</symbol></li>
+                                <li><symbol>gob</symbol></li>
+                                <li><symbol>ear</symbol></li>
+                            </suffixSymbols>
+                        </symbolPack>
+                    </GeneDef>
+
+                    <GeneDef ParentName="GeneEarsBase">
+                        <defName>Ears_Fantasy_Goblin_Crumpled</defName>
+                        <label>crumpled goblin ears</label>
+                        <description>Carriers of this gene have crumpled goblin ears.</description>
+                        <iconPath>UI/Icons/Genes/Gene_EarFantasyGoblin_Crumpled</iconPath>
+                        <graphicData>
+                            <graphicPath>Things/Goblin/Ears/Goblin_Ears3</graphicPath>
+                            <colorType>Skin</colorType>
+                        </graphicData>
+                        <symbolPack>
+                            <prefixSymbols>
+                                <li><symbol>goblin</symbol></li>
+                                <li><symbol>trash</symbol></li>
+                                <li><symbol>gobber</symbol></li>
+                            </prefixSymbols>
+                            <suffixSymbols>
+                                <li><symbol>goblin</symbol></li>
+                                <li><symbol>gobber</symbol></li>
+                                <li><symbol>gob</symbol></li>
+                                <li><symbol>ear</symbol></li>
+                            </suffixSymbols>
+                        </symbolPack>
+                    </GeneDef>
                 </value>
             </li>
         </operations>

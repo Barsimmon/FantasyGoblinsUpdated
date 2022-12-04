@@ -14,9 +14,13 @@
             <li>Skin_Goblin_Green</li>
             <li>Skin_Goblin_Green_Light</li>
             <li>Skin_Goblin_Green_Dark</li>
+            <li>Ears_Fantasy_Goblin_Normal</li>
+            <li>Ears_Fantasy_Goblin_Hanging</li>
+            <li>Ears_Fantasy_Goblin_Jutting</li>
+            <li>Ears_Fantasy_Goblin_Crumpled</li>
         </genes>
     </XenotypeDef>
 
-    <!-- Skin colors are added by Patches/GeneDefs/GeneDef_Goblin -->
+    <!-- Skin colors and ears are added by Patches/GeneDefs/GeneDef_Goblin -->
 
 </Defs>

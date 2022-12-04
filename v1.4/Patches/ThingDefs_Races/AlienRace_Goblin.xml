@@ -5,6 +5,9 @@
             <li Class="PatchOperationRemove" MayRequire="Ludeon.RimWorld.Biotech">
                 <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Fantasy_Goblin"]/alienRace/generalSettings/alienPartGenerator/colorChannels</xpath>
             </li>
+            <li Class="PatchOperationRemove" MayRequire="Ludeon.RimWorld.Biotech">
+                <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Fantasy_Goblin"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
+            </li>
         </operations>
     </Operation>
 </Patch>
