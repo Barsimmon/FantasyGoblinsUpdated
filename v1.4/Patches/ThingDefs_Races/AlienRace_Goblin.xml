@@ -8,6 +8,12 @@
             <li Class="PatchOperationRemove" MayRequire="Ludeon.RimWorld.Biotech">
                 <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Fantasy_Goblin"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
             </li>
+<!--            <li Class="PatchOperationRemove" MayRequire="Ludeon.RimWorld.Biotech">-->
+<!--                <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Fantasy_Goblin"]/alienRace/generalSettings/alienPartGenerator/bodyTypes</xpath>-->
+<!--            </li> Need to leave this, or textures can't be found. Let genes override body? -->
+            <li Class="PatchOperationRemove" MayRequire="Ludeon.RimWorld.Biotech">
+                <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Fantasy_Goblin"]/alienRace/graphicPaths/body</xpath>
+            </li>
         </operations>
     </Operation>
 </Patch>

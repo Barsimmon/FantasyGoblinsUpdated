@@ -18,9 +18,10 @@
             <li>Ears_Fantasy_Goblin_Hanging</li>
             <li>Ears_Fantasy_Goblin_Jutting</li>
             <li>Ears_Fantasy_Goblin_Crumpled</li>
+            <li>Body_Fantasy_Goblin</li>
         </genes>
     </XenotypeDef>
 
-    <!-- Skin colors and ears are added by Patches/GeneDefs/GeneDef_Goblin -->
+    <!-- Skin colors, ears and bodies are added by Patches/GeneDefs/GeneDef_Goblin -->
 
 </Defs>

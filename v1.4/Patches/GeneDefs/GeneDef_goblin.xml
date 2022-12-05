@@ -160,6 +160,22 @@
                             </suffixSymbols>
                         </symbolPack>
                     </GeneDef>
+
+                    <GeneDef ParentName="GeneBodyBase">
+                        <defName>Body_Fantasy_Goblin</defName>
+                        <label>goblin body</label>
+                        <description>Carriers of this gene have characteristic goblin bodies.</description>
+                        <displayCategory>Miscellaneous</displayCategory>
+                        <displayOrderInCategory>400</displayOrderInCategory>
+                        <iconPath>UI/Icons/Genes/Gene_BodyFantasyGoblin</iconPath>
+                        <bodyType>Standard</bodyType><!-- Harmony patch makes sure correct BodyType for gender is selected -->
+                        <iconColor>(0.75, 0.75, 0.75)</iconColor>
+                        <biostatCpx>1</biostatCpx>
+                        <biostatMet>-1</biostatMet>
+                        <statOffsets>
+                            <ComfyTemperatureMax>+10</ComfyTemperatureMax>
+                        </statOffsets>
+                    </GeneDef>
                 </value>
             </li>
         </operations>
