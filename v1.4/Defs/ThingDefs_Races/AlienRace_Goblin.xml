@@ -8,11 +8,9 @@
         <alienRace>
             <raceRestriction>
                 <blackEndoCategories>
-                    <li>BodyType</li>
                     <li>Nose</li>
                     <li>Jaw</li>
                     <li>Headbone</li>
-                    <li>Head</li>
                 </blackEndoCategories>
             </raceRestriction>
             <generalSettings>
@@ -71,11 +69,6 @@
                     <bodyTypes>
                         <li>Male</li>
                         <li>Female</li>
-                        <li>Hulk</li>
-                        <li>Fat</li>
-                        <li>Thin</li>
-                        <li>Fantasy_Goblin_Male</li>
-                        <li>Fantasy_Goblin_Female</li>
                         <li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
                         <li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
                     </bodyTypes>
