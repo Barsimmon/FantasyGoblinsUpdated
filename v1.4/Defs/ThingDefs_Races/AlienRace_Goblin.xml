@@ -9,8 +9,6 @@
             <raceRestriction>
                 <blackEndoCategories>
                     <li>Nose</li>
-                    <li>Jaw</li>
-                    <li>Headbone</li>
                 </blackEndoCategories>
             </raceRestriction>
             <generalSettings>
@@ -59,12 +57,12 @@
                 <humanRecipeImport>true</humanRecipeImport>
                 <alienPartGenerator>
                     <headTypes>
-                        <li>Male_AverageNormal</li>
-                        <li>Male_AverageWide</li>
-                        <li>Male_AveragePointy</li>
-                        <li>Female_AverageNormal</li>
-                        <li>Female_AverageWide</li>
-                        <li>Female_AveragePointy</li>
+                        <li>Goblin_Male_AverageNormal</li>
+                        <li>Goblin_Male_AverageWide</li>
+                        <li>Goblin_Male_AveragePointy</li>
+                        <li>Goblin_Female_AverageNormal</li>
+                        <li>Goblin_Female_AverageWide</li>
+                        <li>Goblin_Female_AveragePointy</li>
                     </headTypes>
                     <bodyTypes>
                         <li>Male</li>

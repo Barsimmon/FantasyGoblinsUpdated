@@ -12,6 +12,7 @@
         <chanceToUseNameMaker>1</chanceToUseNameMaker>
         <genes>
             <li>Body_Fantasy_Goblin</li>
+            <li>Fantasy_Goblin_Heads</li>
             <li>Skin_Goblin_Green</li>
             <li>Skin_Goblin_Green_Light</li>
             <li>Skin_Goblin_Green_Dark</li>

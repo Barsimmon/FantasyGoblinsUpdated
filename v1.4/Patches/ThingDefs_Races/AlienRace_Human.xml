@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd" MayRequire="erdelf.HumanoidAlienRaces">
+                <xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/headTypes</xpath>
+                <value>
+                    <li>Goblin_Male_AverageNormal</li>
+                    <li>Goblin_Male_AverageWide</li>
+                    <li>Goblin_Male_AveragePointy</li>
+                    <li>Goblin_Female_AverageNormal</li>
+                    <li>Goblin_Female_AverageWide</li>
+                    <li>Goblin_Female_AveragePointy</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
