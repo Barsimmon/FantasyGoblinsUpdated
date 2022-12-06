@@ -20,9 +20,11 @@
             <li>Ears_Fantasy_Goblin_Hanging</li>
             <li>Ears_Fantasy_Goblin_Jutting</li>
             <li>Ears_Fantasy_Goblin_Crumpled</li>
+            <li>Hair_Fantasy_Goblin</li>
+            <li>Beard_NoBeardOnly</li>
         </genes>
     </XenotypeDef>
 
-    <!-- Skin colors, ears and bodies are added by Patches/GeneDefs/GeneDef_Goblin -->
+    <!-- Goblin genes are added by Patches/GeneDefs/GeneDef_Goblin -->
 
 </Defs>

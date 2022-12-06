@@ -207,6 +207,21 @@
                             </suffixSymbols>
                         </symbolPack>
                     </GeneDef>
+
+                    <GeneDef ParentName="GeneHairStyleBase">
+                        <defName>Hair_Fantasy_Goblin</defName>
+                        <label>goblin hair</label>
+                        <labelShortAdj>goblin</labelShortAdj>
+                        <description>Carriers of this gene can only grow goblin hair.</description>
+                        <iconPath>UI/Icons/Genes/Gene_GoblinHair</iconPath>
+                        <displayOrderInCategory>200</displayOrderInCategory>
+                        <hairTagFilter>
+                            <whitelist>true</whitelist>
+                            <tags>
+                                <li>Goblin_Hair</li>
+                            </tags>
+                        </hairTagFilter>
+                    </GeneDef>
                 </value>
             </li>
         </operations>
