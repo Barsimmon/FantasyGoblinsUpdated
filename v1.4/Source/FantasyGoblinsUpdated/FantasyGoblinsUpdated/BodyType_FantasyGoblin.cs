@@ -2,6 +2,8 @@
 using Verse;
 using RimWorld;
 using System.Collections.Generic;
+using System;
+using UnityEngine;
 
 namespace FantasyGoblinsUpdated
 {
@@ -14,47 +16,42 @@ namespace FantasyGoblinsUpdated
     {
         static BodyType_FantasyGoblin()
         {
+            Log.Message("Registering Fantasy Goblins Updated body patch.");
             var harmony = new Harmony("barsimmon.fantasy_goblins_updated.body_type_fantasy_goblin");
             harmony.PatchAll();
         }
     }
 
-    [HarmonyPatch(typeof(GeneUtility), "ToBodyType")]
-    public class PatchToBodyType
+    [HarmonyPatch(typeof(PawnGraphicSet), "ResolveAllGraphics")]
+    public class PatchPawnGraphicSetResolveAllGraphics
     {
-        static void Postfix(GeneticBodyType bodyType, Pawn pawn, ref BodyTypeDef __result)
+        static void Postfix(PawnGraphicSet __instance)
         {
-            if (ModLister.BiotechInstalled && bodyType == GeneticBodyType.Standard)
+            List<Gene> genesListForReading = __instance.pawn.genes.GenesListForReading;
+            for (int i = 0; i < genesListForReading.Count; i++)
             {
-                List<Gene> genesListForReading = pawn.genes.GenesListForReading;
-                for (int i = 0; i < genesListForReading.Count; i++)
+                //Log.Message(genesListForReading[i].def.defName);
+                if (genesListForReading[i].Active && genesListForReading[i].def.defName == "Body_Fantasy_Goblin")
                 {
-                    if (genesListForReading[i].Active && genesListForReading[i].def.defName == "Body_Fantasy_Goblin")
+                    //Log.Message("Goblin body gene detected. Old path: " + __instance.nakedGraphic.path);
+                    String path = "Things/Goblin/Bodies/Naked_Male";
+                    if (__instance.pawn.gender == Gender.Female)
                     {
-                        if (pawn.gender == Gender.Female)
-                        {
-                            __result = FantasyGoblinBodyTypeDefOf.Fantasy_Goblin_Female;
-                        }
-                        else
-                        {
-                            __result = FantasyGoblinBodyTypeDefOf.Fantasy_Goblin_Male;
-                        }
+                        path = "Things/Goblin/Bodies/Naked_Female";
                     }
+                    __instance.nakedGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, __instance.pawn.story.SkinColor);
+                    //Log.Message("New path: " + __instance.nakedGraphic.path);
                 }
             }
         }
     }
 
-    [DefOf]
-    public static class FantasyGoblinBodyTypeDefOf
+    /*[HarmonyPatch(typeof(Pawn_GeneTracker), "AddGene", new Type[] { typeof(Gene), typeof(bool) })]
+    public class PatchPawnGeneTrackerAddGene
     {
-        public static BodyTypeDef Fantasy_Goblin_Male;
-
-        public static BodyTypeDef Fantasy_Goblin_Female;
-
-        static FantasyGoblinBodyTypeDefOf()
+        static void Postfix(Gene gene, bool addAsXenogene)
         {
-            DefOfHelper.EnsureInitializedInCtor(typeof(FantasyGoblinBodyTypeDefOf));
+            Log.Message("Adding gene " + gene.def.defName);
         }
-    }
+    }*/
 }
