@@ -8,6 +8,7 @@
     <beardMeshSize>(1.5, 1.5)</beardMeshSize>
     <beardOffset>(0, 0, -0.05)</beardOffset>
     <beardOffsetXEast>-0.05</beardOffsetXEast>
+    <randomChosen>false</randomChosen>
   </HeadTypeDef>
 
   <!-- Male -->
