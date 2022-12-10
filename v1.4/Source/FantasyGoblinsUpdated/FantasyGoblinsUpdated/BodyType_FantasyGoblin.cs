@@ -38,14 +38,22 @@ namespace FantasyGoblinsUpdated
                 //Log.Message(genesListForReading[i].def.defName);
                 if (genesListForReading[i].Active && genesListForReading[i].def.defName == "Body_Fantasy_Goblin")
                 {
-                    Log.Message("Goblin body gene detected. Old path: " + __instance.nakedGraphic.path);
-                    String path = "Things/Goblin/Bodies/Naked_Male";
-                    if (__instance.pawn.gender == Gender.Female)
+                    //Log.Message("Goblin body gene detected. Old path: " + __instance.nakedGraphic.path);
+
+                    String path = null;
+                    if (__instance.pawn.gender == Gender.Female && __instance.nakedGraphic.path == "Things/Pawn/Humanlike/Bodies/Naked_Female")
                     {
                         path = "Things/Goblin/Bodies/Naked_Female";
+                    } else if (__instance.pawn.gender == Gender.Male && __instance.nakedGraphic.path == "Things/Pawn/Humanlike/Bodies/Naked_Male")
+                    {
+                        path = "Things/Goblin/Bodies/Naked_Male";
                     }
-                    __instance.nakedGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, __instance.pawn.story.SkinColor);
-                    //Log.Message("New path: " + __instance.nakedGraphic.path);
+
+                    if (path != null)
+                    {
+                        __instance.nakedGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, __instance.pawn.story.SkinColor);
+                        //Log.Message("New path: " + __instance.nakedGraphic.path);
+                    }
                 }
             }
         }
