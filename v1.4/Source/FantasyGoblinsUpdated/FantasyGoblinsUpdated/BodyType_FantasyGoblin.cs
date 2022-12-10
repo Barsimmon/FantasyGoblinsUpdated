@@ -27,13 +27,18 @@ namespace FantasyGoblinsUpdated
     {
         static void Postfix(PawnGraphicSet __instance)
         {
+            if (__instance.pawn == null || __instance.pawn.genes == null)
+            {
+                return;
+            }
+
             List<Gene> genesListForReading = __instance.pawn.genes.GenesListForReading;
             for (int i = 0; i < genesListForReading.Count; i++)
             {
                 //Log.Message(genesListForReading[i].def.defName);
                 if (genesListForReading[i].Active && genesListForReading[i].def.defName == "Body_Fantasy_Goblin")
                 {
-                    //Log.Message("Goblin body gene detected. Old path: " + __instance.nakedGraphic.path);
+                    Log.Message("Goblin body gene detected. Old path: " + __instance.nakedGraphic.path);
                     String path = "Things/Goblin/Bodies/Naked_Male";
                     if (__instance.pawn.gender == Gender.Female)
                     {
