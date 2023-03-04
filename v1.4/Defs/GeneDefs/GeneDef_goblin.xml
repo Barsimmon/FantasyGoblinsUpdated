@@ -11,6 +11,15 @@
         <nameMaker>Fantasy_GoblinNamer</nameMaker>
         <chanceToUseNameMaker>1</chanceToUseNameMaker>
         <genes>
+            <li>WoundHealing_Slow</li>
+            <li>ToxicEnvironmentResistance_Partial</li>
+            <li>FireResistant</li>
+            <li>MinTemp_SmallIncrease</li>
+            <li>MaxTemp_SmallIncrease</li>
+            <li>MoveSpeed_Quick</li>
+            <li>Aggression_Aggressive</li>
+            <li>MeleeDamage_Weak</li>
+            <li>Beauty_Ugly</li>
             <li>Body_Fantasy_Goblin</li>
             <li>Fantasy_Goblin_Heads</li>
             <li>Skin_Goblin_Green</li>

@@ -168,11 +168,6 @@
                         <iconPath>UI/Icons/Genes/Gene_BodyFantasyGoblin</iconPath>
                         <bodyType>Standard</bodyType><!-- Harmony patch overrides textures -->
                         <displayOrderInCategory>50</displayOrderInCategory>
-                        <biostatCpx>1</biostatCpx>
-                        <biostatMet>-1</biostatMet>
-                        <statOffsets>
-                            <ComfyTemperatureMax>+10</ComfyTemperatureMax>
-                        </statOffsets>
                     </GeneDef>
 
                     <GeneDef ParentName="GeneJawBase">
