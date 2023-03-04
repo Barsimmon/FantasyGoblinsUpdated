@@ -4,17 +4,17 @@
     <!-- Need to specify backkstories in order to set which body should go with which gender.
           Copied these from the rimworld wiki and changed some titles and text -->
 
-    <AlienRace.AlienBackstoryDef Name="GoblinBackstoryBase" Abstract="True">
+    <BackstoryDef Name="GoblinBackstoryBase" Abstract="True">
         <bodyTypeMale>Male</bodyTypeMale>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <spawnCategories>
             <li>GoblinBackstory</li>
         </spawnCategories>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
     <!-- Adulthood -->
 
-    <AlienRace.AlienBackstoryDef ParentName="GoblinBackstoryBase">
+    <BackstoryDef ParentName="GoblinBackstoryBase">
         <defName>HutTenderGoblin</defName>
         <title>Hut tender</title>
         <titleShort>Tender</titleShort>
@@ -34,9 +34,9 @@
                 <value>2</value>
             </li>
         </skillGains>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
-    <AlienRace.AlienBackstoryDef ParentName="GoblinBackstoryBase">
+    <BackstoryDef ParentName="GoblinBackstoryBase">
         <defName>DiggerGoblin</defName>
         <title>Digger</title>
         <titleShort>Digger</titleShort>
@@ -53,9 +53,9 @@
                 <value>2</value>
             </li>
         </skillGains>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
-    <AlienRace.AlienBackstoryDef ParentName="GoblinBackstoryBase">
+    <BackstoryDef ParentName="GoblinBackstoryBase">
         <defName>MoonshadeFarmerGoblin</defName>
         <title>Moonshade farmer</title>
         <titleShort>Farmer</titleShort>
@@ -67,9 +67,9 @@
                 <value>4</value>
             </li>
         </skillGains>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
-    <AlienRace.AlienBackstoryDef ParentName="GoblinBackstoryBase">
+    <BackstoryDef ParentName="GoblinBackstoryBase">
         <defName>ShamanGoblin</defName>
         <title>Shaman</title>
         <titleShort>Shaman</titleShort>
@@ -86,9 +86,9 @@
                 <value>3</value>
             </li>
         </skillGains>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
-    <AlienRace.AlienBackstoryDef ParentName="GoblinBackstoryBase">
+    <BackstoryDef ParentName="GoblinBackstoryBase">
         <defName>HermitGoblin</defName>
         <title>Hermit</title>
         <titleShort>Hermit</titleShort>
@@ -115,9 +115,9 @@
         <workDisables>
             <li>Social</li>
         </workDisables>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
-    <AlienRace.AlienBackstoryDef ParentName="GoblinBackstoryBase">
+    <BackstoryDef ParentName="GoblinBackstoryBase">
         <defName>StoryTellerGoblin</defName>
         <title>Story teller</title>
         <titleShort>Teller</titleShort>
@@ -137,9 +137,9 @@
                 <value>2</value>
             </li>
         </skillGains>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
-    <AlienRace.AlienBackstoryDef ParentName="GoblinBackstoryBase">
+    <BackstoryDef ParentName="GoblinBackstoryBase">
         <defName>WrestlingChampionGoblin</defName>
         <title>Wrestling champion</title>
         <titleShort>Champion</titleShort>
@@ -155,9 +155,9 @@
                 <value>2</value>
             </li>
         </skillGains>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
-    <AlienRace.AlienBackstoryDef ParentName="GoblinBackstoryBase">
+    <BackstoryDef ParentName="GoblinBackstoryBase">
         <defName>GuideGoblin</defName>
         <title>Guide</title>
         <titleShort>Guide</titleShort>
@@ -177,9 +177,9 @@
                 <value>2</value>
             </li>
         </skillGains>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
-    <AlienRace.AlienBackstoryDef ParentName="GoblinBackstoryBase">
+    <BackstoryDef ParentName="GoblinBackstoryBase">
         <defName>BerserkerGoblin</defName>
         <title>Berserker</title>
         <titleShort>Berserker</titleShort>
@@ -199,9 +199,9 @@
                 <value>-2</value>
             </li>
         </skillGains>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
-    <AlienRace.AlienBackstoryDef ParentName="GoblinBackstoryBase">
+    <BackstoryDef ParentName="GoblinBackstoryBase">
         <defName>TailorGoblin</defName>
         <title>Tailor</title>
         <titleShort>Tailor</titleShort>
@@ -217,11 +217,11 @@
                 <value>2</value>
             </li>
         </skillGains>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
     <!-- Childhood -->
 
-    <AlienRace.AlienBackstoryDef ParentName="GoblinBackstoryBase">
+    <BackstoryDef ParentName="GoblinBackstoryBase">
         <defName>AbandonedChildGoblin</defName>
         <title>Abandoned child</title>
         <titleShort>Abandoned</titleShort>
@@ -241,9 +241,9 @@
                 <value>-2</value>
             </li>
         </skillGains>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
-    <AlienRace.AlienBackstoryDef ParentName="GoblinBackstoryBase">
+    <BackstoryDef ParentName="GoblinBackstoryBase">
         <defName>CaveChildGoblin</defName>
         <title>Cave child</title>
         <titleShort>Cave child</titleShort>
@@ -259,9 +259,9 @@
                 <value>3</value>
             </li>
         </skillGains>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
-    <AlienRace.AlienBackstoryDef ParentName="GoblinBackstoryBase">
+    <BackstoryDef ParentName="GoblinBackstoryBase">
         <defName>FireKeeperGoblin</defName>
         <title>Fire keeper</title>
         <titleShort>Firekeep</titleShort>
@@ -277,9 +277,9 @@
                 <value>2</value>
             </li>
         </skillGains>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
-    <AlienRace.AlienBackstoryDef ParentName="GoblinBackstoryBase">
+    <BackstoryDef ParentName="GoblinBackstoryBase">
         <defName>HerderGoblin</defName>
         <title>Herder</title>
         <titleShort>Herder</titleShort>
@@ -303,9 +303,9 @@
                 <value>-2</value>
             </li>
         </skillGains>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
-    <AlienRace.AlienBackstoryDef ParentName="GoblinBackstoryBase">
+    <BackstoryDef ParentName="GoblinBackstoryBase">
         <defName>ReclusiveChildGoblin</defName>
         <title>Reclusive child</title>
         <titleShort>Reclusive</titleShort>
@@ -321,9 +321,9 @@
                 <value>3</value>
             </li>
         </skillGains>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
-    <AlienRace.AlienBackstoryDef ParentName="GoblinBackstoryBase">
+    <BackstoryDef ParentName="GoblinBackstoryBase">
         <defName>ScavengerGoblin</defName>
         <title>Scavenger</title>
         <titleShort>Scavenger</titleShort>
@@ -339,9 +339,9 @@
                 <value>3</value>
             </li>
         </skillGains>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
-    <AlienRace.AlienBackstoryDef ParentName="GoblinBackstoryBase">
+    <BackstoryDef ParentName="GoblinBackstoryBase">
         <defName>SoleSurvivorGoblin</defName>
         <title>Sole survivor</title>
         <titleShort>Survivor</titleShort>
@@ -357,9 +357,9 @@
                 <value>3</value>
             </li>
         </skillGains>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
-    <AlienRace.AlienBackstoryDef ParentName="GoblinBackstoryBase">
+    <BackstoryDef ParentName="GoblinBackstoryBase">
         <defName>TribeChildGoblin</defName>
         <title>Tribe child</title>
         <titleShort>Tribal</titleShort>
@@ -383,9 +383,9 @@
                 <value>-3</value>
             </li>
         </skillGains>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
-    <AlienRace.AlienBackstoryDef ParentName="GoblinBackstoryBase">
+    <BackstoryDef ParentName="GoblinBackstoryBase">
         <defName>VengefulChildGoblin</defName>
         <title>Vengeful child</title>
         <titleShort>Vengeful</titleShort>
@@ -401,6 +401,6 @@
                 <value>3</value>
             </li>
         </skillGains>
-    </AlienRace.AlienBackstoryDef>
+    </BackstoryDef>
 
 </Defs>
