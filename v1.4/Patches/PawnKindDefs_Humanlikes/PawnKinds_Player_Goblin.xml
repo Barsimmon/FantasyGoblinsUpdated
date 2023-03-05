@@ -3,7 +3,7 @@
 <Operation Class="PatchOperationSequence">
     <operations>
         <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
-            <xpath>/Defs/PawnKindDef[@Name="BaseGoblinPawnKind"]/race</xpath>
+            <xpath>Defs/PawnKindDef[@Name="BaseGoblinPawnKind"]/race</xpath>
             <value>
                 <race>Human</race>
             </value>

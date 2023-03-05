@@ -3,7 +3,7 @@
     <Operation Class="PatchOperationSequence">
         <operations>
             <li Class="PatchOperationRemove" MayRequire="Ludeon.RimWorld.Biotech">
-                <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Fantasy_Goblin"]</xpath>
+                <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Fantasy_Goblin"]</xpath>
             </li>
         </operations>
     </Operation>
