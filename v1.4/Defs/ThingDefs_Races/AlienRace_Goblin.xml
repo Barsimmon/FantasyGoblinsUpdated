@@ -94,7 +94,7 @@
                                     <li>
                                         <!-- Goblin (dark) -->
                                         <weight>5</weight>
-                                        <only>RGBA(136, 145, 43, 255)</only>
+                                        <only>RGBA(105, 161, 30, 255)</only>
                                     </li>
                                 </options>
                             </first>
