@@ -3,22 +3,7 @@
     <Operation Class="PatchOperationSequence">
         <operations>
             <li Class="PatchOperationRemove" MayRequire="Ludeon.RimWorld.Biotech">
-                <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Fantasy_Goblin"]/alienRace/generalSettings/alienPartGenerator/colorChannels</xpath>
-            </li>
-            <li Class="PatchOperationRemove" MayRequire="Ludeon.RimWorld.Biotech">
-                <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Fantasy_Goblin"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
-            </li>
-<!--            <li Class="PatchOperationRemove" MayRequire="Ludeon.RimWorld.Biotech">-->
-<!--                <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Fantasy_Goblin"]/alienRace/generalSettings/alienPartGenerator/bodyTypes</xpath>-->
-<!--            </li> Need to leave this. Genes override body texture -->
-            <li Class="PatchOperationRemove" MayRequire="Ludeon.RimWorld.Biotech">
-                <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Fantasy_Goblin"]/alienRace/graphicPaths/body</xpath>
-            </li>
-            <li Class="PatchOperationRemove" MayRequire="Ludeon.RimWorld.Biotech">
-                <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Fantasy_Goblin"]/alienRace/generalSettings/alienPartGenerator/headTypes</xpath>
-            </li>
-            <li Class="PatchOperationRemove" MayRequire="Ludeon.RimWorld.Biotech">
-                <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Fantasy_Goblin"]/alienRace/graphicPaths/head</xpath>
+                <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Fantasy_Goblin"]</xpath>
             </li>
         </operations>
     </Operation>

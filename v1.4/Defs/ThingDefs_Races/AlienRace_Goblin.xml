@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+    <!-- If Biotech is present, gets removed by patch -->
     <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
         <defName>Fantasy_Goblin</defName>
         <label>Goblin</label>
-        <description>Goblins are small humanoid beings. With short scrawny bodies and oversized heads with long ears. While physically weaker than an average human goblins have a higher resistance to diseases and toxcicity. What they lack in physical strength they make up with their speed and tenacity. Goblins are fast workers if not the most diligent ones. They're a sly and intellectual race, only hindered by their own greed and violent nature. Goblins exist in primitive tribal structures with constant shifts in power. Often small tribes dominated by the strongest warriors. Both goblin men and women are vicious and both sexes are just as likely to rise to positions of power in a tribe.</description>
+        <description>Goblins are small humanoid beings. With short scrawny bodies and over-sized heads with long ears. While physically weaker than an average human goblins have a higher resistance to diseases and toxicity. What they lack in physical strength they make up with their speed and tenacity. Goblins are fast workers if not the most diligent ones. They're a sly and intellectual race, only hindered by their own greed and violent nature. Goblins exist in primitive tribal structures with constant shifts in power. Often small tribes dominated by the strongest warriors. Both goblin men and women are vicious and both sexes are just as likely to rise to positions of power in a tribe.</description>
         <alienRace>
             <raceRestriction>
                 <blackEndoCategories>
+                    <li>BodyType</li>
                     <li>Nose</li>
+                    <li>Jaw</li>
+                    <li>Headbone</li>
+                    <li>Head</li>
+                    <li>Melanin</li>
                 </blackEndoCategories>
             </raceRestriction>
             <generalSettings>
@@ -56,13 +62,13 @@
                 <immuneToXenophobia>false</immuneToXenophobia>
                 <humanRecipeImport>true</humanRecipeImport>
                 <alienPartGenerator>
-                    <headTypes>
-                        <li>Goblin_Male_AverageNormal</li>
-                        <li>Goblin_Male_AverageWide</li>
-                        <li>Goblin_Male_AveragePointy</li>
-                        <li>Goblin_Female_AverageNormal</li>
-                        <li>Goblin_Female_AverageWide</li>
-                        <li>Goblin_Female_AveragePointy</li>
+                    <headTypes Inherit="False">
+                        <li>Male_AverageNormal</li>
+                        <li>Male_AverageWide</li>
+                        <li>Male_AveragePointy</li>
+                        <li>Female_AverageNormal</li>
+                        <li>Female_AverageWide</li>
+                        <li>Female_AveragePointy</li>
                     </headTypes>
                     <bodyTypes>
                         <li>Male</li>
@@ -70,7 +76,7 @@
                         <li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
                         <li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
                     </bodyTypes>
-                    <colorChannels>
+                    <colorChannels Inherit="False">
                         <li>
                             <name>skin</name>
                             <first Class="ColorGenerator_Options">
@@ -78,20 +84,23 @@
                                     <li>
                                         <!-- Goblin (Green) -->
                                         <weight>10</weight>
-                                        <only>RGBA(188,200,59)</only>
+                                        <only>RGBA(188, 200, 59, 255)</only>
                                     </li>
                                     <li>
                                         <!-- Goblin (light) -->
                                         <weight>5</weight>
-                                        <only>RGBA(215,226,81)</only>
+                                        <only>RGBA(215, 226, 81, 255)</only>
                                     </li>
                                     <li>
                                         <!-- Goblin (dark) -->
                                         <weight>5</weight>
-                                        <only>RGBA(136,145,43)</only>
+                                        <only>RGBA(105, 161, 30, 255)</only>
                                     </li>
                                 </options>
                             </first>
+                            <second Class="ColorGenerator_Single">
+                                <color>RGBA(255, 255, 255, 255)</color>
+                            </second>
                         </li>
                     </colorChannels>
                     <customDrawSize>(0.9, 0.9)</customDrawSize>

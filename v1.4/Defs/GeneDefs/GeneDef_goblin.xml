@@ -4,13 +4,22 @@
     <XenotypeDef MayRequire="Ludeon.RimWorld.Biotech">
         <defName>Fantasy_Goblin</defName>
         <label>goblin</label>
-        <description>Goblins are small humanoid beings. With short scrawny bodies and oversized heads with long ears. While physically weaker than an average human goblins have a higher resistance to diseases and toxcicity. What they lack in physical strength they make up with their speed and tenacity. Goblins are fast workers if not the most diligent ones. They're a sly and intellectual race, only hindered by their own greed and violent nature. Goblins exist in primitive tribal structures with constant shifts in power. Often small tribes dominated by the strongest warriors. Both goblin men and women are vicious and both sexes are just as likely to rise to positions of power in a tribe.</description>
-        <descriptionShort>Goblins are small humanoid beings. With short scrawny bodies and oversized heads with long ears. While physically weaker than an average human goblins have a higher resistance to diseases and toxcicity. What they lack in physical strength they make up with their speed and tenacity. Goblins are fast workers if not the most diligent ones. They're a sly and intellectual race, only hindered by their own greed and violent nature.</descriptionShort>
+        <description>Goblins are small humanoid beings. With short scrawny bodies and over-sized heads with long ears. While physically weaker than an average human goblins have a higher resistance to diseases and toxicity. What they lack in physical strength they make up with their speed and tenacity. Goblins are fast workers if not the most diligent ones. They're a sly and intellectual race, only hindered by their own greed and violent nature. Goblins exist in primitive tribal structures with constant shifts in power. Often small tribes dominated by the strongest warriors. Both goblin men and women are vicious and both sexes are just as likely to rise to positions of power in a tribe.</description>
+        <descriptionShort>Goblins are small humanoid beings. With short scrawny bodies and over-sized heads with long ears. While physically weaker than an average human goblins have a higher resistance to diseases and toxicity. What they lack in physical strength they make up with their speed and tenacity. Goblins are fast workers if not the most diligent ones. They're a sly and intellectual race, only hindered by their own greed and violent nature.</descriptionShort>
         <iconPath>UI/Icons/Xenotypes/Goblin</iconPath>
         <inheritable>true</inheritable>
         <nameMaker>Fantasy_GoblinNamer</nameMaker>
         <chanceToUseNameMaker>1</chanceToUseNameMaker>
         <genes>
+            <li>WoundHealing_Slow</li>
+            <li>ToxicEnvironmentResistance_Partial</li>
+            <li>FireResistant</li>
+            <li>MinTemp_SmallIncrease</li>
+            <li>MaxTemp_SmallIncrease</li>
+            <li>MoveSpeed_Quick</li>
+            <li>Aggression_Aggressive</li>
+            <li>MeleeDamage_Weak</li>
+            <li>Beauty_Ugly</li>
             <li>Body_Fantasy_Goblin</li>
             <li>Fantasy_Goblin_Heads</li>
             <li>Skin_Goblin_Green</li>

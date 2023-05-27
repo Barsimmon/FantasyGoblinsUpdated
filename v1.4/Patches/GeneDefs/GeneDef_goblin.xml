@@ -50,7 +50,7 @@
                         <label>goblin dark green skin</label>
                         <labelShortAdj>goblin dark green</labelShortAdj>
                         <description>Carriers of this gene produce a pigment that gives their skin a dark green color.</description>
-                        <skinColorOverride>(136,145,43)</skinColorOverride>
+                        <skinColorOverride>(105,161,30)</skinColorOverride>
                         <displayOrderInCategory>0</displayOrderInCategory>
                         <symbolPack>
                             <wholeNameSymbols>
@@ -168,11 +168,6 @@
                         <iconPath>UI/Icons/Genes/Gene_BodyFantasyGoblin</iconPath>
                         <bodyType>Standard</bodyType><!-- Harmony patch overrides textures -->
                         <displayOrderInCategory>50</displayOrderInCategory>
-                        <biostatCpx>1</biostatCpx>
-                        <biostatMet>-1</biostatMet>
-                        <statOffsets>
-                            <ComfyTemperatureMax>+10</ComfyTemperatureMax>
-                        </statOffsets>
                     </GeneDef>
 
                     <GeneDef ParentName="GeneJawBase">
