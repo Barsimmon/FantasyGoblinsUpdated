@@ -27,24 +27,34 @@ namespace FantasyGoblinsUpdated
     {
         static void Postfix(PawnGraphicSet __instance)
         {
+            // Only execute patch for pawn with genes
             if (__instance.pawn == null || __instance.pawn.genes == null)
             {
                 return;
             }
 
+            // Only execute patch for pawn with standard body type
+            if (!__instance.pawn.story.bodyType.Equals(BodyTypeDefOf.Female) && !__instance.pawn.story.bodyType.Equals(BodyTypeDefOf.Male))
+            {
+                return;
+            }
+            Log.Message("------------------");
+            Log.Message(__instance.pawn.Name.ToStringShort);
+
             List<Gene> genesListForReading = __instance.pawn.genes.GenesListForReading;
             for (int i = 0; i < genesListForReading.Count; i++)
             {
-                //Log.Message(genesListForReading[i].def.defName);
-                if (genesListForReading[i].Active && genesListForReading[i].def.defName == "Body_Fantasy_Goblin")
+                Log.Message(genesListForReading[i].def.defName);
+                if (genesListForReading[i].def.defName == "Body_Fantasy_Goblin")
                 {
-                    //Log.Message("Goblin body gene detected. Old path: " + __instance.nakedGraphic.path);
+                    Log.Message("Goblin body gene detected. Old path: " + __instance.nakedGraphic.path);
 
                     String path = null;
                     if (__instance.pawn.gender == Gender.Female && __instance.nakedGraphic.path == "Things/Pawn/Humanlike/Bodies/Naked_Female")
                     {
                         path = "Things/Goblin/Bodies/Naked_Female";
-                    } else if (__instance.pawn.gender == Gender.Male && __instance.nakedGraphic.path == "Things/Pawn/Humanlike/Bodies/Naked_Male")
+                    }
+                    else if (__instance.pawn.gender == Gender.Male && __instance.nakedGraphic.path == "Things/Pawn/Humanlike/Bodies/Naked_Male")
                     {
                         path = "Things/Goblin/Bodies/Naked_Male";
                     }
@@ -52,8 +62,10 @@ namespace FantasyGoblinsUpdated
                     if (path != null)
                     {
                         __instance.nakedGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, __instance.pawn.story.SkinColor);
-                        //Log.Message("New path: " + __instance.nakedGraphic.path);
+                        Log.Message("New path: " + __instance.nakedGraphic.path);
                     }
+
+                    break;
                 }
             }
         }
