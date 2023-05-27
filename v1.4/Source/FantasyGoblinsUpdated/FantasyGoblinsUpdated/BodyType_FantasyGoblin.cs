@@ -38,16 +38,16 @@ namespace FantasyGoblinsUpdated
             {
                 return;
             }
-            Log.Message("------------------");
-            Log.Message(__instance.pawn.Name.ToStringShort);
+            //Log.Message("------------------");
+            //Log.Message(__instance.pawn.Name.ToStringShort);
 
             List<Gene> genesListForReading = __instance.pawn.genes.GenesListForReading;
             for (int i = 0; i < genesListForReading.Count; i++)
             {
-                Log.Message(genesListForReading[i].def.defName);
+                //Log.Message(genesListForReading[i].def.defName);
                 if (genesListForReading[i].def.defName == "Body_Fantasy_Goblin")
                 {
-                    Log.Message("Goblin body gene detected. Old path: " + __instance.nakedGraphic.path);
+                    //Log.Message("Goblin body gene detected. Old path: " + __instance.nakedGraphic.path);
 
                     String path = null;
                     if (__instance.pawn.gender == Gender.Female && __instance.nakedGraphic.path == "Things/Pawn/Humanlike/Bodies/Naked_Female")
@@ -62,7 +62,7 @@ namespace FantasyGoblinsUpdated
                     if (path != null)
                     {
                         __instance.nakedGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, __instance.pawn.story.SkinColor);
-                        Log.Message("New path: " + __instance.nakedGraphic.path);
+                        //Log.Message("New path: " + __instance.nakedGraphic.path);
                     }
 
                     break;
