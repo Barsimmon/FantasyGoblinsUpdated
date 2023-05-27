@@ -41,32 +41,42 @@ namespace FantasyGoblinsUpdated
             //Log.Message("------------------");
             //Log.Message(__instance.pawn.Name.ToStringShort);
 
+            // See which genes are present
+            Boolean goblinBodyPresent = false;
+            Boolean standardBodyActive = false;
             List<Gene> genesListForReading = __instance.pawn.genes.GenesListForReading;
-            for (int i = 0; i < genesListForReading.Count; i++)
-            {
+            for (int i = 0; i < genesListForReading.Count; i++) {
                 //Log.Message(genesListForReading[i].def.defName);
-                if (genesListForReading[i].def.defName == "Body_Fantasy_Goblin")
-                {
-                    //Log.Message("Goblin body gene detected. Old path: " + __instance.nakedGraphic.path);
-
-                    String path = null;
-                    if (__instance.pawn.gender == Gender.Female && __instance.nakedGraphic.path == "Things/Pawn/Humanlike/Bodies/Naked_Female")
-                    {
-                        path = "Things/Goblin/Bodies/Naked_Female";
-                    }
-                    else if (__instance.pawn.gender == Gender.Male && __instance.nakedGraphic.path == "Things/Pawn/Humanlike/Bodies/Naked_Male")
-                    {
-                        path = "Things/Goblin/Bodies/Naked_Male";
-                    }
-
-                    if (path != null)
-                    {
-                        __instance.nakedGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, __instance.pawn.story.SkinColor);
-                        //Log.Message("New path: " + __instance.nakedGraphic.path);
-                    }
-
-                    break;
+                if (genesListForReading[i].def.defName == "Body_Fantasy_Goblin") {
+                    goblinBodyPresent = true;
                 }
+                if (genesListForReading[i].def.defName == "Body_Standard" && genesListForReading[i].Active) {
+                    standardBodyActive = true;
+                }
+            }
+
+            // Only apply patch if goblin body gene is present and standard body gene is not present or inactive
+            // This allows a xenotype with both the standard and goblin body types to be functional
+            if (!goblinBodyPresent || standardBodyActive) {
+                return;
+            }
+
+            //Log.Message("Goblin body gene detected. Old path: " + __instance.nakedGraphic.path);
+
+            String path = null;
+            if (__instance.pawn.gender == Gender.Female && __instance.nakedGraphic.path == "Things/Pawn/Humanlike/Bodies/Naked_Female")
+            {
+                path = "Things/Goblin/Bodies/Naked_Female";
+            }
+            else if (__instance.pawn.gender == Gender.Male && __instance.nakedGraphic.path == "Things/Pawn/Humanlike/Bodies/Naked_Male")
+            {
+                path = "Things/Goblin/Bodies/Naked_Male";
+            }
+
+            if (path != null)
+            {
+                __instance.nakedGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, __instance.pawn.story.SkinColor);
+                //Log.Message("New path: " + __instance.nakedGraphic.path);
             }
         }
     }
