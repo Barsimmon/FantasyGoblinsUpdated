@@ -80,13 +80,4 @@ namespace FantasyGoblinsUpdated
             }
         }
     }
-
-    /*[HarmonyPatch(typeof(Pawn_GeneTracker), "AddGene", new Type[] { typeof(Gene), typeof(bool) })]
-    public class PatchPawnGeneTrackerAddGene
-    {
-        static void Postfix(Gene gene, bool addAsXenogene)
-        {
-            Log.Message("Adding gene " + gene.def.defName);
-        }
-    }*/
 }

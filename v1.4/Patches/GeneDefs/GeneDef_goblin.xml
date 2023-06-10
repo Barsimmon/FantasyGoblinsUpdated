@@ -168,16 +168,6 @@
                         <iconPath>UI/Icons/Genes/Gene_BodyFantasyGoblin</iconPath>
                         <bodyType>Standard</bodyType><!-- Harmony patch overrides textures -->
                         <displayOrderInCategory>50</displayOrderInCategory>
-                        <modExtensions>
-                            <li Class="FantasyGoblinsUpdated.GeneCompatibility">
-                                <overriddenByTag>
-                                    <li>Fur</li>
-                                </overriddenByTag>
-<!--                                <overriddenBy>-->
-<!--                                    <li>Furskin</li>-->
-<!--                                </overriddenBy>-->
-                            </li>
-                        </modExtensions>
                     </GeneDef>
 
                     <GeneDef ParentName="GeneJawBase">
@@ -216,23 +206,12 @@
                                 <overridesTag>
                                     <li>EyeColor</li>
                                     <li>Nose</li>
-<!--                                    <li>Headbone</li>-->
+                                    <li>Headbone</li>
                                 </overridesTag>
                                 <overrides>
-<!--                                    <li>Eyes_Red</li>-->
-<!--                                    <li>Eyes_Gray</li>-->
-
                                     <li>Brow_Heavy</li>
                                     <li>FacialRidges</li>
-
-<!--                                    <li>Nose_Pig</li>-->
                                 </overrides>
-                                <overriddenByTag>
-                                    <li>Fur</li>
-                                </overriddenByTag>
-<!--                                <overriddenBy>-->
-<!--                                    <li>Furskin</li>-->
-<!--                                </overriddenBy>-->
                             </li>
                         </modExtensions>
                     </GeneDef>

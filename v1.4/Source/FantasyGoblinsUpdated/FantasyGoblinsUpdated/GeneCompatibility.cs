@@ -12,7 +12,5 @@ namespace FantasyGoblinsUpdated
     {
         public List<String> overridesTag;
         public List<GeneDef> overrides;
-        public List<String> overriddenByTag;
-        public List<GeneDef> overriddenBy;
     }
 }
