@@ -51,6 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BodyType_FantasyGoblin.cs" />
+    <Compile Include="GeneCompatibility.cs" />
+    <Compile Include="GeneCompatibilityPatch.cs" />
     <Compile Include="JobDriver_Wrestle.cs" />
     <Compile Include="JoyGiver_Wrestle.cs" />
     <Compile Include="Toils_Wrestling.cs" />
