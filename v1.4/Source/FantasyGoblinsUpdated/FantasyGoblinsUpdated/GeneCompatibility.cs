@@ -11,6 +11,6 @@ namespace FantasyGoblinsUpdated
     public class GeneCompatibility : DefModExtension
     {
         public List<String> overridesTag;
-        public List<GeneDef> overrides;
+        public List<String> overrides;
     }
 }

@@ -13,27 +13,33 @@ namespace FantasyGoblinsUpdated
     {
         static void Postfix(Pawn_GeneTracker __instance)
         {
+            if (!__instance.pawn.story.headType.defName.Contains("Goblin"))
+            {
+                return;
+            }
+
             bool changed = false;
             List<Gene> genesListForReading = __instance.GenesListForReading;
 
             for (int i = 0; i < genesListForReading.Count; i++)
             {
                 // Goblin head is active
-                if (genesListForReading[i].def.defName == "Fantasy_Goblin_Heads" && __instance.pawn.story.headType.defName.Contains("Goblin"))
+                if (genesListForReading[i].def.defName == "Fantasy_Goblin_Heads")
                 {
+                    //Log.Message("Found goblin head gene");
                     // Get info on overridden genes
                     GeneCompatibility geneCompatibility = genesListForReading[i].def.GetModExtension<GeneCompatibility>();
                     if (geneCompatibility == null) {
                         return;
                     }
-                    for (int j = i + 1; j < genesListForReading.Count; j++)
+                    for (int j = 0; j < genesListForReading.Count; j++)
                     {
-                        // Golbin head overrides the other gene's exclusionTags or def name
-                        if (OverridesTag(genesListForReading[j].def, geneCompatibility) || geneCompatibility.overrides.Contains(genesListForReading[j].def))
+                        // Goblin head overrides the other gene's exclusionTags or def name
+                        if (OverridesTag(genesListForReading[j].def, geneCompatibility) || geneCompatibility.overrides.Contains(genesListForReading[j].def.defName))
                         {
+                            //Log.Message("Should override" + genesListForReading[j].def.defName);
                             genesListForReading[j].OverrideBy(genesListForReading[i]);
                             changed = true;
-                            continue;
                         }
                     }
                     break;
