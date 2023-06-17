@@ -16,6 +16,12 @@
         <apparelMoney>50~250</apparelMoney>
         <initialWillRange>0~0</initialWillRange>
         <initialResistanceRange>10~17</initialResistanceRange>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Fantasy_Goblin MayRequire="Ludeon.RimWorld.Biotech">0.7</Fantasy_Goblin>
+                <Fantasy_Goblin_Hobgoblin MayRequire="Ludeon.RimWorld.Biotech">0.3</Fantasy_Goblin_Hobgoblin>
+            </xenotypeChances>
+        </xenotypeSet>
     </PawnKindDef>
 
 </Defs>

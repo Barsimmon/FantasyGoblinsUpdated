@@ -25,14 +25,23 @@
                     <customSummary>Start with 5 goblins</customSummary>
                     <overrideKinds>
                         <li>
+                            <xenotype>Fantasy_Goblin_Hobgoblin</xenotype>
+                            <pawnKind>Goblin</pawnKind>
+                        </li>
+                        <li>
                             <xenotype>Fantasy_Goblin</xenotype>
                             <pawnKind>Goblin</pawnKind>
                         </li>
                     </overrideKinds>
                     <xenotypeCounts>
                         <li>
+                            <xenotype>Fantasy_Goblin_Hobgoblin</xenotype>
+                            <count>2</count>
+                            <description>hobgoblin</description>
+                        </li>
+                        <li>
                             <xenotype>Fantasy_Goblin</xenotype>
-                            <count>5</count>
+                            <count>3</count>
                             <description>goblin</description>
                         </li>
                     </xenotypeCounts>

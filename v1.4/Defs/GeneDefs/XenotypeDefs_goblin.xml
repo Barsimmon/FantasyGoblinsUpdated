@@ -11,15 +11,50 @@
         <nameMaker>Fantasy_GoblinNamer</nameMaker>
         <chanceToUseNameMaker>1</chanceToUseNameMaker>
         <genes>
-            <li>WoundHealing_Slow</li>
-            <li>ToxicEnvironmentResistance_Partial</li>
-            <li>FireResistant</li>
+            <li>Immunity_Strong</li>
+            <li>ToxResist_Partial</li>
             <li>MinTemp_SmallIncrease</li>
             <li>MaxTemp_SmallIncrease</li>
             <li>MoveSpeed_Quick</li>
             <li>Aggression_Aggressive</li>
             <li>MeleeDamage_Weak</li>
             <li>Beauty_Ugly</li>
+            <li>AptitudePoor_Social</li>
+            <li>AptitudePoor_Melee</li>
+            <li>Body_Fantasy_Goblin</li>
+            <li>Fantasy_Goblin_Heads</li>
+            <li>Skin_Goblin_Green</li>
+            <li>Skin_Goblin_Green_Light</li>
+            <li>Skin_Goblin_Green_Dark</li>
+            <li>Ears_Fantasy_Goblin_Normal</li>
+            <li>Ears_Fantasy_Goblin_Hanging</li>
+            <li>Ears_Fantasy_Goblin_Jutting</li>
+            <li>Ears_Fantasy_Goblin_Crumpled</li>
+            <li>Hair_Fantasy_Goblin</li>
+            <li>Beard_NoBeardOnly</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef MayRequire="Ludeon.RimWorld.Biotech">
+        <defName>Fantasy_Goblin_Hobgoblin</defName>
+        <label>hobgoblin</label>
+        <description>Hobgoblins are bigger and stronger goblins, this means they are better warriors, but less nimble than their cousins. Their mind is slower as well, making them unsuitable for intellectual tasks, but less likely to offend a conversation partner.</description>
+        <descriptionShort>Hobgoblins are bigger and stronger goblins, this means they are better warriors, but less nimble than their cousins. Their mind is slower as well, making them unsuitable for intellectual tasks, but less likely to offend a conversation partner.</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/Hobgoblin</iconPath>
+        <inheritable>true</inheritable>
+        <nameMaker>Fantasy_GoblinNamer</nameMaker>
+        <chanceToUseNameMaker>1</chanceToUseNameMaker>
+        <genes>
+            <li>Immunity_Strong</li>
+            <li>ToxResist_Partial</li>
+            <li>MinTemp_SmallIncrease</li>
+            <li>MaxTemp_SmallIncrease</li>
+            <li>Aggression_Aggressive</li>
+            <li>Beauty_Ugly</li>
+            <li>Robust</li>
+            <li>AptitudeStrong_Melee</li>
+            <li>AptitudeStrong_Social</li>
+            <li>AptitudeTerrible_Intellectual</li>
             <li>Body_Fantasy_Goblin</li>
             <li>Fantasy_Goblin_Heads</li>
             <li>Skin_Goblin_Green</li>
