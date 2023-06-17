@@ -24,16 +24,16 @@
         </stuffCategories>
         <tradeability>Sellable</tradeability>
         <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
+            <MaxHitPoints>120</MaxHitPoints>
             <WorkToMake>2000</WorkToMake>
             <Mass>0.4</Mass>
-            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
+            <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.70</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>4.5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <MeleeDodgeChance>0.05</MeleeDodgeChance>
+            <MeleeDodgeChance>0.10</MeleeDodgeChance>
         </equippedStatOffsets>
         <thingCategories>
             <li>Apparel</li>
@@ -99,9 +99,9 @@
             <MaxHitPoints>100</MaxHitPoints>
             <WorkToMake>1000</WorkToMake>
             <Mass>0.5</Mass>
-            <StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
+            <StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>2</EquipDelay>
         </statBases>
         <apparel>
@@ -133,7 +133,7 @@
     <ThingDef ParentName="ArmorSmithableBase">
         <defName>Goblin_WarlordArmor</defName>
         <label>goblin warlord armor</label>
-        <description>Metal and leather forged .</description>
+        <description>Metal and leather forged goblin warlord armor.</description>
         <techLevel>Medieval</techLevel>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
@@ -147,20 +147,15 @@
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
-        <costStuffCount>50</costStuffCount>
         <stuffCategories>
-            <li>Leathery</li>
             <li>Metallic</li>
         </stuffCategories>
-        <costList>
-            <Steel>200</Steel>
-        </costList>
+        <costStuffCount>150</costStuffCount>
         <statBases>
             <WorkToMake>28000</WorkToMake>
             <MaxHitPoints>260</MaxHitPoints>
             <Mass>8</Mass>
-            <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <StuffEffectMultiplierArmor>0.80</StuffEffectMultiplierArmor>
             <StuffEffectMultiplierInsulation_Cold>0.7</StuffEffectMultiplierInsulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>5</EquipDelay>
@@ -197,7 +192,7 @@
     <ThingDef ParentName="ApparelMakeableBase">
         <defName>Goblin_BerserkerArmour</defName>
         <label>goblin berserker armor</label>
-        <description>.</description>
+        <description>Stronger leather armor suitable for Goblin warriors who like to fight up close.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/Armor/GoblinBerserkerArmor/GoblinBerserkerArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -209,10 +204,10 @@
         </stuffCategories>
         <tradeability>Sellable</tradeability>
         <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-            <WorkToMake>5200</WorkToMake>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToMake>10000</WorkToMake>
             <Mass>0.4</Mass>
-            <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
             <StuffEffectMultiplierInsulation_Cold>0.65</StuffEffectMultiplierInsulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>0.60</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>5.5</EquipDelay>
