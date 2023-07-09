@@ -2,7 +2,7 @@
 <Defs>
 
     <PawnKindDef Name="GoblinTribeBase" Abstract="True">
-        <race>Fantasy_Goblin</race>
+        <race>Human</race>
         <defaultFactionType>GoblinTribeSavage</defaultFactionType>
         <maxGenerationAge>60</maxGenerationAge>
         <chemicalAddictionChance>0.05</chemicalAddictionChance>

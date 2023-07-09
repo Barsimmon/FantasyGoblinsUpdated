@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-<Operation Class="PatchOperationSequence">
-    <operations>
-        <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="Human"][@Class="AlienRace.ThingDef_AlienRace"]</xpath>
+        <match Class="PatchOperationReplace">
             <xpath>Defs/PawnKindDef[@Name="BaseGoblinPawnKind"]/race</xpath>
             <value>
-                <race>Human</race>
+                <race>Fantasy_Goblin</race>
             </value>
-        </li>
-    </operations>
-</Operation>
+        </match>
+    </Operation>
 </Patch>

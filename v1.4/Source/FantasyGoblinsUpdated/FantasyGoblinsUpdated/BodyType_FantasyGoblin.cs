@@ -19,6 +19,17 @@ namespace FantasyGoblinsUpdated
             Log.Message("Registering Fantasy Goblins Updated body patch.");
             var harmony = new Harmony("barsimmon.fantasy_goblins_updated.body_type_fantasy_goblin");
             harmony.PatchAll();
+
+            GeneDef testGene = DefDatabase<GeneDef>.GetNamed("Skin_Goblin_Green", false);
+            ThingCategoryDef testThingCategory = DefDatabase<ThingCategoryDef>.GetNamed("alienCorpseCategory");
+
+            if (testGene == null && testThingCategory == null)
+            {
+                Log.Error("Missing dependency! Fantasy Goblins Updated requires either the official Biotech expansion OR the Humanoid Alien Races mod. Make sure at least one of these is active.");
+            }
+
+            //Dialog_MessageBox messageBox = new Dialog_MessageBox("Fantasy Goblins Updated requires either the official Biotech expansion OR the Humanoid Alien Races mod. Make sure at least one of these is active.");
+            //Find.WindowStack.Add(messageBox);
         }
     }
 
