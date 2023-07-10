@@ -14,6 +14,8 @@ namespace FantasyGoblinsUpdated
     [StaticConstructorOnStartup]
     public static class BodyType_FantasyGoblin
     {
+        private static String GoblinHeadPath = "Things/Goblin/Heads/";
+
         static BodyType_FantasyGoblin()
         {
             Log.Message("Registering Fantasy Goblins Updated body patch.");
@@ -28,6 +30,24 @@ namespace FantasyGoblinsUpdated
                 Log.Error("Missing dependency! Fantasy Goblins Updated requires either the official Biotech expansion OR the Humanoid Alien Races mod in order to actually add goblins. Make sure at least one of these is active.");
             }
         }
+
+        public static void fixGoblinsAfterUpgrade(PawnGraphicSet pawnGraphicSet)
+        {
+            String raceName = pawnGraphicSet.pawn.kindDef?.race?.defName;
+
+            if (raceName == null || raceName != "Fantasy_Goblin")
+            {
+                return;
+            }
+
+            String headPath = pawnGraphicSet.headGraphic.path;
+
+            if (headPath != GoblinHeadPath) {
+                return;
+            }
+
+            pawnGraphicSet.headGraphic = GraphicDatabase.Get<Graphic_Multi>(pawnGraphicSet.pawn.story.headType.graphicPath, ShaderUtility.GetSkinShader(pawnGraphicSet.pawn.story.SkinColorOverriden), Vector2.one, pawnGraphicSet.pawn.story.SkinColor);
+        }
     }
 
     [HarmonyPatch(typeof(PawnGraphicSet), "ResolveAllGraphics")]
@@ -35,8 +55,16 @@ namespace FantasyGoblinsUpdated
     {
         static void Postfix(PawnGraphicSet __instance)
         {
+            // Only execute patch for pawn
+            if (__instance.pawn == null)
+            {
+                return;
+            }
+
+            BodyType_FantasyGoblin.fixGoblinsAfterUpgrade(__instance);
+
             // Only execute patch for pawn with genes
-            if (__instance.pawn == null || __instance.pawn.genes == null)
+            if (__instance.pawn.genes == null)
             {
                 return;
             }
