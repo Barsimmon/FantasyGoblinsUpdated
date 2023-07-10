@@ -75,6 +75,13 @@
                                             <li>Female_AverageNormal</li>
                                             <li>Female_AverageWide</li>
                                             <li>Female_AveragePointy</li>
+                                            <!-- These are the older heads, they are being replaced by a Harmony patch on save load -->
+<!--                                            <li>Goblin_Male_AverageNormal</li>-->
+<!--                                            <li>Goblin_Male_AverageWide</li>-->
+<!--                                            <li>Goblin_Male_AveragePointy</li>-->
+<!--                                            <li>Goblin_Female_AverageNormal</li>-->
+<!--                                            <li>Goblin_Female_AverageWide</li>-->
+<!--                                            <li>Goblin_Female_AveragePointy</li>-->
                                         </headTypes>
                                         <bodyTypes>
                                             <li>Male</li>

@@ -14,8 +14,6 @@ namespace FantasyGoblinsUpdated
     [StaticConstructorOnStartup]
     public static class BodyType_FantasyGoblin
     {
-        private static String GoblinHeadPath = "Things/Goblin/Heads/";
-
         static BodyType_FantasyGoblin()
         {
             Log.Message("Registering Fantasy Goblins Updated body patch.");
@@ -30,24 +28,6 @@ namespace FantasyGoblinsUpdated
                 Log.Error("Missing dependency! Fantasy Goblins Updated requires either the official Biotech expansion OR the Humanoid Alien Races mod in order to actually add goblins. Make sure at least one of these is active.");
             }
         }
-
-        public static void fixGoblinsAfterUpgrade(PawnGraphicSet pawnGraphicSet)
-        {
-            String raceName = pawnGraphicSet.pawn.kindDef?.race?.defName;
-
-            if (raceName == null || raceName != "Fantasy_Goblin")
-            {
-                return;
-            }
-
-            String headPath = pawnGraphicSet.headGraphic.path;
-
-            if (headPath != GoblinHeadPath) {
-                return;
-            }
-
-            pawnGraphicSet.headGraphic = GraphicDatabase.Get<Graphic_Multi>(pawnGraphicSet.pawn.story.headType.graphicPath, ShaderUtility.GetSkinShader(pawnGraphicSet.pawn.story.SkinColorOverriden), Vector2.one, pawnGraphicSet.pawn.story.SkinColor);
-        }
     }
 
     [HarmonyPatch(typeof(PawnGraphicSet), "ResolveAllGraphics")]
@@ -55,16 +35,8 @@ namespace FantasyGoblinsUpdated
     {
         static void Postfix(PawnGraphicSet __instance)
         {
-            // Only execute patch for pawn
-            if (__instance.pawn == null)
-            {
-                return;
-            }
-
-            BodyType_FantasyGoblin.fixGoblinsAfterUpgrade(__instance);
-
             // Only execute patch for pawn with genes
-            if (__instance.pawn.genes == null)
+            if (__instance.pawn == null || __instance.pawn.genes == null)
             {
                 return;
             }
@@ -81,19 +53,23 @@ namespace FantasyGoblinsUpdated
             Boolean goblinBodyPresent = false;
             Boolean standardBodyActive = false;
             List<Gene> genesListForReading = __instance.pawn.genes.GenesListForReading;
-            for (int i = 0; i < genesListForReading.Count; i++) {
+            for (int i = 0; i < genesListForReading.Count; i++)
+            {
                 //Log.Message(genesListForReading[i].def.defName);
-                if (genesListForReading[i].def.defName == "Body_Fantasy_Goblin") {
+                if (genesListForReading[i].def.defName == "Body_Fantasy_Goblin")
+                {
                     goblinBodyPresent = true;
                 }
-                if (genesListForReading[i].def.defName == "Body_Standard" && genesListForReading[i].Active) {
+                if (genesListForReading[i].def.defName == "Body_Standard" && genesListForReading[i].Active)
+                {
                     standardBodyActive = true;
                 }
             }
 
             // Only apply patch if goblin body gene is present and standard body gene is not present or inactive
             // This allows a xenotype with both the standard and goblin body types to be functional
-            if (!goblinBodyPresent || standardBodyActive) {
+            if (!goblinBodyPresent || standardBodyActive)
+            {
                 return;
             }
 
@@ -113,6 +89,35 @@ namespace FantasyGoblinsUpdated
             {
                 __instance.nakedGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, __instance.pawn.story.SkinColor);
                 //Log.Message("New path: " + __instance.nakedGraphic.path);
+            }
+        }
+
+        [HarmonyPatch(typeof(BackCompatibility), "BackCompatibleDefName")]
+        public class ReplaceOldHeads
+        {
+            private static bool logged = false;
+
+            private static Dictionary<string, string> oldHeads = new Dictionary<string, string>()
+            {
+                { "Goblin_Male_AverageNormal", "Male_AverageNormal" },
+                { "Goblin_Male_AverageWide", "Male_AverageWide" },
+                { "Goblin_Male_AveragePointy", "Male_AveragePointy" },
+                { "Goblin_Female_AverageNormal", "Female_AverageNormal" },
+                { "Goblin_Female_AverageWide", "Female_AverageWide" },
+                { "Goblin_Female_AveragePointy", "Female_AveragePointy" }
+            };
+
+            static void Postfix(ref string __result)
+            {
+                if (oldHeads.ContainsKey(__result))
+                {
+                    __result = oldHeads.TryGetValue(__result);
+                    if (!logged)
+                    {
+                        Log.Message("Fantasy Goblins: replaced old head with new head.");
+                        logged = true;
+                    }
+                }
             }
         }
     }
