@@ -150,13 +150,16 @@ namespace FantasyGoblinsUpdated
 
         static void Postfix(ref string __result)
         {
-            if (oldHeads.ContainsKey(__result))
+            if (!ModsConfig.BiotechActive)
             {
-                __result = oldHeads.TryGetValue(__result);
-                if (!logged)
+                if (oldHeads.ContainsKey(__result))
                 {
-                    Log.Message("Fantasy Goblins: replaced old head with new head.");
-                    logged = true;
+                    __result = oldHeads.TryGetValue(__result);
+                    if (!logged)
+                    {
+                        Log.Message("Fantasy Goblins: replaced old head with new head.");
+                        logged = true;
+                    }
                 }
             }
         }
