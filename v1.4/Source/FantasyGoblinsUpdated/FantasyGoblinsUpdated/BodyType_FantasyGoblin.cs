@@ -4,6 +4,7 @@ using RimWorld;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using System.IO;
 
 namespace FantasyGoblinsUpdated
 {
@@ -14,6 +15,8 @@ namespace FantasyGoblinsUpdated
     [StaticConstructorOnStartup]
     public static class BodyType_FantasyGoblin
     {
+        public static bool patchingHeadShader = false;
+
         static BodyType_FantasyGoblin()
         {
             Log.Message("Registering Fantasy Goblins Updated body patch.");
@@ -35,6 +38,8 @@ namespace FantasyGoblinsUpdated
     {
         static void Postfix(PawnGraphicSet __instance)
         {
+            FixHeadGraphic(__instance);
+
             // Only execute patch for pawn with genes
             if (__instance.pawn == null || __instance.pawn.genes == null)
             {
@@ -87,11 +92,32 @@ namespace FantasyGoblinsUpdated
 
             if (path != null)
             {
+                // TODO cache
                 __instance.nakedGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(__instance.pawn.story.SkinColorOverriden), Vector2.one, __instance.pawn.story.SkinColor);
                 //Log.Message("New path: " + __instance.nakedGraphic.path);
             }
         }
 
+        static void FixHeadGraphic(PawnGraphicSet pawnGraphicSet)
+        {
+            // Only execute patch for pawn
+            if (pawnGraphicSet.pawn == null)
+            {
+                return;
+            }
+
+            HeadTypeDef headType = pawnGraphicSet.pawn.story?.headType;
+
+            if (headType == null || !headType.defName.Contains("Goblin"))
+            {
+                return;
+            }
+
+            // TODO cache
+            pawnGraphicSet.headGraphic = GraphicDatabase.Get<Graphic_Multi>(headType.graphicPath, ShaderDatabase.CutoutComplex, Vector2.one, pawnGraphicSet.pawn.story.SkinColor);
+        }
+
+        // TODO remove when upgrading to Rimworld 1.5
         [HarmonyBefore("rimworld.erdelf.alien_race.main")]
         static void Prefix(PawnGraphicSet __instance)
         {
@@ -133,6 +159,7 @@ namespace FantasyGoblinsUpdated
         }
     }
 
+    // TODO remove when upgrading to Rimworld 1.5
     [HarmonyPatch(typeof(BackCompatibility), "BackCompatibleDefName")]
     public class ReplaceOldHeads
     {
