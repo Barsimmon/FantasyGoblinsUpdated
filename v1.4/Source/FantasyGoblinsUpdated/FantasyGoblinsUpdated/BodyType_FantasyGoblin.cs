@@ -92,31 +92,71 @@ namespace FantasyGoblinsUpdated
             }
         }
 
-        [HarmonyPatch(typeof(BackCompatibility), "BackCompatibleDefName")]
-        public class ReplaceOldHeads
+        [HarmonyBefore("rimworld.erdelf.alien_race.main")]
+        static void Prefix(PawnGraphicSet __instance)
         {
-            private static bool logged = false;
-
-            private static Dictionary<string, string> oldHeads = new Dictionary<string, string>()
+            Pawn pawn = __instance.pawn;
+            // Only execute patch for pawn
+            if (pawn == null)
             {
-                { "Goblin_Male_AverageNormal", "Male_AverageNormal" },
-                { "Goblin_Male_AverageWide", "Male_AverageWide" },
-                { "Goblin_Male_AveragePointy", "Male_AveragePointy" },
-                { "Goblin_Female_AverageNormal", "Female_AverageNormal" },
-                { "Goblin_Female_AverageWide", "Female_AverageWide" },
-                { "Goblin_Female_AveragePointy", "Female_AveragePointy" }
-            };
+                return;
+            }
 
-            static void Postfix(ref string __result)
+            if (pawn.kindDef?.race?.defName != "Fantasy_Goblin")
             {
-                if (oldHeads.ContainsKey(__result))
+                // pawn is not HAR goblin
+                return;
+            }
+
+            Color currentSkinColor = pawn.story.SkinColor;
+
+            if (currentSkinColor.g > currentSkinColor.r && currentSkinColor.g > currentSkinColor.b)
+            {
+                // Skin color is already green
+                return;
+            }
+
+            Log.Message("Setting " + pawn.Name + " skin color");
+
+            if (pawn.story.SkinColor.b > 0.75)
+            {
+                pawn.story.skinColorOverride = new Color(0.843f, 0.886f, 0.317f, 1);
+            }
+            else if (pawn.story.SkinColor.b > 0.353)
+            {
+                pawn.story.skinColorOverride = new Color(0.737f, 0.784f, 0.231f, 1);
+            }
+            else
+            {
+                pawn.story.skinColorOverride = new Color(0.411f, 0.631f, 0.117f, 1);
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(BackCompatibility), "BackCompatibleDefName")]
+    public class ReplaceOldHeads
+    {
+        private static bool logged = false;
+
+        private static Dictionary<string, string> oldHeads = new Dictionary<string, string>()
+        {
+            { "Goblin_Male_AverageNormal", "Male_AverageNormal" },
+            { "Goblin_Male_AverageWide", "Male_AverageWide" },
+            { "Goblin_Male_AveragePointy", "Male_AveragePointy" },
+            { "Goblin_Female_AverageNormal", "Female_AverageNormal" },
+            { "Goblin_Female_AverageWide", "Female_AverageWide" },
+            { "Goblin_Female_AveragePointy", "Female_AveragePointy" }
+        };
+
+        static void Postfix(ref string __result)
+        {
+            if (oldHeads.ContainsKey(__result))
+            {
+                __result = oldHeads.TryGetValue(__result);
+                if (!logged)
                 {
-                    __result = oldHeads.TryGetValue(__result);
-                    if (!logged)
-                    {
-                        Log.Message("Fantasy Goblins: replaced old head with new head.");
-                        logged = true;
-                    }
+                    Log.Message("Fantasy Goblins: replaced old head with new head.");
+                    logged = true;
                 }
             }
         }
