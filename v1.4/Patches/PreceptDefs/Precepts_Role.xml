@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
     <Operation Class="PatchOperationConditional">
-        <xpath>/Defs/PreceptDef[defName="IdeoRole_Moralist"]/roleApparelRequirements</xpath>
+        <xpath>Defs/PreceptDef[defName="IdeoRole_Moralist"]/roleApparelRequirements</xpath>
         <match Class="PatchOperationAdd">
-            <xpath>/Defs/PreceptDef[defName="IdeoRole_Moralist"]/roleApparelRequirements</xpath>
+            <xpath>Defs/PreceptDef[defName="IdeoRole_Moralist"]/roleApparelRequirements</xpath>
             <value>
                 <li>
                     <allowedFactionCategoryTags><li>Goblin</li></allowedFactionCategoryTags>
@@ -42,9 +42,9 @@
         </match>
     </Operation>
     <Operation Class="PatchOperationConditional">
-        <xpath>/Defs/PreceptDef[defName="IdeoRole_Leader"]/roleApparelRequirements</xpath>
+        <xpath>Defs/PreceptDef[defName="IdeoRole_Leader"]/roleApparelRequirements</xpath>
         <match Class="PatchOperationAdd">
-            <xpath>/Defs/PreceptDef[defName="IdeoRole_Leader"]/roleApparelRequirements</xpath>
+            <xpath>Defs/PreceptDef[defName="IdeoRole_Leader"]/roleApparelRequirements</xpath>
             <value>
                 <li>
                     <allowedFactionCategoryTags><li>Goblin</li></allowedFactionCategoryTags>
@@ -72,9 +72,9 @@
         </match>
     </Operation>
     <Operation Class="PatchOperationConditional">
-        <xpath>/Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements</xpath>
+        <xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements</xpath>
         <match Class="PatchOperationAdd">
-            <xpath>/Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements</xpath>
+            <xpath>Defs/PreceptDef[@Name="PreceptRoleMultiBase"]/roleApparelRequirements</xpath>
             <value>
                 <li>
                     <allowedFactionCategoryTags><li>Goblin</li></allowedFactionCategoryTags>

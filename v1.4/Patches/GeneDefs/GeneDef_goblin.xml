@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+                <xpath>Defs</xpath>
+                <value>
+                    <GeneDef ParentName="GeneSkinColorOverride">
+                        <defName>Skin_Goblin_Green</defName>
+                        <label>goblin green skin</label>
+                        <labelShortAdj>goblin green</labelShortAdj>
+                        <description>Carriers of this gene produce a pigment that gives their skin a green color.</description>
+                        <skinColorOverride>(188,200,59)</skinColorOverride>
+                        <displayOrderInCategory>0</displayOrderInCategory>
+                        <symbolPack>
+                            <wholeNameSymbols>
+                                <li><symbol>greenskin</symbol></li>
+                            </wholeNameSymbols>
+                            <prefixSymbols>
+                                <li><symbol>green</symbol></li>
+                                <li><symbol>lime</symbol></li>
+                                <li><symbol>jade</symbol></li>
+                                <li><symbol>leaf</symbol></li>
+                            </prefixSymbols>
+                        </symbolPack>
+                    </GeneDef>
+
+                    <GeneDef ParentName="GeneSkinColorOverride">
+                        <defName>Skin_Goblin_Green_Light</defName>
+                        <label>goblin light green skin</label>
+                        <labelShortAdj>goblin light green</labelShortAdj>
+                        <description>Carriers of this gene produce a pigment that gives their skin a light green color.</description>
+                        <skinColorOverride>(215,226,81)</skinColorOverride>
+                        <displayOrderInCategory>0</displayOrderInCategory>
+                        <symbolPack>
+                            <wholeNameSymbols>
+                                <li><symbol>greenskin</symbol></li>
+                            </wholeNameSymbols>
+                            <prefixSymbols>
+                                <li><symbol>green</symbol></li>
+                                <li><symbol>lime</symbol></li>
+                                <li><symbol>jade</symbol></li>
+                                <li><symbol>leaf</symbol></li>
+                            </prefixSymbols>
+                        </symbolPack>
+                    </GeneDef>
+
+                    <GeneDef ParentName="GeneSkinColorOverride">
+                        <defName>Skin_Goblin_Green_Dark</defName>
+                        <label>goblin dark green skin</label>
+                        <labelShortAdj>goblin dark green</labelShortAdj>
+                        <description>Carriers of this gene produce a pigment that gives their skin a dark green color.</description>
+                        <skinColorOverride>(105,161,30)</skinColorOverride>
+                        <displayOrderInCategory>0</displayOrderInCategory>
+                        <symbolPack>
+                            <wholeNameSymbols>
+                                <li><symbol>greenskin</symbol></li>
+                            </wholeNameSymbols>
+                            <prefixSymbols>
+                                <li><symbol>green</symbol></li>
+                                <li><symbol>lime</symbol></li>
+                                <li><symbol>jade</symbol></li>
+                                <li><symbol>leaf</symbol></li>
+                            </prefixSymbols>
+                        </symbolPack>
+                    </GeneDef>
+
+                    <GeneDef ParentName="GeneEarsBase">
+                        <defName>Ears_Fantasy_Goblin_Normal</defName>
+                        <label>goblin ears</label>
+                        <description>Carriers of this gene have goblin ears.</description>
+                        <iconPath>UI/Icons/Genes/Gene_EarFantasyGoblin_Normal</iconPath>
+                        <graphicData>
+                            <graphicPath>Things/Goblin/Ears/Goblin_Ears</graphicPath>
+                            <colorType>Skin</colorType>
+                        </graphicData>
+                        <symbolPack>
+                            <prefixSymbols>
+                                <li><symbol>goblin</symbol></li>
+                                <li><symbol>trash</symbol></li>
+                                <li><symbol>gobber</symbol></li>
+                            </prefixSymbols>
+                            <suffixSymbols>
+                                <li><symbol>goblin</symbol></li>
+                                <li><symbol>gobber</symbol></li>
+                                <li><symbol>gob</symbol></li>
+                                <li><symbol>ear</symbol></li>
+                            </suffixSymbols>
+                        </symbolPack>
+                    </GeneDef>
+
+                    <GeneDef ParentName="GeneEarsBase">
+                        <defName>Ears_Fantasy_Goblin_Hanging</defName>
+                        <label>hanging goblin ears</label>
+                        <description>Carriers of this gene have hanging goblin ears.</description>
+                        <iconPath>UI/Icons/Genes/Gene_EarFantasyGoblin_Hanging</iconPath>
+                        <graphicData>
+                            <graphicPath>Things/Goblin/Ears/Goblin_Ears1</graphicPath>
+                            <colorType>Skin</colorType>
+                        </graphicData>
+                        <symbolPack>
+                            <prefixSymbols>
+                                <li><symbol>goblin</symbol></li>
+                                <li><symbol>trash</symbol></li>
+                                <li><symbol>gobber</symbol></li>
+                            </prefixSymbols>
+                            <suffixSymbols>
+                                <li><symbol>goblin</symbol></li>
+                                <li><symbol>gobber</symbol></li>
+                                <li><symbol>gob</symbol></li>
+                                <li><symbol>ear</symbol></li>
+                            </suffixSymbols>
+                        </symbolPack>
+                    </GeneDef>
+
+                    <GeneDef ParentName="GeneEarsBase">
+                        <defName>Ears_Fantasy_Goblin_Jutting</defName>
+                        <label>jutting goblin ears</label>
+                        <description>Carriers of this gene have jutting goblin ears.</description>
+                        <iconPath>UI/Icons/Genes/Gene_EarFantasyGoblin_Jutting</iconPath>
+                        <graphicData>
+                            <graphicPath>Things/Goblin/Ears/Goblin_Ears2</graphicPath>
+                            <colorType>Skin</colorType>
+                        </graphicData>
+                        <symbolPack>
+                            <prefixSymbols>
+                                <li><symbol>goblin</symbol></li>
+                                <li><symbol>trash</symbol></li>
+                                <li><symbol>gobber</symbol></li>
+                            </prefixSymbols>
+                            <suffixSymbols>
+                                <li><symbol>goblin</symbol></li>
+                                <li><symbol>gobber</symbol></li>
+                                <li><symbol>gob</symbol></li>
+                                <li><symbol>ear</symbol></li>
+                            </suffixSymbols>
+                        </symbolPack>
+                    </GeneDef>
+
+                    <GeneDef ParentName="GeneEarsBase">
+                        <defName>Ears_Fantasy_Goblin_Crumpled</defName>
+                        <label>crumpled goblin ears</label>
+                        <description>Carriers of this gene have crumpled goblin ears.</description>
+                        <iconPath>UI/Icons/Genes/Gene_EarFantasyGoblin_Crumpled</iconPath>
+                        <graphicData>
+                            <graphicPath>Things/Goblin/Ears/Goblin_Ears3</graphicPath>
+                            <colorType>Skin</colorType>
+                        </graphicData>
+                        <symbolPack>
+                            <prefixSymbols>
+                                <li><symbol>goblin</symbol></li>
+                                <li><symbol>trash</symbol></li>
+                                <li><symbol>gobber</symbol></li>
+                            </prefixSymbols>
+                            <suffixSymbols>
+                                <li><symbol>goblin</symbol></li>
+                                <li><symbol>gobber</symbol></li>
+                                <li><symbol>gob</symbol></li>
+                                <li><symbol>ear</symbol></li>
+                            </suffixSymbols>
+                        </symbolPack>
+                    </GeneDef>
+
+                    <GeneDef ParentName="GeneBodyBase">
+                        <defName>Body_Fantasy_Goblin</defName>
+                        <label>goblin body</label>
+                        <description>Carriers of this gene have characteristic goblin bodies.</description>
+                        <iconPath>UI/Icons/Genes/Gene_BodyFantasyGoblin</iconPath>
+                        <bodyType>Standard</bodyType><!-- Harmony patch overrides textures -->
+                        <displayOrderInCategory>50</displayOrderInCategory>
+                    </GeneDef>
+
+                    <GeneDef ParentName="GeneJawBase">
+                        <defName>Fantasy_Goblin_Heads</defName>
+                        <label>goblin head</label>
+                        <description>Carriers of this gene have a goblin head.</description>
+                        <iconPath>UI/Icons/Genes/Gene_HeadFantasyGoblin</iconPath>
+                        <forcedHeadTypes>
+                            <li>Goblin_Male_AverageNormal</li>
+                            <li>Goblin_Male_AveragePointy</li>
+                            <li>Goblin_Male_AverageWide</li>
+                            <li>Goblin_Female_AverageNormal</li>
+                            <li>Goblin_Female_AveragePointy</li>
+                            <li>Goblin_Female_AverageWide</li>
+                            <li>Furskin_Average1</li>
+                            <li>Furskin_Average2</li>
+                            <li>Furskin_Average3</li>
+                        </forcedHeadTypes>
+                        <displayOrderInCategory>600</displayOrderInCategory>
+                        <symbolPack>
+                            <prefixSymbols>
+                                <li><symbol>gob</symbol></li>
+                                <li><symbol>trash</symbol></li>
+                                <li><symbol>gobbo</symbol></li>
+                                <li><symbol>goblin</symbol></li>
+                            </prefixSymbols>
+                            <suffixSymbols>
+                                <li><symbol>gob</symbol></li>
+                                <li><symbol>trash</symbol></li>
+                                <li><symbol>gobbo</symbol></li>
+                                <li><symbol>goblin</symbol></li>
+                            </suffixSymbols>
+                        </symbolPack>
+                        <modExtensions>
+                            <li Class="FantasyGoblinsUpdated.GeneCompatibility">
+                                <overridesTag>
+                                    <li>EyeColor</li>
+                                    <li>Nose</li>
+                                    <li>Headbone</li>
+                                </overridesTag>
+                                <overrides>
+                                    <li>Brow_Heavy</li>
+                                    <li>FacialRidges</li>
+                                </overrides>
+                            </li>
+                        </modExtensions>
+                    </GeneDef>
+
+                    <GeneDef ParentName="GeneHairStyleBase">
+                        <defName>Hair_Fantasy_Goblin</defName>
+                        <label>goblin hair</label>
+                        <labelShortAdj>goblin</labelShortAdj>
+                        <description>Carriers of this gene can only grow goblin hair.</description>
+                        <iconPath>UI/Icons/Genes/Gene_GoblinHair</iconPath>
+                        <displayOrderInCategory>200</displayOrderInCategory>
+                        <hairTagFilter>
+                            <whitelist>true</whitelist>
+                            <tags>
+                                <li>Goblin_Hair</li>
+                            </tags>
+                        </hairTagFilter>
+                    </GeneDef>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

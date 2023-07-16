@@ -10,13 +10,18 @@
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
         <canMakeRandomly>true</canMakeRandomly>
         <canStageAttacks>true</canStageAttacks>
-        <!--<melaninRange>0.25~0.75</melaninRange>-->
         <techLevel>Neolithic</techLevel>
         <factionNameMaker>Fantasy_GoblinNamerFaction</factionNameMaker>
         <settlementNameMaker>Fantasy_GoblinNamerFaction</settlementNameMaker>
         <allowedCultures>
             <li>Goblin</li>
         </allowedCultures>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Fantasy_Goblin MayRequire="Ludeon.RimWorld.Biotech">0.7</Fantasy_Goblin>
+                <Fantasy_Goblin_Hobgoblin MayRequire="Ludeon.RimWorld.Biotech">0.3</Fantasy_Goblin_Hobgoblin>
+            </xenotypeChances>
+        </xenotypeSet>
         <disallowedMemes>
             <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
             <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>

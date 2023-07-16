@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <PawnKindDef Abstract="True" Name="BaseGoblinPawnKind">
-        <race>Fantasy_Goblin</race>
+        <race>Human</race>
         <combatPower>35</combatPower>
         <isFighter>false</isFighter>
         <apparelIgnoreSeasons>true</apparelIgnoreSeasons>

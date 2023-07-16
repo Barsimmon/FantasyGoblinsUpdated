@@ -9,7 +9,6 @@
         <pawnSingular>Goblin</pawnSingular>
         <pawnsPlural>Goblins</pawnsPlural>
         <basicMemberKind>Goblin</basicMemberKind>
-        <!--<melaninRange>0.25~0.75</melaninRange>-->
         <techLevel>Neolithic</techLevel>
         <factionNameMaker>Fantasy_GoblinNamerFaction</factionNameMaker>
         <settlementNameMaker>Fantasy_GoblinNamerFaction</settlementNameMaker>
@@ -17,6 +16,7 @@
         <allowedCultures>
             <li>Goblin</li>
         </allowedCultures>
+        <!-- NOTE: Player factions lack a xenotype set. Player pawns have their xenotypes set by the player/scenario. -->
         <disallowedMemes>
             <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
             <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>

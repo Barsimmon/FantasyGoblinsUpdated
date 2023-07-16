@@ -1,55 +1,53 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- Bases -->
+    <!-- Bases -->
 
-  <HeadTypeDef Name="Goblin_AverageBase" Abstract="True">
-    <hairMeshSize>(1.5, 1.5)</hairMeshSize>
-    <beardMeshSize>(1.5, 1.5)</beardMeshSize>
-    <beardOffset>(0, 0, -0.05)</beardOffset>
-    <beardOffsetXEast>-0.05</beardOffsetXEast>
-    <randomChosen>false</randomChosen>
-  </HeadTypeDef>
+    <HeadTypeDef Name="Goblin_AverageBase" ParentName="AverageBase" Abstract="True">
+        <beardOffset>(0, 0, -0.05)</beardOffset>
+        <beardOffsetXEast>-0.05</beardOffsetXEast>
+        <randomChosen>false</randomChosen>
+    </HeadTypeDef>
 
-  <!-- Male -->
+    <!-- Male -->
 
-  <HeadTypeDef ParentName="Goblin_AverageBase">
-    <defName>Goblin_Male_AverageNormal</defName>
-    <graphicPath>Things/Goblin/Heads/Male_Average_Normal</graphicPath>
-    <gender>Male</gender>
-  </HeadTypeDef>
+    <HeadTypeDef ParentName="Goblin_AverageBase">
+        <defName>Goblin_Male_AverageNormal</defName>
+        <graphicPath>Things/Goblin/Heads/Male_Average_Normal</graphicPath>
+        <gender>Male</gender>
+    </HeadTypeDef>
 
-  <HeadTypeDef ParentName="Goblin_AverageBase">
-    <defName>Goblin_Male_AveragePointy</defName>
-    <graphicPath>Things/Goblin/Heads/Male_Average_Pointy</graphicPath>
-    <gender>Male</gender>
-  </HeadTypeDef>
+    <HeadTypeDef ParentName="Goblin_AverageBase">
+        <defName>Goblin_Male_AveragePointy</defName>
+        <graphicPath>Things/Goblin/Heads/Male_Average_Pointy</graphicPath>
+        <gender>Male</gender>
+    </HeadTypeDef>
 
-  <HeadTypeDef ParentName="Goblin_AverageBase">
-    <defName>Goblin_Male_AverageWide</defName>
-    <graphicPath>Things/Goblin/Heads/Male_Average_Wide</graphicPath>
-    <gender>Male</gender>
-  </HeadTypeDef>
+    <HeadTypeDef ParentName="Goblin_AverageBase">
+        <defName>Goblin_Male_AverageWide</defName>
+        <graphicPath>Things/Goblin/Heads/Male_Average_Wide</graphicPath>
+        <gender>Male</gender>
+    </HeadTypeDef>
 
 
-  <!-- Female -->
+    <!-- Female -->
 
-  <HeadTypeDef ParentName="Goblin_AverageBase">
-    <defName>Goblin_Female_AverageNormal</defName>
-    <graphicPath>Things/Pawn/Humanlike/Heads/Female/Female_Average_Normal</graphicPath>
-    <gender>Female</gender>
-  </HeadTypeDef>
+    <HeadTypeDef ParentName="Goblin_AverageBase">
+        <defName>Goblin_Female_AverageNormal</defName>
+        <graphicPath>Things/Goblin/Heads/Female_Average_Normal</graphicPath>
+        <gender>Female</gender>
+    </HeadTypeDef>
 
-  <HeadTypeDef ParentName="Goblin_AverageBase">
-    <defName>Goblin_Female_AveragePointy</defName>
-    <graphicPath>Things/Pawn/Humanlike/Heads/Female/Female_Average_Pointy</graphicPath>
-    <gender>Female</gender>
-  </HeadTypeDef>
+    <HeadTypeDef ParentName="Goblin_AverageBase">
+        <defName>Goblin_Female_AveragePointy</defName>
+        <graphicPath>Things/Goblin/Heads/Female_Average_Pointy</graphicPath>
+        <gender>Female</gender>
+    </HeadTypeDef>
 
-  <HeadTypeDef ParentName="Goblin_AverageBase">
-    <defName>Goblin_Female_AverageWide</defName>
-    <graphicPath>Things/Pawn/Humanlike/Heads/Female/Female_Average_Wide</graphicPath>
-    <gender>Female</gender>
-  </HeadTypeDef>
+    <HeadTypeDef ParentName="Goblin_AverageBase">
+        <defName>Goblin_Female_AverageWide</defName>
+        <graphicPath>Things/Goblin/Heads/Female_Average_Wide</graphicPath>
+        <gender>Female</gender>
+    </HeadTypeDef>
 
 </Defs>
