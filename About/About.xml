@@ -20,6 +20,7 @@
 	</modDependencies>
 	<loadAfter>
 		<li>erdelf.HumanoidAlienRaces</li>
+		<li>erdelf.HumanoidAlienRaces.dev</li>
 		<li>brrainz.harmony</li>
 	</loadAfter>
 	<!--<loadBefore>
@@ -27,7 +28,9 @@
 	</loadBefore>-->
 	<description>
 Goblins! Xenotype/race, faction, scenario, items, buildings, tech, ...
-This mod requires either Biotech or Humanoid Alien Races. When both are present, Humanoid Alien Races is not used. If neither are present, this mod will generate errors.
+This mod requires either Biotech or Humanoid Alien Races. See this dependency grid for details:
+
+[img]https://i.imgur.com/yAUa2Yh.png[img]
 
 This mod was first made by Vagabond, I just updated it with retroactive permission.
 I did not make any of the original art, but the goblin textures have been edited for compatibility with vanilla clothes and expansion features.
@@ -152,9 +155,13 @@ Barsimmon's changes
 - Separate heads and ears, so more combinations are possible
 - Support 1.4 head types
 - Added goblin body, head, ears, skin color and hair genes
-- Added goblin xenotype
+- Make sure vanilla cosmetic genes that clash with the goblin art are not rendered
+- Added goblin and hobgoblin xenotypes
 - Patch out Humanoid Alien Races xml if Biotech is present
 - Set mod to be compatible with Biotech
+- Fix save compatibility
+- Add alpha masks for goblin heads so the eyes can be yellow again
+- Buff armors somewhat
 
 Todo's
 ------
@@ -171,7 +178,10 @@ Todo's
 - make floors less repetitive
 - mud wall shows dirt between wall and floor
 - No Goblins sold by slave traders
-
+- Improve texture quality
+- armor alpha masks
+- More medieval/modern armors and accessories (gloves/gauntlets, boots, cloaks)
+- More firearms
 
 
 
