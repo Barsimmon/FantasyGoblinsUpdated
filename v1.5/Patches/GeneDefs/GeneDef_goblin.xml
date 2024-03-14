@@ -70,10 +70,23 @@
                         <label>goblin ears</label>
                         <description>Carriers of this gene have goblin ears.</description>
                         <iconPath>UI/Icons/Genes/Gene_EarFantasyGoblin_Normal</iconPath>
-                        <graphicData>
-                            <graphicPath>Things/Goblin/Ears/Goblin_Ears</graphicPath>
-                            <colorType>Skin</colorType>
-                        </graphicData>
+                        <renderNodeProperties>
+                            <li>
+                                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                                <texPath>Things/Goblin/Ears/Goblin_Ears</texPath>
+                                <colorType>Skin</colorType>
+                                <parentTagDef>Head</parentTagDef>
+                                <useSkinShader>true</useSkinShader>
+                                <useRottenColor>true</useRottenColor>
+                                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                                <drawData>
+                                    <defaultData>
+                                        <layer>70</layer>
+                                    </defaultData>
+                                </drawData>
+                            </li>
+                        </renderNodeProperties>
                         <symbolPack>
                             <prefixSymbols>
                                 <li><symbol>goblin</symbol></li>
@@ -94,10 +107,23 @@
                         <label>hanging goblin ears</label>
                         <description>Carriers of this gene have hanging goblin ears.</description>
                         <iconPath>UI/Icons/Genes/Gene_EarFantasyGoblin_Hanging</iconPath>
-                        <graphicData>
-                            <graphicPath>Things/Goblin/Ears/Goblin_Ears1</graphicPath>
-                            <colorType>Skin</colorType>
-                        </graphicData>
+                        <renderNodeProperties>
+                            <li>
+                                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                                <texPath>Things/Goblin/Ears/Goblin_Ears1</texPath>
+                                <colorType>Skin</colorType>
+                                <parentTagDef>Head</parentTagDef>
+                                <useSkinShader>true</useSkinShader>
+                                <useRottenColor>true</useRottenColor>
+                                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                                <drawData>
+                                    <defaultData>
+                                        <layer>70</layer>
+                                    </defaultData>
+                                </drawData>
+                            </li>
+                        </renderNodeProperties>
                         <symbolPack>
                             <prefixSymbols>
                                 <li><symbol>goblin</symbol></li>
@@ -118,10 +144,23 @@
                         <label>jutting goblin ears</label>
                         <description>Carriers of this gene have jutting goblin ears.</description>
                         <iconPath>UI/Icons/Genes/Gene_EarFantasyGoblin_Jutting</iconPath>
-                        <graphicData>
-                            <graphicPath>Things/Goblin/Ears/Goblin_Ears2</graphicPath>
-                            <colorType>Skin</colorType>
-                        </graphicData>
+                        <renderNodeProperties>
+                            <li>
+                                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                                <texPath>Things/Goblin/Ears/Goblin_Ears2</texPath>
+                                <colorType>Skin</colorType>
+                                <parentTagDef>Head</parentTagDef>
+                                <useSkinShader>true</useSkinShader>
+                                <useRottenColor>true</useRottenColor>
+                                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                                <drawData>
+                                    <defaultData>
+                                        <layer>70</layer>
+                                    </defaultData>
+                                </drawData>
+                            </li>
+                        </renderNodeProperties>
                         <symbolPack>
                             <prefixSymbols>
                                 <li><symbol>goblin</symbol></li>
@@ -142,10 +181,23 @@
                         <label>crumpled goblin ears</label>
                         <description>Carriers of this gene have crumpled goblin ears.</description>
                         <iconPath>UI/Icons/Genes/Gene_EarFantasyGoblin_Crumpled</iconPath>
-                        <graphicData>
-                            <graphicPath>Things/Goblin/Ears/Goblin_Ears3</graphicPath>
-                            <colorType>Skin</colorType>
-                        </graphicData>
+                        <renderNodeProperties>
+                            <li>
+                                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                                <texPath>Things/Goblin/Ears/Goblin_Ears3</texPath>
+                                <colorType>Skin</colorType>
+                                <parentTagDef>Head</parentTagDef>
+                                <useSkinShader>true</useSkinShader>
+                                <useRottenColor>true</useRottenColor>
+                                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                                <drawData>
+                                    <defaultData>
+                                        <layer>70</layer>
+                                    </defaultData>
+                                </drawData>
+                            </li>
+                        </renderNodeProperties>
                         <symbolPack>
                             <prefixSymbols>
                                 <li><symbol>goblin</symbol></li>
