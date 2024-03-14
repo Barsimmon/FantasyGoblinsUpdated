@@ -48,7 +48,7 @@ namespace FantasyGoblinsUpdated
 
             if (changed)
             {
-                __instance.pawn.skills?.Notify_GenesChanged();
+                //__instance.pawn.skills?.Notify_GenesChanged();
                 __instance.pawn.Notify_DisabledWorkTypesChanged();
             }
         }
