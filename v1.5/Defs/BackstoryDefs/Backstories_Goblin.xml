@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-    <!-- Need to specify backkstories in order to set which body should go with which gender.
+    <!-- Need to specify backstories in order to set which body should go with which gender.
           Copied these from the rimworld wiki and changed some titles and text -->
 
     <BackstoryDef Name="GoblinBackstoryBase" Abstract="True">
@@ -21,18 +21,9 @@
         <baseDesc>While the others were out hunting and foraging, [PAWN_nameDef] would stay at home to cook and take care of the young and sick.</baseDesc>
         <slot>Adulthood</slot>
         <skillGains>
-            <li>
-                <key>Cooking</key>
-                <value>4</value>
-            </li>
-            <li>
-                <key>Medicine</key>
-                <value>3</value>
-            </li>
-            <li>
-                <key>Crafting</key>
-                <value>2</value>
-            </li>
+            <Cooking>4</Cooking>
+            <Medicine>3</Medicine>
+            <Crafting>2</Crafting>
         </skillGains>
     </BackstoryDef>
 
@@ -44,14 +35,8 @@
 [PAWN_nameDef] feels most at home picking through rock and shoring up cave walls.</baseDesc>
         <slot>Adulthood</slot>
         <skillGains>
-            <li>
-                <key>Mining</key>
-                <value>5</value>
-            </li>
-            <li>
-                <key>Construction</key>
-                <value>2</value>
-            </li>
+            <Mining>5</Mining>
+            <Construction>2</Construction>
         </skillGains>
     </BackstoryDef>
 
@@ -62,10 +47,7 @@
         <baseDesc>[PAWN_nameDef] is a master farmer. [PAWN_pronoun] has spent a lot of time growing moonshade inkcap mushrooms.</baseDesc>
         <slot>Adulthood</slot>
         <skillGains>
-            <li>
-                <key>Plants</key>
-                <value>4</value>
-            </li>
+            <Plants>4</Plants>
         </skillGains>
     </BackstoryDef>
 
@@ -77,14 +59,8 @@
         </baseDesc>
         <slot>Adulthood</slot>
         <skillGains>
-            <li>
-                <key>Medicine</key>
-                <value>4</value>
-            </li>
-            <li>
-                <key>Plants</key>
-                <value>3</value>
-            </li>
+            <Medicine>4</Medicine>
+            <Plants>3</Plants>
         </skillGains>
     </BackstoryDef>
 
@@ -95,22 +71,10 @@
         <baseDesc>[PAWN_nameDef] never much liked the tribal council or the yearly festivals. [PAWN_pronoun] prefers the open plain and the lonely whistle of wind through the rocks. [PAWN_pronoun] visits [PAWN_possessive] tribe from time to time, but for the most part [PAWN_pronoun] takes care of [PAWN_objective]self using [PAWN_possessive] own survival skills.</baseDesc>
         <slot>Adulthood</slot>
         <skillGains>
-            <li>
-                <key>Shooting</key>
-                <value>3</value>
-            </li>
-            <li>
-                <key>Melee</key>
-                <value>2</value>
-            </li>
-            <li>
-                <key>Plants</key>
-                <value>5</value>
-            </li>
-            <li>
-                <key>Construction</key>
-                <value>1</value>
-            </li>
+            <Shooting>3</Shooting>
+            <Melee>2</Melee>
+            <Plants>5</Plants>
+            <Construction>1</Construction>
         </skillGains>
         <workDisables>
             <li>Social</li>
@@ -124,18 +88,9 @@
         <baseDesc>[PAWN_nameDef] was one of a long line of story tellers in [PAWN_possessive] tribe. Every night around the fire, [PAWN_pronoun] would pass on ancient knowledge and helpful wisdom through stories.</baseDesc>
         <slot>Adulthood</slot>
         <skillGains>
-            <li>
-                <key>Intellectual</key>
-                <value>2</value>
-            </li>
-            <li>
-                <key>Social</key>
-                <value>3</value>
-            </li>
-            <li>
-                <key>Artistic</key>
-                <value>2</value>
-            </li>
+            <Intellectual>2</Intellectual>
+            <Social>3</Social>
+            <Artistic>2</Artistic>
         </skillGains>
     </BackstoryDef>
 
@@ -146,14 +101,8 @@
         <baseDesc>[PAWN_nameDef] used his strength and charisma to become a champion of the wrestling pits in [PAWN_possessive] tribe.</baseDesc>
         <slot>Adulthood</slot>
         <skillGains>
-            <li>
-                <key>Melee</key>
-                <value>5</value>
-            </li>
-            <li>
-                <key>Social</key>
-                <value>2</value>
-            </li>
+            <Melee>5</Melee>
+            <Social>2</Social>
         </skillGains>
     </BackstoryDef>
 
@@ -164,18 +113,9 @@
         <baseDesc>Since [PAWN_possessive] tribe has made contact with local humans, [PAWN_nameDef] has contracted [PAWN_possessive] services out as a guide to the local area. Frequent contact with ancient relics has made [PAWN_objective] fairly comfortable with the old technology.</baseDesc>
         <slot>Adulthood</slot>
         <skillGains>
-            <li>
-                <key>Shooting</key>
-                <value>2</value>
-            </li>
-            <li>
-                <key>Intellectual</key>
-                <value>2</value>
-            </li>
-            <li>
-                <key>Social</key>
-                <value>2</value>
-            </li>
+            <Shooting>2</Shooting>
+            <Intellectual>2</Intellectual>
+            <Social>2</Social>
         </skillGains>
     </BackstoryDef>
 
@@ -186,18 +126,9 @@
         <baseDesc>[PAWN_nameDef] was a fearsome berserker. [PAWN_pronoun] participated in many battles.</baseDesc>
         <slot>Adulthood</slot>
         <skillGains>
-            <li>
-                <key>Melee</key>
-                <value>6</value>
-            </li>
-            <li>
-                <key>Shooting</key>
-                <value>2</value>
-            </li>
-            <li>
-                <key>Social</key>
-                <value>-2</value>
-            </li>
+            <Melee>6</Melee>
+            <Shooting>2</Shooting>
+            <Social>-2</Social>
         </skillGains>
     </BackstoryDef>
 
@@ -208,14 +139,8 @@
         <baseDesc>[PAWN_nameDef] was an expert at working leather into sturdy clothing for [PAWN_possessive] kin.</baseDesc>
         <slot>Adulthood</slot>
         <skillGains>
-            <li>
-                <key>Crafting</key>
-                <value>5</value>
-            </li>
-            <li>
-                <key>Plants</key>
-                <value>2</value>
-            </li>
+            <Crafting>5</Crafting>
+            <Plants>2</Plants>
         </skillGains>
     </BackstoryDef>
 
@@ -228,18 +153,9 @@
         <baseDesc>[PAWN_nameDef] was born sickly. Thinking that [PAWN_pronoun] would only burden the tribe, [PAWN_possessive] parents left [PAWN_objective] out in the elements. Somehow, [PAWN_pronoun] survived.</baseDesc>
         <slot>Childhood</slot>
         <skillGains>
-            <li>
-                <key>Melee</key>
-                <value>4</value>
-            </li>
-            <li>
-                <key>Crafting</key>
-                <value>3</value>
-            </li>
-            <li>
-                <key>Social</key>
-                <value>-2</value>
-            </li>
+            <Melee>4</Melee>
+            <Crafting>3</Crafting>
+            <Social>-2</Social>
         </skillGains>
     </BackstoryDef>
 
@@ -250,14 +166,8 @@
         <baseDesc>[PAWN_nameDef] grew up in a large and intricate cave complex that extended deep into a mountainside. [PAWN_pronoun] helped the adults maintain and improve the deep caves.</baseDesc>
         <slot>Childhood</slot>
         <skillGains>
-            <li>
-                <key>Mining</key>
-                <value>3</value>
-            </li>
-            <li>
-                <key>Construction</key>
-                <value>3</value>
-            </li>
+            <Mining>3</Mining>
+            <Construction>3</Construction>
         </skillGains>
     </BackstoryDef>
 
@@ -268,14 +178,8 @@
         <baseDesc>[PAWN_nameDef] was responsible for keeping the tribe’s fire going. [PAWN_pronoun] took this responsibility very seriously.</baseDesc>
         <slot>Childhood</slot>
         <skillGains>
-            <li>
-                <key>Crafting</key>
-                <value>2</value>
-            </li>
-            <li>
-                <key>Cooking</key>
-                <value>2</value>
-            </li>
+            <Crafting>2</Crafting>
+            <Cooking>2</Cooking>
         </skillGains>
     </BackstoryDef>
 
@@ -286,22 +190,10 @@
         <baseDesc>As a child, [PAWN_nameDef] tended the tribe’s herds, keeping them safe from predators and treating the sick. It was quiet work, but [PAWN_pronoun] enjoyed being away from people.</baseDesc>
         <slot>Childhood</slot>
         <skillGains>
-            <li>
-                <key>Medicine</key>
-                <value>3</value>
-            </li>
-            <li>
-                <key>Melee</key>
-                <value>3</value>
-            </li>
-            <li>
-                <key>Animals</key>
-                <value>4</value>
-            </li>
-            <li>
-                <key>Social</key>
-                <value>-2</value>
-            </li>
+            <Medicine>3</Medicine>
+            <Melee>3</Melee>
+            <Animals>4</Animals>
+            <Social>-2</Social>
         </skillGains>
     </BackstoryDef>
 
@@ -312,14 +204,8 @@
         <baseDesc>[PAWN_nameDef] didn’t learn to speak until [PAWN_pronoun] was nearly 5 years old, and, even then, [PAWN_pronoun] preferred to keep to [PAWN_objective]self. When [PAWN_pronoun] was in [PAWN_possessive] early teens, [PAWN_pronoun] made a habit of wandering off from the village to live in the wilderness for weeks at a time.</baseDesc>
         <slot>Childhood</slot>
         <skillGains>
-            <li>
-                <key>Melee</key>
-                <value>4</value>
-            </li>
-            <li>
-                <key>Crafting</key>
-                <value>3</value>
-            </li>
+            <Melee>4</Melee>
+            <Crafting>3</Crafting>
         </skillGains>
     </BackstoryDef>
 
@@ -330,14 +216,8 @@
         <baseDesc>[PAWN_nameDef] spent [PAWN_possessive] childhood escaping grunt work to go digging through wrecks and ruins for treasures. [PAWN_possessive] natural curiosity got [PAWN_objective] into a lot of trouble, but it also yielded many interesting finds.</baseDesc>
         <slot>Childhood</slot>
         <skillGains>
-            <li>
-                <key>Mining</key>
-                <value>3</value>
-            </li>
-            <li>
-                <key>Intellectual</key>
-                <value>3</value>
-            </li>
+            <Mining>3</Mining>
+            <Intellectual>3</Intellectual>
         </skillGains>
     </BackstoryDef>
 
@@ -348,14 +228,8 @@
         <baseDesc>[PAWN_nameDef]’s entire tribe was wiped out in a raid. Though [PAWN_pronoun] was adopted by another group, [PAWN_pronoun] was emotionally scarred, and preferred to stay near home, cooking and tending crops.</baseDesc>
         <slot>Childhood</slot>
         <skillGains>
-            <li>
-                <key>Plants</key>
-                <value>3</value>
-            </li>
-            <li>
-                <key>Cooking</key>
-                <value>3</value>
-            </li>
+            <Plants>3</Plants>
+            <Cooking>3</Cooking>
         </skillGains>
     </BackstoryDef>
 
@@ -366,22 +240,10 @@
         <baseDesc>[PAWN_nameDef] grew up in the tribe, running around the village, learning essential skills from [PAWN_possessive] parents. [PAWN_pronoun] never learned to read and never saw a machine that wasn't an ancient ruin.</baseDesc>
         <slot>Childhood</slot>
         <skillGains>
-            <li>
-                <key>Plants</key>
-                <value>2</value>
-            </li>
-            <li>
-                <key>Melee</key>
-                <value>2</value>
-            </li>
-            <li>
-                <key>Shooting</key>
-                <value>2</value>
-            </li>
-            <li>
-                <key>Intellectual</key>
-                <value>-3</value>
-            </li>
+            <Plants>2</Plants>
+            <Melee>2</Melee>
+            <Shooting>2</Shooting>
+            <Intellectual>-3</Intellectual>
         </skillGains>
     </BackstoryDef>
 
@@ -392,14 +254,8 @@
         <baseDesc>As a child, [PAWN_nameDef] returned to [PAWN_possessive] village to find that it had been wiped out by bandits. [PAWN_pronoun] swore revenge on the attackers and began a violent rampage across the wilderness.</baseDesc>
         <slot>Childhood</slot>
         <skillGains>
-            <li>
-                <key>Melee</key>
-                <value>3</value>
-            </li>
-            <li>
-                <key>Shooting</key>
-                <value>3</value>
-            </li>
+            <Melee>3</Melee>
+            <Shooting>3</Shooting>
         </skillGains>
     </BackstoryDef>
 
