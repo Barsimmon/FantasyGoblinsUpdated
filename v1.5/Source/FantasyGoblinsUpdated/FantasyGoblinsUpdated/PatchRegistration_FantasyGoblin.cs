@@ -24,7 +24,7 @@ namespace FantasyGoblinsUpdated
         private static void checkForDependencies()
         {
             GeneDef testGene = DefDatabase<GeneDef>.GetNamed("Skin_Goblin_Green", false);// Def added by this mod when Biotech is active
-            ThingCategoryDef testThingCategory = DefDatabase<ThingCategoryDef>.GetNamed("alienCorpseCategory", false);// Def added by HAR
+            ThingCategoryDef testThingCategory = DefDatabase<ThingCategoryDef>.GetNamed("HAR_AlienCorpseCategory", false);// Def added by HAR
 
             if (testGene == null && testThingCategory == null)
             {
