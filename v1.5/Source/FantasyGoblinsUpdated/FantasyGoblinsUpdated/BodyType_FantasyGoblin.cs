@@ -1,34 +1,25 @@
 ﻿using HarmonyLib;
 using Verse;
-using RimWorld;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
-using System.IO;
-using System.Runtime.Remoting.Messaging;
 
 namespace FantasyGoblinsUpdated
 {
     [HarmonyPatch(typeof(PawnRenderNode_Body), "GraphicFor")]
     public class PatchPawnRenderNodeBody
     {
+        /**
+         * When pawn graphics are initialized, and the body Graphic is retrieved, this pathch replaces the standard naked male or female body with the goblin body if the goblin body gene is active.
+         */
         static void Postfix(PawnRenderNode_Body __instance, Pawn pawn, ref Graphic __result)
         {
-            if (__result == null)
-            {
-                return;
-            }
+            if (__result == null) return;
 
-            if (__result.path != "Things/Pawn/Humanlike/Bodies/Naked_Female" && __result.path != "Things/Pawn/Humanlike/Bodies/Naked_Male")
-            {
-                return;
-            }
+            if (__result.path != "Things/Pawn/Humanlike/Bodies/Naked_Female" && __result.path != "Things/Pawn/Humanlike/Bodies/Naked_Male") return;
 
             // Only execute patch for pawn with genes
-            if (pawn == null || pawn.genes == null)
-            {
-                return;
-            }
+            if (pawn == null || pawn.genes == null) return;
 
             //Log.Message("------------------");
             //Log.Message(pawn.Name.ToStringShort);
@@ -45,13 +36,11 @@ namespace FantasyGoblinsUpdated
             }
 
             // Only apply patch if goblin body gene is active
-            if (!goblinBodyActive)
-            {
-                return;
-            }
+            if (!goblinBodyActive) return;
 
             //Log.Message("Goblin body active. Old path: " + __result.path);
 
+            // Replace graphic path
             String path = null;
             if (__result.path == "Things/Pawn/Humanlike/Bodies/Naked_Female")
             {
@@ -64,6 +53,7 @@ namespace FantasyGoblinsUpdated
 
             if (path == null) return;
 
+            // Replace patched method result
             __result = GraphicDatabase.Get<Graphic_Multi>(path, __result.Shader, Vector2.one, __result.Color);
         }
     }

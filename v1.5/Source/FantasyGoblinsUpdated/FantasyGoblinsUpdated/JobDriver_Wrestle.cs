@@ -7,6 +7,9 @@ using System;
 
 namespace FantasyGoblinsUpdated
 {
+	/*
+	 * This was based on the billiards JobDriver. Fighting noises are played instead of billiards and pawn location is inside the pit instead of around it.
+	 */
     class JobDriver_Wrestle : JobDriver
 	{
 		private const int MoveDuration = 300;
