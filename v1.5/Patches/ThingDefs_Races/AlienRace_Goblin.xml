@@ -182,6 +182,7 @@
                             <tools>
                                 <li>
                                     <label>left fist</label>
+                                    <labelNoLocation>fist</labelNoLocation>
                                     <capacities>
                                         <li>Blunt</li>
                                     </capacities>
@@ -199,6 +200,7 @@
                                 </li>
                                 <li>
                                     <label>right fist</label>
+                                    <labelNoLocation>fist</labelNoLocation>
                                     <capacities>
                                         <li>Blunt</li>
                                     </capacities>
@@ -245,9 +247,11 @@
                                 <intelligence>Humanlike</intelligence>
                                 <makesFootprints>true</makesFootprints>
                                 <lifeExpectancy>60</lifeExpectancy>
+                                <bloodDef>Filth_Blood</bloodDef>
                                 <leatherDef>Leather_Goblin</leatherDef>
                                 <nameCategory>HumanStandard</nameCategory>
                                 <body>Human</body>
+                                <renderTree>Humanlike</renderTree>
                                 <baseBodySize>0.8</baseBodySize>
                                 <baseHealthScale>0.8</baseHealthScale>
                                 <foodType>OmnivoreHuman</foodType>
@@ -255,6 +259,8 @@
                                 <meatMarketValue>0.8</meatMarketValue>
                                 <manhunterOnDamageChance>0.30</manhunterOnDamageChance>
                                 <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+                                <soundCallIntervalRange>2000~5000</soundCallIntervalRange>
+                                <canBecomeShambler>true</canBecomeShambler>
                                 <litterSizeCurve>
                                     <points>
                                         <li>(0.5, 0)</li>
@@ -307,9 +313,8 @@
                                     <Hauling>2</Hauling>
                                     <Cleaning>2</Cleaning>
                                     <Research>10</Research>
+                                    <DarkStudy MayRequire="Ludeon.RimWorld.Anomaly">10</DarkStudy>
                                 </lifeStageWorkSettings>
-                                <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
-                                <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
                                 <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
                                 <specialShadowData>
                                     <volume>(0.3, 0.8, 0.4)</volume>
@@ -383,7 +388,24 @@
                                 <li MayRequire="Ludeon.RimWorld.Biotech">ImplantIUD</li>
                                 <li MayRequire="Ludeon.RimWorld.Biotech">RemoveIUD</li>
                                 <li MayRequire="Ludeon.RimWorld.Biotech">TerminatePregnancy</li>
+                                <li MayRequire="Ludeon.RimWorld.Anomaly">SurgicalInspection</li>
+                                <li MayRequire="Ludeon.RimWorld.Anomaly">BlissLobotomy</li>
+                                <li MayRequire="Ludeon.RimWorld.Anomaly">GhoulInfusion</li>
                             </recipes>
+                            <comps>
+                                <!-- For shamblers -->
+                                <li Class="CompProperties_HoldingPlatformTarget" MayRequire="Ludeon.RimWorld.Anomaly">
+                                    <baseEscapeIntervalMtbDays>120</baseEscapeIntervalMtbDays>
+                                    <getsColdContainmentBonus>true</getsColdContainmentBonus>
+                                </li>
+                                <li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_Studiable">
+                                    <frequencyTicks>120000</frequencyTicks>
+                                    <knowledgeCategory MayRequire="Ludeon.RimWorld.Anomaly">Basic</knowledgeCategory>
+                                    <anomalyKnowledge>1</anomalyKnowledge>
+                                    <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+                                    <requiresImprisonment>true</requiresImprisonment>
+                                </li>
+                            </comps>
                         </AlienRace.ThingDef_AlienRace>
                     </value>
                 </match>
