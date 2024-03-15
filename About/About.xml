@@ -172,6 +172,8 @@ Barsimmon's changes
 - Fix save compatibility
 - Add alpha masks for goblin heads so the eyes can be yellow again
 - Buff armors somewhat
+- Update for 1.5 (XML syntax and rewrite Harmony patches for new pawn rendering system)
+- Fix scenario so you don't have to click twice after selecting pawns
 
 Todo's
 ------
