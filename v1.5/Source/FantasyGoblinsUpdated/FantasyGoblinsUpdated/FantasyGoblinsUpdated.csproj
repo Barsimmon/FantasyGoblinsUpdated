@@ -55,6 +55,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HeadType_FantasyGoblin.cs" />
+    <Compile Include="PatchRegistration_FantasyGoblin.cs" />
     <Compile Include="BodyType_FantasyGoblin.cs" />
     <Compile Include="GeneCompatibility.cs" />
     <Compile Include="GeneCompatibilityPatch.cs" />

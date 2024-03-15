@@ -9,33 +9,8 @@ using System.Runtime.Remoting.Messaging;
 
 namespace FantasyGoblinsUpdated
 {
-
-    /// <summary>
-    /// This class makes sure the goblin body gene causes the female and male bodies to be assigned correctly
-    /// </summary>
-    [StaticConstructorOnStartup]
-    public static class BodyType_FantasyGoblin
-    {
-        public static bool patchingHeadShader = false;
-
-        static BodyType_FantasyGoblin()
-        {
-            Log.Message("Registering Fantasy Goblins Updated body patch.");
-            var harmony = new Harmony("barsimmon.fantasy_goblins_updated.body_type_fantasy_goblin");
-            harmony.PatchAll();
-
-            GeneDef testGene = DefDatabase<GeneDef>.GetNamed("Skin_Goblin_Green", false);// Def added by this mod when Biotech is active
-            ThingCategoryDef testThingCategory = DefDatabase<ThingCategoryDef>.GetNamed("alienCorpseCategory", false);// Def added by HAR
-
-            if (testGene == null && testThingCategory == null)
-            {
-                Log.Error("Missing dependency! Fantasy Goblins Updated requires either the official Biotech expansion OR the Humanoid Alien Races mod in order to actually add goblins. Make sure at least one of these is active.");
-            }
-        }
-    }
-
     [HarmonyPatch(typeof(PawnRenderNode_Body), "GraphicFor")]
-    public class PatchPawnGraphicSetResolveAllGraphics
+    public class PatchPawnRenderNodeBody
     {
         static void Postfix(PawnRenderNode_Body __instance, Pawn pawn, ref Graphic __result)
         {
@@ -91,24 +66,5 @@ namespace FantasyGoblinsUpdated
 
             __result = GraphicDatabase.Get<Graphic_Multi>(path, __result.Shader, Vector2.one, __result.Color);
         }
-        /*
-        static void FixHeadGraphic(PawnGraphicSet pawnGraphicSet)
-        {
-            // Only execute patch for pawn
-            if (pawnGraphicSet.pawn == null)
-            {
-                return;
-            }
-
-            HeadTypeDef headType = pawnGraphicSet.pawn.story?.headType;
-
-            if (headType == null || !headType.defName.Contains("Goblin"))
-            {
-                return;
-            }
-
-            // TODO cache
-            pawnGraphicSet.headGraphic = GraphicDatabase.Get<Graphic_Multi>(headType.graphicPath, ShaderDatabase.CutoutComplex, Vector2.one, pawnGraphicSet.pawn.story.SkinColor);
-        }*/
     }
 }
