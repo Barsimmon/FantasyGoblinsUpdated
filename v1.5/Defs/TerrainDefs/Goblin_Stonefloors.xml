@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <DesignatorDropdownGroupDef>
+        <defName>Floor_Goblinstone</defName>
+    </DesignatorDropdownGroupDef>
+
+    <TerrainDef Abstract="True" ParentName="FloorBase" Name="GoblinstoneBase">
+        <renderPrecedence>220</renderPrecedence>
+        <description>Roughly-cut stone tiles. These are not beautiful, but they're cheap to build and boosts walking speed ever so slightly. Deconstructing flagstone yields no resources.</description>
+        <texturePath>Terrain/Surfaces/Goblin_StoneFloor</texturePath>
+        <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+        <statBases>
+            <WorkToBuild>800</WorkToBuild>
+            <Beauty>0</Beauty>
+        </statBases>
+        <designatorDropdown>Floor_Goblinstone</designatorDropdown>
+        <pathCost>-1</pathCost>
+        <researchPrerequisites>
+            <li>GoblinStoneConstruction</li>
+        </researchPrerequisites>
+    </TerrainDef>
+
+    <TerrainDef ParentName="GoblinstoneBase">
+        <defName>GoblinstoneSandstone</defName>
+        <label>sandstone goblinstone</label>
+        <color>(126,104,94)</color>
+        <costList>
+            <BlocksSandstone>2</BlocksSandstone>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="GoblinstoneBase">
+        <defName>GoblinstoneGranite</defName>
+        <label>granite goblinstone</label>
+        <color>(105,95,97)</color>
+        <costList>
+            <BlocksGranite>2</BlocksGranite>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="GoblinstoneBase">
+        <defName>GoblinstoneLimestone</defName>
+        <label>limestone goblinstone</label>
+        <color>(158,153,135)</color>
+        <costList>
+            <BlocksLimestone>2</BlocksLimestone>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="GoblinstoneBase">
+        <defName>GoblinstoneSlate</defName>
+        <label>slate goblinstone</label>
+        <color>(105,105,105)</color>
+        <costList>
+            <BlocksSlate>2</BlocksSlate>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="GoblinstoneBase">
+        <defName>GoblinstoneMarble</defName>
+        <label>marble goblinstone</label>
+        <color>(132,135,132)</color>
+        <costList>
+            <BlocksMarble>2</BlocksMarble>
+        </costList>
+    </TerrainDef>
+
+</Defs>
