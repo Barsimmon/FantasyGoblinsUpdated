@@ -69,19 +69,15 @@
                                     <humanRecipeImport>true</humanRecipeImport>
                                     <alienPartGenerator>
                                         <headTypes Inherit="False">
+                                            <!-- Can't use goblin heads because HAR ignores heads that have randomChosen set to false -->
+                                            <!-- If randomChosen is set to true using a patch, humans also get goblin heads -->
+                                            <!-- Override textures for vanilla heads instead -->
                                             <li>Male_AverageNormal</li>
                                             <li>Male_AverageWide</li>
                                             <li>Male_AveragePointy</li>
                                             <li>Female_AverageNormal</li>
                                             <li>Female_AverageWide</li>
                                             <li>Female_AveragePointy</li>
-                                            <!-- These are the older heads, they are being replaced by a Harmony patch on save load -->
-<!--                                            <li>Goblin_Male_AverageNormal</li>-->
-<!--                                            <li>Goblin_Male_AverageWide</li>-->
-<!--                                            <li>Goblin_Male_AveragePointy</li>-->
-<!--                                            <li>Goblin_Female_AverageNormal</li>-->
-<!--                                            <li>Goblin_Female_AverageWide</li>-->
-<!--                                            <li>Goblin_Female_AveragePointy</li>-->
                                         </headTypes>
                                         <bodyTypes>
                                             <li>Male</li>
@@ -135,7 +131,18 @@
                                 </generalSettings>
                                 <graphicPaths>
                                     <body>Things/Goblin/Bodies/</body>
-                                    <head>Things/Goblin/Heads/</head>
+                                    <!-- For some reason, for head textures to work with HAR dev at the time of the 1.5 beta, they have to be defined like this -->
+                                    <head>
+                                        <path>Things/Goblin/Heads/</path>
+                                        <headtypeGraphics>
+                                            <Male_AverageNormal>Things/Goblin/Heads/Male_Average_Normal</Male_AverageNormal>
+                                            <Male_AverageWide>Things/Goblin/Heads/Male_Average_Wide</Male_AverageWide>
+                                            <Male_AveragePointy>Things/Goblin/Heads/Male_Average_Pointy</Male_AveragePointy>
+                                            <Female_AverageNormal>Things/Goblin/Heads/Female_Average_Normal</Female_AverageNormal>
+                                            <Female_AverageWide>Things/Goblin/Heads/Female_Average_Wide</Female_AverageWide>
+                                            <Female_AveragePointy>Things/Goblin/Heads/Female_Average_Pointy</Female_AveragePointy>
+                                        </headtypeGraphics>
+                                    </head>
                                     <skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
                                 </graphicPaths>
                                 <thoughtSettings>

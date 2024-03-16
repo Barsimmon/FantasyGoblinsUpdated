@@ -6,7 +6,7 @@ using UnityEngine;
 namespace FantasyGoblinsUpdated
 {
     [HarmonyPatch(typeof(HeadTypeDef), "GetGraphic")]
-    public class PatchShaderUtilityGetSkinShader
+    public class PatchHeadTypeDefGetGraphic
     {
         /**
          * Replaces the shader for goblin heads for alive goblins.

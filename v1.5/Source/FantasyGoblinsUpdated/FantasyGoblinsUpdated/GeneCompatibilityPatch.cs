@@ -34,8 +34,11 @@ namespace FantasyGoblinsUpdated
         static void Postfix(Pawn_GeneTracker __instance)
         {
             //Log.Message("CheckForOverrides");
+
+            HeadTypeDef headTypeDef = __instance.pawn?.story?.headType;
+
             // Only do this when the pawns head is a goblin head.
-            if (!__instance.pawn.story.headType.defName.Contains("Goblin")) return;
+            if (headTypeDef == null || !headTypeDef.defName.Contains("Goblin")) return;
 
             //Log.Message("Found goblin head");
 
