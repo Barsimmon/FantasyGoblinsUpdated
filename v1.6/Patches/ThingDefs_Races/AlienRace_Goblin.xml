@@ -61,8 +61,7 @@
                                             <defName>Kind</defName>
                                         </li>
                                         <li>
-                                            <defName>DrugDesire</defName>
-                                            <degree>-1</degree>
+                                            <defName Degree="-1">DrugDesire</defName>
                                         </li>
                                     </disallowedTraits>
                                     <immuneToXenophobia>false</immuneToXenophobia>
