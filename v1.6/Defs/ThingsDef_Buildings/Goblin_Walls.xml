@@ -9,6 +9,10 @@
         <thingClass>Building</thingClass>
         <category>Building</category>
         <description>Walls made from mud. They're quick and easy to build. Though hardly the sturdiest. Does not catch fire very easily.</description>
+        <noRightClickDraftAttack>true</noRightClickDraftAttack>
+        <replaceTags>
+            <li>Wall</li>
+        </replaceTags>
         <graphicData>
             <texPath>Things/Building/Linked/Goblin_MudWall</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -41,7 +45,7 @@
         <castEdgeShadows>true</castEdgeShadows>
         <fillPercent>1</fillPercent>
         <coversFloor>true</coversFloor>
-        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <drawStyleCategory>Walls</drawStyleCategory>
         <tickerType>Never</tickerType>
         <rotatable>false</rotatable>
         <selectable>true</selectable>
@@ -58,16 +62,30 @@
         </costList>
         <building>
             <isInert>true</isInert>
+            <isWall>true</isWall>
             <isPlaceOverableWall>true</isPlaceOverableWall>
             <ai_chillDestination>false</ai_chillDestination>
+            <supportsWallAttachments>true</supportsWallAttachments>
             <blueprintGraphicData>
                 <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
             </blueprintGraphicData>
+            <relatedBuildCommands>
+                <li>Door</li>
+                <li>Autodoor</li>
+                <li>OrnateDoor</li>
+                <li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+                <li>Cooler</li>
+                <li>Vent</li>
+            </relatedBuildCommands>
         </building>
         <damageMultipliers>
             <li>
                 <damageDef>Bomb</damageDef>
                 <multiplier>3</multiplier>
+            </li>
+            <li>
+                <damageDef>Thump</damageDef>
+                <multiplier>2</multiplier>
             </li>
         </damageMultipliers>
         <designationHotKey>Misc3</designationHotKey>
@@ -84,6 +102,9 @@
         <thingClass>Building</thingClass>
         <category>Building</category>
         <description>Walls made from large logs bound together with strips from leather.</description>
+        <replaceTags>
+            <li>Wall</li>
+        </replaceTags>
         <graphicData>
             <texPath>Things/Building/Linked/Goblin_Palisade</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -116,8 +137,8 @@
         <blockWind>true</blockWind>
         <castEdgeShadows>true</castEdgeShadows>
         <fillPercent>1</fillPercent>
+        <drawStyleCategory>Defenses</drawStyleCategory>
         <coversFloor>true</coversFloor>
-        <placingDraggableDimensions>1</placingDraggableDimensions>
         <tickerType>Never</tickerType>
         <rotatable>false</rotatable>
         <selectable>true</selectable>
@@ -134,6 +155,7 @@
         </stuffCategories>
         <building>
             <isInert>true</isInert>
+            <isWall>true</isWall>
             <isPlaceOverableWall>true</isPlaceOverableWall>
             <ai_chillDestination>false</ai_chillDestination>
             <blueprintGraphicData>
@@ -160,6 +182,10 @@
         <thingClass>Building</thingClass>
         <category>Building</category>
         <description>Walls made from stone.</description>
+        <noRightClickDraftAttack>true</noRightClickDraftAttack>
+        <replaceTags>
+            <li>Wall</li>
+        </replaceTags>
         <graphicData>
             <texPath>Things/Building/Linked/Goblin_StoneWall</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -193,7 +219,7 @@
         <castEdgeShadows>true</castEdgeShadows>
         <fillPercent>1</fillPercent>
         <coversFloor>true</coversFloor>
-        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <drawStyleCategory>Walls</drawStyleCategory>
         <tickerType>Never</tickerType>
         <rotatable>false</rotatable>
         <selectable>true</selectable>
@@ -210,16 +236,30 @@
         </stuffCategories>
         <building>
             <isInert>true</isInert>
+            <isWall>true</isWall>
             <isPlaceOverableWall>true</isPlaceOverableWall>
             <ai_chillDestination>false</ai_chillDestination>
+            <supportsWallAttachments>true</supportsWallAttachments>
             <blueprintGraphicData>
                 <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
             </blueprintGraphicData>
+            <relatedBuildCommands>
+                <li>Door</li>
+                <li>Autodoor</li>
+                <li>OrnateDoor</li>
+                <li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+                <li>Cooler</li>
+                <li>Vent</li>
+            </relatedBuildCommands>
         </building>
         <damageMultipliers>
             <li>
                 <damageDef>Bomb</damageDef>
                 <multiplier>3</multiplier>
+            </li>
+            <li>
+                <damageDef>Thump</damageDef>
+                <multiplier>2</multiplier>
             </li>
         </damageMultipliers>
         <designationHotKey>Misc3</designationHotKey>
