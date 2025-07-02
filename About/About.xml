@@ -177,7 +177,7 @@ Barsimmon's changes
 - Fix scenario so you don't have to click twice after selecting pawns
 - Fix HAR compatibility
 - Update for 1.6
-- Remove duplicate textures and create symlinks for each supported version
+- Remove duplicate textures
 
 Todo's
 ------
