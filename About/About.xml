@@ -179,7 +179,7 @@ Barsimmon's changes
 - Fix HAR compatibility
 - Update for 1.6
 - Remove duplicate textures
-- Update for 1.7
+- Update for 1.7 and recompile using .NET 10
 
 - More medieval/modern armors and accessories (gloves/gauntlets, boots, cloaks)
 - More firearms
