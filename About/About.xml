@@ -10,6 +10,7 @@
 		<li>1.4</li>
 		<li>1.5</li>
 		<li>1.6</li>
+		<li>1.7</li>
 	</supportedVersions>
 	<packageId>Barsimmon.OriginalByVagabond.FantasyGoblins</packageId>
 	<modDependencies>
@@ -178,24 +179,8 @@ Barsimmon's changes
 - Fix HAR compatibility
 - Update for 1.6
 - Remove duplicate textures
+- Update for 1.7
 
-Todo's
-------
-- gibbet should be able to contain prisoners, is just decorative right now.
-- rotate gibbet
-- sleeping/poison blowdart
-- nets
-- poison trap
-- alpha levels for armour
-- better goblin warlord armour for fat and female body types
-- change map icons
-- Use 1.1 quest system in some way
-- Use 1.1 rank system in some way
-- make floors less repetitive
-- mud wall shows dirt between wall and floor
-- No Goblins sold by slave traders
-- Improve texture quality
-- armor alpha masks
 - More medieval/modern armors and accessories (gloves/gauntlets, boots, cloaks)
 - More firearms
 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeIconDef>
+    <defName>Goblin</defName>
+    <texPath>UI/Icons/Xenotypes/Custom/GoblinCustom</texPath>
+  </XenotypeIconDef>
+
+  <XenotypeIconDef>
+    <defName>GoblinSavage</defName>
+    <texPath>UI/Icons/Xenotypes/Custom/HobgoblinCustom</texPath>
+  </XenotypeIconDef>
+
+</Defs>

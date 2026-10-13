@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <JobDef>
+        <defName>Play_TribalDrum</defName>
+        <driverClass>JobDriver_SitFacingBuilding</driverClass>
+        <reportString>playing tribal drum.</reportString>
+        <joyDuration>4000</joyDuration>
+        <joyMaxParticipants>3</joyMaxParticipants>
+        <joySkill>Shooting</joySkill>
+        <joyXpPerTick>0.003</joyXpPerTick>
+        <joyKind>Gaming_Dexterity</joyKind>
+        <taleOnCompletion>PlayedGame</taleOnCompletion>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+    <JobDef>
+        <defName>Play_WrestlingPit</defName>
+        <driverClass>FantasyGoblinsUpdated.JobDriver_Wrestle</driverClass>
+        <reportString>wrestling.</reportString>
+        <joyDuration>4000</joyDuration>
+        <joyMaxParticipants>2</joyMaxParticipants>
+        <joySkill>Melee</joySkill>
+        <joyXpPerTick>0.004</joyXpPerTick>
+        <joyKind>Gaming_Dexterity</joyKind>
+        <taleOnCompletion>PlayedGame</taleOnCompletion>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+</Defs>

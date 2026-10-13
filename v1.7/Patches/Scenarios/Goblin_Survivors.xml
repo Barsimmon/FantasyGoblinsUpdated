@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[defName="Human"][@Class="AlienRace.ThingDef_AlienRace"]</xpath>
+                <match Class="PatchOperationReplace">
+                    <xpath>Defs/ScenarioDef[defName="GoblinScenario"]/scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes"][1]</xpath>
+                    <value>
+                        <!-- If Biotech is present, gets removed by next patch operation -->
+                        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+                            <def>ConfigPage_ConfigureStartingPawns</def>
+                            <pawnCount>5</pawnCount>
+                            <pawnChoiceCount>8</pawnChoiceCount>
+                        </li>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationConditional" MayRequire="Ludeon.RimWorld.Biotech">
+                <xpath>Defs/ThingDef[defName="Human"][@Class="AlienRace.ThingDef_AlienRace"]</xpath>
+                <match Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
+                    <xpath>Defs/ScenarioDef[defName="GoblinScenario"]/scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"][1]</xpath>
+                    <value>
+                        <!-- If Biotech is present, gets removed by next patch operation -->
+                        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes" MayRequire="Ludeon.RimWorld.Biotech">
+                            <def>ConfigurePawnsXenotypes</def>
+                            <pawnChoiceCount>5</pawnChoiceCount>
+                            <customSummary>Start with 5 goblins</customSummary>
+                            <xenotypeCounts>
+                                <li>
+                                    <xenotype>Fantasy_Goblin_Hobgoblin</xenotype>
+                                    <count>2</count>
+                                    <description>hobgoblin</description>
+                                </li>
+                                <li>
+                                    <xenotype>Fantasy_Goblin</xenotype>
+                                    <count>3</count>
+                                    <description>goblin</description>
+                                </li>
+                            </xenotypeCounts>
+                        </li>
+                    </value>
+                </match>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

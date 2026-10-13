@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <FactionDef ParentName="FactionBase" Name="GoblinTribeFactionBase" Abstract="True">
+        <pawnSingular>goblin</pawnSingular>
+        <pawnsPlural>goblins</pawnsPlural>
+        <categoryTag>Goblin</categoryTag>
+        <listOrderPriority>20</listOrderPriority>
+        <settlementGenerationWeight>0.5</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <canMakeRandomly>true</canMakeRandomly>
+        <canStageAttacks>true</canStageAttacks>
+        <techLevel>Neolithic</techLevel>
+        <factionNameMaker>Fantasy_GoblinNamerFaction</factionNameMaker>
+        <settlementNameMaker>Fantasy_GoblinNamerFaction</settlementNameMaker>
+        <allowedCultures>
+            <li>Goblin</li>
+        </allowedCultures>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Fantasy_Goblin MayRequire="Ludeon.RimWorld.Biotech">0.7</Fantasy_Goblin>
+                <Fantasy_Goblin_Hobgoblin MayRequire="Ludeon.RimWorld.Biotech">0.3</Fantasy_Goblin_Hobgoblin>
+            </xenotypeChances>
+        </xenotypeSet>
+        <disallowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginChristian</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginIslamic</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginHindu</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginBuddhist</li>
+        </disallowedMemes>
+        <disallowedPrecepts>
+            <li MayRequire="Ludeon.RimWorld.Ideology">FungusEating_Despised</li>
+        </disallowedPrecepts>
+        <structureMemeWeights>
+            <Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">4</Structure_Animist>
+            <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+            <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+            <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+        </structureMemeWeights>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>GoblinBackstory</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <leaderTitle>chief</leaderTitle>
+        <caravanTraderKinds>
+            <li>Caravan_Neolithic_BulkGoods</li>
+            <li>Caravan_Neolithic_WarMerchant</li>
+            <li>Caravan_Neolithic_Slaver</li>
+            <li>Caravan_Neolithic_ShamanMerchant</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>Visitor_Neolithic_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>Base_Neolithic_Standard</li>
+        </baseTraderKinds>
+        <allowedArrivalTemperatureRange>-20~55</allowedArrivalTemperatureRange>
+        <raidCommonalityFromPointsCurve>
+            <points>
+                <li>(0, 1)</li> <!--Constant 1 at all points levels-->
+            </points>
+        </raidCommonalityFromPointsCurve>
+        <raidLootMaker>TribeRaidLootMaker</raidLootMaker>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,35)</li>
+                <li>(70, 50)</li>
+                <li>(800, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers Inherit="False">
+            <li>
+                <!-- Normal fights, ranged with melee mix-ins -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <GoblinTribe_Penitent>5</GoblinTribe_Penitent>
+                    <GoblinTribe_Warrior>5</GoblinTribe_Warrior>
+                    <GoblinTribe_Archer>10</GoblinTribe_Archer>
+                    <GoblinTribe_Hunter>10</GoblinTribe_Hunter>
+                    <GoblinTribe_HeavyArcher>10</GoblinTribe_HeavyArcher>
+                    <GoblinTribe_Berserker>5</GoblinTribe_Berserker>
+                    <GoblinTribe_ChiefRanged>3</GoblinTribe_ChiefRanged>
+                    <GoblinTribe_ChiefMelee>1.5</GoblinTribe_ChiefMelee>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, ranged only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <GoblinTribe_Archer>10</GoblinTribe_Archer>
+                    <GoblinTribe_Hunter>10</GoblinTribe_Hunter>
+                    <GoblinTribe_HeavyArcher>10</GoblinTribe_HeavyArcher>
+                    <GoblinTribe_ChiefRanged>5</GoblinTribe_ChiefRanged>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, melee only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <GoblinTribe_Penitent>10</GoblinTribe_Penitent>
+                    <GoblinTribe_Warrior>10</GoblinTribe_Warrior>
+                    <GoblinTribe_Berserker>10</GoblinTribe_Berserker>
+                    <GoblinTribe_ChiefMelee>5</GoblinTribe_ChiefMelee>
+                </options>
+            </li>
+            <li>
+                <!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+                <kindDef>Combat</kindDef>
+                <commonality>5</commonality>
+                <options>
+                    <GoblinTribe_Breacher>5</GoblinTribe_Breacher>
+                    <GoblinTribe_Penitent>5</GoblinTribe_Penitent>
+                    <GoblinTribe_Warrior>5</GoblinTribe_Warrior>
+                    <GoblinTribe_Archer>10</GoblinTribe_Archer>
+                    <GoblinTribe_Hunter>10</GoblinTribe_Hunter>
+                    <GoblinTribe_HeavyArcher>10</GoblinTribe_HeavyArcher>
+                    <GoblinTribe_Berserker>5</GoblinTribe_Berserker>
+                    <GoblinTribe_ChiefRanged>3</GoblinTribe_ChiefRanged>
+                    <GoblinTribe_ChiefMelee>1.5</GoblinTribe_ChiefMelee>
+                </options>
+            </li>
+            <li>
+                <!-- Peaceful -->
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <GoblinTribe_Warrior>20</GoblinTribe_Warrior>
+                    <GoblinTribe_Archer>10</GoblinTribe_Archer>
+                    <GoblinTribe_Hunter>10</GoblinTribe_Hunter>
+                    <GoblinTribe_HeavyArcher>10</GoblinTribe_HeavyArcher>
+                    <GoblinTribe_Berserker>5</GoblinTribe_Berserker>
+                    <GoblinTribe_ChiefRanged>3</GoblinTribe_ChiefRanged>
+                    <GoblinTribe_ChiefMelee>1.5</GoblinTribe_ChiefMelee>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <GoblinTribe_Trader>1</GoblinTribe_Trader>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2.5</Alpaca>
+                    <Elephant>2</Elephant>
+                </carriers>
+                <guards>
+                    <GoblinTribe_Warrior>7</GoblinTribe_Warrior>
+                    <GoblinTribe_Archer>10</GoblinTribe_Archer>
+                    <GoblinTribe_Hunter>10</GoblinTribe_Hunter>
+                    <GoblinTribe_HeavyArcher>10</GoblinTribe_HeavyArcher>
+                    <GoblinTribe_Berserker>7</GoblinTribe_Berserker>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <GoblinTribe_Warrior>7</GoblinTribe_Warrior>
+                    <GoblinTribe_Archer>10</GoblinTribe_Archer>
+                    <GoblinTribe_Hunter>10</GoblinTribe_Hunter>
+                    <GoblinTribe_HeavyArcher>10</GoblinTribe_HeavyArcher>
+                    <GoblinTribe_Berserker>7</GoblinTribe_Berserker>
+                    <GoblinTribe_ChiefRanged>10</GoblinTribe_ChiefRanged>
+                </options>
+            </li>
+            <li>
+                <kindDef>Settlement_RangedOnly</kindDef>
+                <options>
+                    <GoblinTribe_Archer>10</GoblinTribe_Archer>
+                    <GoblinTribe_Hunter>10</GoblinTribe_Hunter>
+                    <GoblinTribe_HeavyArcher>10</GoblinTribe_HeavyArcher>
+                    <GoblinTribe_ChiefRanged>10</GoblinTribe_ChiefRanged>
+                </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <kindDef>Miners</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <GoblinTribe_Miner>1</GoblinTribe_Miner>
+                </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <kindDef>Hunters</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <GoblinTribe_Hunter>1</GoblinTribe_Hunter>
+                </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <kindDef>Loggers</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <GoblinTribe_Logger>1</GoblinTribe_Logger>
+                </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <kindDef>Farmers</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <GoblinTribe_Farmer>1</GoblinTribe_Farmer>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>World/GoblinBase</settlementTexturePath>
+    </FactionDef>
+
+    <FactionDef ParentName="GoblinTribeFactionBase">
+        <defName>GoblinTribeCivil</defName>
+        <label>goblin tribe</label>
+        <description>A tribe of nomadic goblins. This particular tribe seems to be of a less hostile nature than one would expect from a goblin settlement.</description>
+        <colorSpectrum>
+            <li>(0.85, 0.75, 0.37)</li>
+            <li>(0.95, 0.95, 0.37)</li>
+        </colorSpectrum>
+        <factionIconPath>World/GoblinBase</factionIconPath>
+        <disallowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+        </disallowedMemes>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>200</configurationListOrderPriority>
+    </FactionDef>
+
+    <FactionDef ParentName="GoblinTribeFactionBase">
+        <defName>GoblinTribeSavage</defName>
+        <label>savage goblin tribe</label>
+        <description>These goblins live their lives in constant strife. Having made war an occupation they raid nearby
+            settlements to sustain themselves.</description>
+        <colorSpectrum>
+            <li>(0.25, 0.65, 0.05)</li>
+            <li>(0.25, 0.75, 0.05)</li>
+        </colorSpectrum>
+        <factionIconPath>World/GoblinBaseSavage</factionIconPath>
+        <permanentEnemy>true</permanentEnemy>
+        <requiredMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+        </requiredMemes>
+        <disallowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+        </disallowedMemes>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>210</configurationListOrderPriority>
+    </FactionDef>
+
+</Defs>
