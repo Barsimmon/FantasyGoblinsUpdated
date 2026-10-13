@@ -52,7 +52,7 @@ namespace FantasyGoblinsUpdated
 				}
 				else
 				{
-					JoyTickCheckEndCompat(pawn, base.TargetThingA);
+					JoyUtility.JoyTickCheckEnd(pawn, 1, JoyTickFullJoyAction.EndJob, 1f, (Building)base.TargetThingA);
 				}
 			};
 			toil.handlingFacing = true;
@@ -66,42 +66,6 @@ namespace FantasyGoblinsUpdated
 			yield return toil;
 			yield return Toils_Reserve.Release(TargetIndex.B);
 			yield return Toils_Jump.Jump(chooseCell);
-		}
-
-		private static System.Reflection.MethodInfo joyTickCheckEnd;
-		private static System.Reflection.ParameterInfo[] joyTickParams;
-
-		// JoyUtility.JoyTickCheckEnd signature changed in 1.7; resolve it at runtime.
-		private static void JoyTickCheckEndCompat(Pawn pawn, Thing source)
-		{
-			if (joyTickCheckEnd == null)
-			{
-				foreach (var m in typeof(JoyUtility).GetMethods(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static))
-				{
-					if (m.Name == "JoyTickCheckEnd")
-					{
-						joyTickCheckEnd = m;
-						joyTickParams = m.GetParameters();
-						break;
-					}
-				}
-				if (joyTickCheckEnd == null)
-				{
-					return;
-				}
-			}
-			object[] args = new object[joyTickParams.Length];
-			for (int i = 0; i < args.Length; i++)
-			{
-				var pt = joyTickParams[i].ParameterType;
-				if (pt == typeof(Pawn)) args[i] = pawn;
-				else if (pt == typeof(JoyTickFullJoyAction)) args[i] = JoyTickFullJoyAction.EndJob;
-				else if (pt == typeof(float)) args[i] = 1f;
-				else if (typeof(Thing).IsAssignableFrom(pt) && pt.IsInstanceOfType(source)) args[i] = source;
-				else if (joyTickParams[i].HasDefaultValue) args[i] = joyTickParams[i].DefaultValue;
-				else args[i] = pt.IsValueType ? System.Activator.CreateInstance(pt) : null;
-			}
-			joyTickCheckEnd.Invoke(null, args);
 		}
 
 		public override object[] TaleParameters()
